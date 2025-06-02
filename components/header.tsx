@@ -3,10 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, Phone, ChevronDown, Sun, Moon } from "lucide-react"
-import { useTheme } from "next-themes"
+import { Menu, X, Phone, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
 
@@ -53,7 +51,6 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
-  const { theme, setTheme } = useTheme()
   const isMobile = useMobile()
   const [emergencyBannerVisible, setEmergencyBannerVisible] = useState(true)
 
@@ -112,7 +109,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 relative z-50">
             <Image 
-              src="/apple-ac-logo.png"
+              src="https://i.postimg.cc/Twxk7MTP/Screenshot-18-5-2025-234358-acheatservices-com.jpg"
               alt="Apple AC & Heat Logo"
               width={50}
               height={50}
@@ -182,20 +179,6 @@ export default function Header() {
               <Phone className="h-4 w-4" />
               <span>(469) 765-3340</span>
             </Link>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full">
-                  {theme === "dark" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
-                  <span className="sr-only">Toggle theme</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
 
             {/* Mobile Menu Button */}
             <button className="lg:hidden relative z-50 p-2" onClick={toggleMenu} aria-label="Toggle menu">
