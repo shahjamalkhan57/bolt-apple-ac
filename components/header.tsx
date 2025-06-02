@@ -109,7 +109,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 relative z-50">
             <Image 
-              src="https://i.postimg.cc/Twxk7MTP/Screenshot-18-5-2025-234358-acheatservices-com.jpg"
+              src="https://i.postimg.cc/wMCR2Hdf/cropped-cropped-Apple-icon-1.png"
               alt="Apple AC & Heat Logo"
               width={50}
               height={50}
