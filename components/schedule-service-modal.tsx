@@ -86,7 +86,7 @@ export function ScheduleServiceModal() {
           </span>
         </button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>Schedule Your Service</DialogTitle>
         </DialogHeader>
@@ -150,7 +150,7 @@ export function ScheduleServiceModal() {
               value={formData.service_details}
               onChange={handleChange}
               placeholder="Please describe your service needs..."
-              className="min-h-[100px]"
+              className="min-h-[100px] resize-none"
             />
           </div>
           <Button type="submit" className="w-full" disabled={isLoading}>
