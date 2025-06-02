@@ -47,7 +47,7 @@ export default function AIChatbot() {
     setInputValue("")
 
     try {
-      const response = await fetch("https://hvacagencymin.app.n8n.cloud/webhook/acheat", {
+      const response = await fetch("https://orangepeeldust.app.n8n.cloud/webhook/acheat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
