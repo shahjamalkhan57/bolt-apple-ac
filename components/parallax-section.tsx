@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef, useEffect } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 
 export default function ParallaxSection({ 
@@ -14,9 +14,17 @@ export default function ParallaxSection({
 }) {
   const sectionRef = useRef<HTMLElement>(null)
   const [offset, setOffset] = useState(0)
+  const [mounted, setMounted] = useState(false)
+
+  // Set mounted to true after component mounts on client
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Handle parallax effect on scroll
   useEffect(() => {
+    if (!mounted) return
+
     const handleScroll = () => {
       if (!sectionRef.current) return
 
@@ -35,18 +43,15 @@ export default function ParallaxSection({
     handleScroll() // Initialize on mount
     
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [speed])
+  }, [speed, mounted])
 
   return (
     <section 
       ref={sectionRef}
       className={cn("relative overflow-hidden", className)}
-      style={{ transform: `translateY(${offset}px)` }}
+      style={{ transform: mounted ? `translateY(${offset}px)` : undefined }}
     >
       {children}
     </section>
   )
 }
-
-// We need to import useState here at the bottom to avoid the React error
-import { useState } from "react"

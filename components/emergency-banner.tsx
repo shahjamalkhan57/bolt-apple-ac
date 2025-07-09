@@ -19,7 +19,7 @@ export default function EmergencyBanner() {
       {isVisible && (
         <div className="relative">
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
+            initial={false}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="bg-gradient-to-r from-red-600 to-red-500 text-white overflow-hidden z-50"
