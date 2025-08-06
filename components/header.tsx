@@ -120,7 +120,7 @@ export default function Header() {
               className="w-12 h-12"
             />
             <div className="font-bold text-xl md:text-2xl">
-              <span className="text-blue-600 dark:text-blue-400">Matt Miller</span>{" "}
+              <span className="text-blue-600 dark:text-blue-400">MM</span>{" "}
               <span className="text-red-500 dark:text-red-400">Contracting</span>
             </div>
           </Link>
