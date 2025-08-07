@@ -128,7 +128,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 relative z-50">
             <Image 
-              src="https://i.postimg.cc/wMCR2Hdf/cropped-cropped-Apple-icon-1.png"
+              src="https://i.postimg.cc/5y4MCmPd/Ginsoy-CA-1.png"
               alt="Matt Miller Contracting Logo"
               width={50}
               height={50}
