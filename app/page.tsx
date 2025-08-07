@@ -180,7 +180,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
-                  src="https://images.pexels.com/photos/8853472/pexels-photo-8853472.jpeg"
+                  src="https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg"
                   alt="Roofing professional inspecting roof damage"
                   width={600}
                   height={600}
