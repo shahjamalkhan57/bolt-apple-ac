@@ -135,7 +135,7 @@ export default function EnhancedServiceAreaMap({
         <button
           className={`flex-1 py-4 text-center font-medium transition-colors ${
             activeView === "map"
-             ? "bg-red-50 dark:bg-[#E54B3B]/20 text-[#E54B3B] dark:text-[#E54B3B]"
+             ? "bg-red-50 dark:bg-[#be1d1d]/20 text-[#be1d1d] dark:text-[#be1d1d]"
               : "text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50"
           }`}
           onClick={() => setActiveView("map")}
@@ -145,7 +145,7 @@ export default function EnhancedServiceAreaMap({
         <button
           className={`flex-1 py-4 text-center font-medium transition-colors ${
             activeView === "list"
-             ? "bg-red-50 dark:bg-[#E54B3B]/20 text-[#E54B3B] dark:text-[#E54B3B]"
+             ? "bg-red-50 dark:bg-[#be1d1d]/20 text-[#be1d1d] dark:text-[#be1d1d]"
               : "text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50"
           }`}
           onClick={() => setActiveView("list")}
@@ -213,11 +213,11 @@ export default function EnhancedServiceAreaMap({
           <div className="absolute top-4 right-4 bg-white dark:bg-gray-800 p-3 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
             <div className="text-sm font-bold mb-2">Map Legend</div>
             <div className="flex items-center gap-2 text-xs">
-             <div className="w-3 h-3 rounded-full bg-[#E54B3B]"></div>
+             <div className="w-3 h-3 rounded-full bg-[#be1d1d]"></div>
               <span>Service Location</span>
             </div>
             <div className="flex items-center gap-2 text-xs mt-1">
-             <div className="w-4 h-4 rounded-full bg-[#E54B3B] flex items-center justify-center text-white text-[8px] font-bold">
+             <div className="w-4 h-4 rounded-full bg-[#be1d1d] flex items-center justify-center text-white text-[8px] font-bold">
                 HQ
               </div>
               <span>Main Office</span>
@@ -225,8 +225,8 @@ export default function EnhancedServiceAreaMap({
           </div>
 
           {/* Map Instructions */}
-         <div className="absolute bottom-4 left-4 md:left-auto md:right-4 bg-red-50 dark:bg-[#E54B3B]/20 p-3 rounded-lg shadow-md border border-red-100 dark:border-[#E54B3B]/30 max-w-xs">
-           <div className="text-xs text-[#E54B3B] dark:text-[#E54B3B] flex items-start gap-2">
+         <div className="absolute bottom-4 left-4 md:left-auto md:right-4 bg-red-50 dark:bg-[#be1d1d]/20 p-3 rounded-lg shadow-md border border-red-100 dark:border-[#be1d1d]/30 max-w-xs">
+           <div className="text-xs text-[#be1d1d] dark:text-[#be1d1d] flex items-start gap-2">
               <Info className="h-4 w-4 flex-shrink-0 mt-0.5" />
               <span>Hover over any pin to see location information</span>
             </div>
@@ -248,8 +248,8 @@ export default function EnhancedServiceAreaMap({
                   p-4 rounded-lg border transition-colors cursor-pointer
                   ${
                     area.isMainOffice
-                      ? "bg-red-50 dark:bg-[#E54B3B]/20 border-red-200 dark:border-[#E54B3B]/30"
-                      : "bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:border-red-200 dark:hover:border-red-800/30"
+                     ? "bg-red-50 dark:bg-[#be1d1d]/20 border-red-200 dark:border-[#be1d1d]/30"
+                     : "bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:border-red-200 dark:hover:border-[#be1d1d]/30"
                   }
                 `}
                 onClick={() => {
@@ -263,8 +263,8 @@ export default function EnhancedServiceAreaMap({
                     p-2 rounded-full 
                     ${
                       area.isMainOffice
-                        ? "bg-red-100 dark:bg-[#E54B3B]/30 text-[#E54B3B] dark:text-[#E54B3B]"
-                        : "bg-red-100 dark:bg-[#E54B3B]/30 text-[#E54B3B] dark:text-[#E54B3B]"
+                       ? "bg-red-100 dark:bg-[#be1d1d]/30 text-[#be1d1d] dark:text-[#be1d1d]"
+                       : "bg-red-100 dark:bg-[#be1d1d]/30 text-[#be1d1d] dark:text-[#be1d1d]"
                     }
                   `}
                   >
@@ -290,7 +290,7 @@ export default function EnhancedServiceAreaMap({
                         setActiveView("map")
                         setTimeout(() => flyToLocation(area.coordinates), 100)
                       }}
-                      className="text-xs text-[#E54B3B] dark:text-[#E54B3B] hover:underline flex items-center gap-1 mt-2"
+                     className="text-xs text-[#be1d1d] dark:text-[#be1d1d] hover:underline flex items-center gap-1 mt-2"
                     >
                       View on map
                       <ChevronRight className="h-3 w-3" />

@@ -147,17 +147,17 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-sky-50 to-white">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-white">
         <div className="absolute inset-0 z-0">
           <HeroAnimation />
         </div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
-              <div className="inline-block animate-bounce-slow bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-2">
+              <div className="inline-block animate-bounce-slow bg-[#be1d1d] text-white px-4 py-1 rounded-full text-sm font-medium mb-2">
                 #RC123456 Licensed & Insured
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#E54B3B] via-[#2C3E50] to-[#E54B3B] animate-gradient">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#be1d1d] via-[#0f1724] to-[#be1d1d] animate-gradient">
                 Matt Miller Contracting
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
@@ -166,9 +166,9 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="tel:4697653340"
-                  className="group relative overflow-hidden rounded-full bg-[#E54B3B] px-6 py-4 text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  className="group relative overflow-hidden rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#2C3E50] to-[#E54B3B] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#0f1724] to-[#be1d1d] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="relative flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
                     (469) 765-3340
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#E54B3B] to-[#2C3E50] rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
                   src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg"
@@ -192,7 +192,7 @@ export default function Home() {
                     Reliable roofing that stands the test of time
                   </p>
                   <div className="flex items-center gap-2 mt-2">
-                    <MapPin className="h-4 w-4 text-[#E54B3B]" />
+                    <MapPin className="h-4 w-4 text-[#be1d1d]" />
                     <p className="text-sm">
                       Dallas–Fort Worth, TX and surrounding areas
                     </p>
@@ -224,9 +224,9 @@ export default function Home() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                  className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#e9ecef]"
                 >
-                  <div className="bg-gradient-to-br from-[#E54B3B] to-[#2C3E50] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                  <div className="bg-gradient-to-br from-[#be1d1d] to-[#0f1724] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                     {feature.icon}
                   </div>
                   <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
@@ -238,7 +238,7 @@ export default function Home() {
       </ParallaxSection>
 
       {/* Services Section */}
-      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-24 bg-gradient-to-b from-white to-[#f8f9fa]">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -273,7 +273,7 @@ export default function Home() {
       </section>
 
       {/* Emergency Call-Out Section */}
-      <section className="py-20 bg-gradient-to-r from-[#E54B3B] to-[#2C3E50] text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1600')] opacity-10 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -299,7 +299,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-24 bg-gradient-to-b from-[#f8f9fa] to-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -315,7 +315,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#2C3E50] to-[#E54B3B] text-white">
+      <section className="py-20 bg-gradient-to-r from-[#0f1724] to-[#be1d1d] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">
