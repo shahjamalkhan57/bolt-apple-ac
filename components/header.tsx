@@ -134,10 +134,6 @@ export default function Header() {
               height={50}
               className="w-12 h-12"
             />
-            <div className="font-bold text-xl md:text-2xl">
-              <span className="text-[#0f1724] dark:text-[#0f1724]">Miller</span>{" "}
-              <span className="text-[#0f1724] dark:text-[#0f1724]">Roofguard</span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
