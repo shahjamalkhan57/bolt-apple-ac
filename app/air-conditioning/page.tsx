@@ -95,7 +95,7 @@ export default function AirConditioningPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="tel:4697653340"
-                  className="inline-flex items-center justify-center gap-2 bg-[#be1d1d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0f1724] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#be1d1d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#be1d1d]/90 transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   (469) 765-3340
@@ -150,7 +150,7 @@ export default function AirConditioningPage() {
                 viewport={{ once: true }}
                 className="bg-red-50 dark:bg-[#be1d1d]/20 rounded-xl p-6 hover:shadow-xl transition-shadow"
               >
-                <div className="bg-[#be1d1d] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-[#0f1724] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
@@ -182,7 +182,7 @@ export default function AirConditioningPage() {
                     viewport={{ once: true }}
                     className="flex items-start gap-3"
                   >
-                    <AlertTriangle className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
+                    <AlertTriangle className="h-6 w-6 text-[#0f1724] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 dark:text-gray-300">{sign}</p>
                   </motion.div>
                 ))}
@@ -215,7 +215,7 @@ export default function AirConditioningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#be1d1d] text-white">
+      <section className="py-20 bg-[#0f1724] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -231,7 +231,7 @@ export default function AirConditioningPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="tel:4697653340"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#be1d1d] px-8 py-4 rounded-full font-semibold hover:bg-red-50 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-[#0f1724] px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   Call Now
@@ -244,7 +244,7 @@ export default function AirConditioningPage() {
       </section>
 
       {/* Emergency Service Banner */}
-      <section className="bg-gradient-to-r from-[#be1d1d] to-[#0f1724] text-white py-12">
+      <section className="bg-[#be1d1d] text-white py-12">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -262,7 +262,7 @@ export default function AirConditioningPage() {
             </div>
             <Link
               href="tel:4697653340"
-              className="inline-flex items-center gap-2 bg-white text-[#be1d1d] px-6 py-3 rounded-full font-semibold hover:bg-red-50 transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-[#be1d1d] px-6 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors"
             >
               <Phone className="h-5 w-5" />
               (469) 765-3340

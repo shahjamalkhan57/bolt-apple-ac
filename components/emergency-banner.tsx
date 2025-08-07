@@ -22,7 +22,7 @@ export default function EmergencyBanner() {
             initial={false}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="bg-gradient-to-r from-[#be1d1d] to-[#0f1724] text-white overflow-hidden z-50"
+            className="bg-[#be1d1d] text-white overflow-hidden z-50"
           >
             <div className="container mx-auto px-4 py-2">
               <div className="flex items-center justify-between">

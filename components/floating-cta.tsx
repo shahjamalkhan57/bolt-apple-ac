@@ -57,7 +57,7 @@ export default function FloatingCTA() {
         
         <Link
           href="tel:4697653340"
-          className="bg-gradient-to-r from-[#be1d1d] to-[#0f1724] hover:from-[#0f1724] hover:to-[#be1d1d] text-white font-bold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 w-full transition-colors"
+          className="bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 w-full transition-colors"
         >
           <Phone className="h-4 w-4" />
           (469) 765-3340

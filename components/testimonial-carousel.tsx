@@ -93,7 +93,7 @@ export default function TestimonialCarousel({ testimonials }: { testimonials: Te
             className={cn(
               "w-3 h-3 rounded-full transition-all",
               current === index 
-                ? "bg-[#be1d1d] w-6" 
+                ? "bg-[#0f1724] w-6" 
                 : "bg-gray-300 hover:bg-gray-400"
             )}
             aria-label={`Go to testimonial ${index + 1}`}
@@ -107,14 +107,14 @@ export default function TestimonialCarousel({ testimonials }: { testimonials: Te
         onClick={prevSlide}
         aria-label="Previous testimonial"
       >
-        <ChevronLeft className="h-6 w-6 text-[#be1d1d]" />
+        <ChevronLeft className="h-6 w-6 text-[#0f1724]" />
       </button>
       <button 
         className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-white transition-colors"
         onClick={nextSlide}
         aria-label="Next testimonial"
       >
-        <ChevronRight className="h-6 w-6 text-[#be1d1d]" />
+        <ChevronRight className="h-6 w-6 text-[#0f1724]" />
       </button>
     </div>
   )

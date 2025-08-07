@@ -85,7 +85,7 @@ export default function ServiceCard({ service, index }: ServiceProps) {
       <div className="p-8">
         <div className="flex items-start justify-between">
           <motion.div
-            className={`w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 bg-gradient-to-br ${service.color}`}
+            className="w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 bg-[#0f1724]"
             {...getAnimation()}
           >
             {getIcon()}
@@ -115,7 +115,7 @@ export default function ServiceCard({ service, index }: ServiceProps) {
               className="flex items-center gap-2"
             >
               <div
-                className={`w-5 h-5 rounded-full flex items-center justify-center bg-gradient-to-br ${service.color}`}
+                className="w-5 h-5 rounded-full flex items-center justify-center bg-[#0f1724]"
               >
                 <Check className="h-3 w-3 text-white" />
               </div>

@@ -157,7 +157,7 @@ export default function Home() {
               <div className="inline-block animate-bounce-slow bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-2">
                 #RC123456 Licensed & Insured
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#be1d1d] via-[#0f1724] to-[#be1d1d] animate-gradient">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#0f1724]">
                 Matt Miller Contracting
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
@@ -166,10 +166,9 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="tel:4697653340"
-                  className="group relative overflow-hidden rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  className="rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-all hover:bg-[#be1d1d]/90 hover:scale-105 active:scale-95"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#0f1724] to-[#be1d1d] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative flex items-center justify-center gap-2 font-bold">
+                  <span className="flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
                     (469) 765-3340
                   </span>
@@ -226,7 +225,7 @@ export default function Home() {
                   key={index}
                   className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
                 >
-                  <div className="bg-gradient-to-br from-[#be1d1d] to-[#0f1724] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                  <div className="bg-[#0f1724] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                     {feature.icon}
                   </div>
                   <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
@@ -273,7 +272,7 @@ export default function Home() {
       </section>
 
       {/* Emergency Call-Out Section */}
-      <section className="py-20 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] text-white relative overflow-hidden">
+      <section className="py-20 bg-[#be1d1d] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1600')] opacity-10 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -289,7 +288,7 @@ export default function Home() {
             </p>
             <Link
               href="tel:4697653340"
-              className="group relative overflow-hidden inline-flex items-center gap-2 bg-white text-[#be1d1d] font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-2 bg-white text-[#be1d1d] font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <Phone className="h-6 w-6 animate-pulse" />
               <span>Call Now: (469) 765-3340</span>
@@ -315,7 +314,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#0f1724] to-[#be1d1d] text-white">
+      <section className="py-20 bg-[#0f1724] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">
