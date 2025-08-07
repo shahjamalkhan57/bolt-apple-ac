@@ -17,13 +17,16 @@ export default function Footer() {
             <p className="text-sm text-gray-400">License: #RC123456</p>
             <div className="flex space-x-4 mt-4">
               <Link href="https://facebook.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
+              <Link href="https://facebook.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
                 <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="https://instagram.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
+              <Link href="https://instagram.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
+              <Link href="https://twitter.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
               <Link href="https://twitter.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
@@ -101,6 +104,7 @@ export default function Footer() {
               <span className="text-gray-400">Garland</span>
               <span className="text-gray-400">Mesquite</span>
               <span className="text-gray-400">Grand Prairie</span>
+              <Link href="/locations" className="text-[#be1d1d] hover:text-[#be1d1d]/80 col-span-2">
               <Link href="/locations" className="text-[#be1d1d] hover:text-[#be1d1d]/80 col-span-2">
                 View All Locations →
               </Link>

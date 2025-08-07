@@ -58,9 +58,9 @@ export default function AirConditioningPage() {
   return (
     <main className="pt-24">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center bg-gradient-to-b from-red-50 to-white dark:from-[#2C3E50] dark:to-gray-900">
+      <section className="relative min-h-[80vh] flex items-center bg-gradient-to-b from-red-50 to-white dark:from-[#0f1724] dark:to-gray-900">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#E54B3B]/10 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#be1d1d]/10 to-transparent"></div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.1 }}
@@ -84,7 +84,7 @@ export default function AirConditioningPage() {
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                 Expert Air Conditioning{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E54B3B] to-[#2C3E50]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#be1d1d] to-[#0f1724]">
                   Services
                 </span>
               </h1>
@@ -95,7 +95,7 @@ export default function AirConditioningPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="tel:4697653340"
-                  className="inline-flex items-center justify-center gap-2 bg-[#E54B3B] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#2C3E50] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#be1d1d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0f1724] transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   (469) 765-3340
@@ -148,10 +148,9 @@ export default function AirConditioningPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 hover:shadow-xl transition-shadow"
-                className="bg-red-50 dark:bg-[#E54B3B]/20 rounded-xl p-6 hover:shadow-xl transition-shadow"
+                className="bg-red-50 dark:bg-[#be1d1d]/20 rounded-xl p-6 hover:shadow-xl transition-shadow"
               >
-                <div className="bg-[#E54B3B] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-[#be1d1d] text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
@@ -163,7 +162,7 @@ export default function AirConditioningPage() {
       </ParallaxSection>
 
       {/* Warning Signs Section */}
-      <section className="py-24 bg-gradient-to-b from-white to-red-50 dark:from-gray-900 dark:to-[#E54B3B]/20">
+      <section className="py-24 bg-gradient-to-b from-white to-red-50 dark:from-gray-900 dark:to-[#be1d1d]/20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -183,7 +182,7 @@ export default function AirConditioningPage() {
                     viewport={{ once: true }}
                     className="flex items-start gap-3"
                   >
-                    <AlertTriangle className="h-6 w-6 text-[#E54B3B] flex-shrink-0 mt-1" />
+                    <AlertTriangle className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
                     <p className="text-gray-700 dark:text-gray-300">{sign}</p>
                   </motion.div>
                 ))}
@@ -216,7 +215,7 @@ export default function AirConditioningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#E54B3B] text-white">
+      <section className="py-20 bg-[#be1d1d] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -232,7 +231,7 @@ export default function AirConditioningPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="tel:4697653340"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#E54B3B] px-8 py-4 rounded-full font-semibold hover:bg-red-50 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-[#be1d1d] px-8 py-4 rounded-full font-semibold hover:bg-red-50 transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   Call Now
@@ -245,7 +244,7 @@ export default function AirConditioningPage() {
       </section>
 
       {/* Emergency Service Banner */}
-      <section className="bg-gradient-to-r from-[#E54B3B] to-[#2C3E50] text-white py-12">
+      <section className="bg-gradient-to-r from-[#be1d1d] to-[#0f1724] text-white py-12">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -263,7 +262,7 @@ export default function AirConditioningPage() {
             </div>
             <Link
               href="tel:4697653340"
-              className="inline-flex items-center gap-2 bg-white text-[#E54B3B] px-6 py-3 rounded-full font-semibold hover:bg-red-50 transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-[#be1d1d] px-6 py-3 rounded-full font-semibold hover:bg-red-50 transition-colors"
             >
               <Phone className="h-5 w-5" />
               (469) 765-3340

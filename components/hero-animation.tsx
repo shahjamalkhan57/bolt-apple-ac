@@ -52,7 +52,7 @@ export default function HeroAnimation() {
         this.size = Math.random() * 5 + 1
         this.speedX = Math.random() * 3 - 1.5
         this.speedY = Math.random() * 3 - 1.5
-        this.color = Math.random() > 0.5 ? "#E54B3B" : "#2C3E50" // Brand red or dark blue
+        this.color = Math.random() > 0.5 ? "#be1d1d" : "#0f1724" // Brand red or dark navy
         this.opacity = Math.random() * 0.5 + 0.1
       }
 
