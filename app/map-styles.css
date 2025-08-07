@@ -14,7 +14,7 @@
 }
 
 .main-office-tooltip .leaflet-tooltip {
-  background-color: #be1d1d;
+  background-color: #E54B3B;
   color: white;
   border: 2px solid white;
   font-size: 1.1rem;
@@ -29,7 +29,7 @@
 }
 
 .main-office-tooltip .leaflet-tooltip-top:before {
-  border-top-color: #be1d1d;
+  border-top-color: #E54B3B;
 }
 
 /* Custom marker styles */

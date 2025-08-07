@@ -131,24 +131,16 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 relative z-50">
-            <div className="w-12 h-12">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                {/* Shield background */}
-                <path d="M50 5 L20 20 L20 50 Q20 80 50 95 Q80 80 80 50 L80 20 Z" fill="#0f1724" stroke="#be1d1d" strokeWidth="2"/>
-                {/* Roof lines */}
-                <path d="M30 35 L50 20 L70 35" fill="none" stroke="#be1d1d" strokeWidth="3" strokeLinecap="round"/>
-                <path d="M25 45 L50 25 L75 45" fill="none" stroke="#be1d1d" strokeWidth="2" strokeLinecap="round"/>
-                {/* Text area background */}
-                <rect x="15" y="50" width="70" height="35" rx="5" fill="#be1d1d"/>
-                {/* Miller text */}
-                <text x="50" y="62" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">MILLER</text>
-                {/* Roofguard text */}
-                <text x="50" y="72" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">ROOFGUARD</text>
-              </svg>
-            </div>
+            <Image 
+              src="https://i.postimg.cc/wMCR2Hdf/cropped-cropped-Apple-icon-1.png"
+              alt="Matt Miller Contracting Logo"
+              width={50}
+              height={50}
+              className="w-12 h-12"
+            />
             <div className="font-bold text-xl md:text-2xl">
-              <span className="text-[#be1d1d] dark:text-[#be1d1d]">Miller</span>{" "}
-              <span className="text-[#0f1724] dark:text-[#0f1724]">Roofguard</span>
+              <span className="text-[#E54B3B] dark:text-[#E54B3B]">Miller</span>{" "}
+              <span className="text-[#2C3E50] dark:text-[#2C3E50]">Roofguard</span>
             </div>
           </Link>
 
@@ -160,12 +152,12 @@ export default function Header() {
                   <div className="flex items-center">
                     <Link
                       href={item.href}
-                      className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] font-medium rounded-md flex items-center gap-1 group"
+                      className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#E54B3B] dark:hover:text-[#E54B3B] font-medium rounded-md flex items-center gap-1 group"
                     >
                       {item.label}
                     </Link>
                     <button
-                      className="p-1 hover:text-[#be1d1d] dark:hover:text-[#be1d1d]"
+                      className="p-1 hover:text-[#E54B3B] dark:hover:text-[#E54B3B]"
                       onClick={() => toggleDropdown(item.label)}
                     >
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
@@ -176,7 +168,7 @@ export default function Header() {
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-red-50 dark:hover:bg-[#be1d1d]/10 hover:text-[#be1d1d] dark:hover:text-[#be1d1d]"
+                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-red-50 dark:hover:bg-[#E54B3B]/10 hover:text-[#E54B3B] dark:hover:text-[#E54B3B]"
                           >
                             {child.label}
                           </Link>
@@ -187,7 +179,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] font-medium rounded-md block"
+                    className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#E54B3B] dark:hover:text-[#E54B3B] font-medium rounded-md block"
                   >
                     {item.label}
                   </Link>
@@ -203,8 +195,8 @@ export default function Header() {
               className={cn(
                 "hidden md:flex items-center gap-2 text-white font-medium rounded-full transition-all",
                 scrolled
-                  ? "bg-[#be1d1d] hover:bg-[#0f1724] px-4 py-2"
-                  : "bg-[#be1d1d]/90 hover:bg-[#be1d1d] backdrop-blur-sm px-4 py-2",
+                  ? "bg-[#E54B3B] hover:bg-[#2C3E50] px-4 py-2"
+                  : "bg-[#E54B3B]/90 hover:bg-[#E54B3B] backdrop-blur-sm px-4 py-2",
               )}
             >
               <Phone className="h-4 w-4" />
@@ -281,7 +273,7 @@ export default function Header() {
           <div className="mt-8 space-y-4">
             <Link
               href="tel:4697653340"
-              className="flex items-center justify-center gap-2 bg-[#be1d1d] text-white font-medium rounded-full px-6 py-3 w-full"
+              className="flex items-center justify-center gap-2 bg-[#E54B3B] text-white font-medium rounded-full px-6 py-3 w-full"
               onClick={toggleMenu}
             >
               <Phone className="h-5 w-5" />
@@ -289,7 +281,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 bg-[#0f1724] text-white font-medium rounded-full px-6 py-3 w-full"
+              className="flex items-center justify-center gap-2 bg-[#2C3E50] text-white font-medium rounded-full px-6 py-3 w-full"
               onClick={toggleMenu}
             >
               Schedule Service
