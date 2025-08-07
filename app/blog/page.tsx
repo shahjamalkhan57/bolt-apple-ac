@@ -38,9 +38,9 @@ export default function BlogPage() {
   return (
     <main className="pt-24">
       {/* Hero Section */}
-      <section className="relative min-h-[40vh] flex items-center bg-gradient-to-b from-red-50 to-white dark:from-[#0f1724] dark:to-gray-900">
+      <section className="relative min-h-[40vh] flex items-center bg-red-50 dark:bg-[#0f1724]">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#be1d1d]/10 to-transparent"></div>
+          <div className="absolute inset-0 bg-[#be1d1d]/10"></div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.1 }}
@@ -104,7 +104,7 @@ export default function BlogPage() {
                       5 min read
                     </span>
                   </div>
-                  <h2 className="text-xl font-bold mb-3 group-hover:text-[#be1d1d] dark:group-hover:text-[#be1d1d] transition-colors">
+                  <h2 className="text-xl font-bold mb-3 group-hover:text-[#0f1724] dark:group-hover:text-[#0f1724] transition-colors">
                     {blog.title}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
@@ -112,7 +112,7 @@ export default function BlogPage() {
                   </p>
                   <Link
                     href={`/blog/${blog.slug}`}
-                    className="inline-flex items-center gap-2 text-[#be1d1d] dark:text-[#be1d1d] font-medium group-hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-[#0f1724] dark:text-[#0f1724] font-medium group-hover:gap-3 transition-all"
                   >
                     Read More
                     <ArrowRight className="h-4 w-4" />

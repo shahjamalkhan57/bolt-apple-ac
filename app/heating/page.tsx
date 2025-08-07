@@ -101,7 +101,7 @@ export default function HeatingPage() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#be1d1d] via-[#0f1724] to-[#be1d1d] animate-gradient"
+                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#0f1724]"
               >
                 HVAC Heating Service in Rockwall
               </motion.h1>
@@ -122,22 +122,20 @@ export default function HeatingPage() {
               >
                 <Link
                   href="tel:4697653340"
-                  className="group relative overflow-hidden rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  className="rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-all hover:bg-[#be1d1d]/90 hover:scale-105 active:scale-95"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#0f1724] to-[#be1d1d] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative flex items-center justify-center gap-2 font-bold">
+                  <span className="flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
                     (469) 765-3340
                   </span>
                 </Link>
                 <Link
                   href="#service-form"
-                  className="group relative overflow-hidden rounded-full bg-white border-2 border-[#be1d1d] px-6 py-4 text-[#be1d1d] shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-100 to-red-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative flex items-center justify-center gap-2 font-bold">
+                  <span className="flex items-center justify-center gap-2 font-bold">
                     Schedule Service
-                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="h-5 w-5" />
                   </span>
                 </Link>
               </motion.div>
@@ -201,7 +199,7 @@ export default function HeatingPage() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
-                <div className="bg-gradient-to-br from-[#be1d1d] to-[#0f1724] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-[#0f1724] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -268,7 +266,7 @@ export default function HeatingPage() {
               <div className="pt-4">
                 <Link
                   href="#service-form"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] hover:from-[#0f1724] hover:to-[#be1d1d] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Schedule Maintenance
                   <ArrowRight className="h-5 w-5" />
@@ -315,7 +313,7 @@ export default function HeatingPage() {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-[#be1d1d] to-[#0f1724] p-3 rounded-xl text-white">
+                  <div className="bg-[#0f1724] p-3 rounded-xl text-white">
                     {sign.icon}
                   </div>
                   <div>
@@ -341,7 +339,7 @@ export default function HeatingPage() {
             </p>
             <Link
               href="tel:4697653340"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] hover:from-[#0f1724] hover:to-[#be1d1d] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Phone className="h-5 w-5" />
               Contact Apple AC & Heat Today
@@ -390,7 +388,7 @@ export default function HeatingPage() {
               <div className="pt-4">
                 <Link
                   href="#service-form"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] hover:from-[#0f1724] hover:to-[#be1d1d] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Get Your HVAC System Fixed
                   <ArrowRight className="h-5 w-5" />
@@ -424,7 +422,7 @@ export default function HeatingPage() {
       </section>
 
       {/* Emergency Call-Out Section */}
-      <section className="py-20 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] text-white relative overflow-hidden">
+      <section className="py-20 bg-[#be1d1d] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1600')] opacity-10 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -480,14 +478,14 @@ export default function HeatingPage() {
             >
               <Link
                 href="tel:4697653340"
-                className="group relative overflow-hidden inline-flex items-center gap-2 bg-white text-[#be1d1d] font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+                className="inline-flex items-center gap-2 bg-white text-[#be1d1d] font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (469) 765-3340</span>
               </Link>
               <Link
                 href="#service-form"
-                className="group relative overflow-hidden inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
               >
                 <Calendar className="h-6 w-6" />
                 <span>Schedule Service</span>
