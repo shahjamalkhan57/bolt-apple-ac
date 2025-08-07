@@ -161,7 +161,7 @@ export default function Home() {
                 Matt Miller Contracting
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
-                Protecting homes in Dallas–Fort Worth, TX and nearby areas with expert roofing and storm restoration services.
+                Protecting homes in the Dallas–Fort Worth, TX area with expert roofing and storm restoration services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
