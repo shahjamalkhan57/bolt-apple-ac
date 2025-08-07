@@ -62,10 +62,10 @@ export default function BlogPage() {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              HVAC Insights & Tips
+              Roofing Insights & Tips
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Expert advice, industry updates, and helpful guides for maintaining your home comfort systems
+              Expert advice, industry updates, and helpful guides for maintaining your roof and home exterior
             </p>
           </motion.div>
         </div>
@@ -104,7 +104,6 @@ export default function BlogPage() {
                       5 min read
                     </span>
                   </div>
-                  <h2 className="text-xl font-bold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   <h2 className="text-xl font-bold mb-3 group-hover:text-[#E54B3B] dark:group-hover:text-[#E54B3B] transition-colors">
                     {blog.title}
                   </h2>
@@ -115,10 +114,10 @@ export default function BlogPage() {
                     href={`/blog/${blog.slug}`}
                     className="inline-flex items-center gap-2 text-[#E54B3B] dark:text-[#E54B3B] font-medium group-hover:gap-3 transition-all"
                   >
-                Roofing Insights & Tips
+                    Read More
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                Expert advice, industry updates, and helpful guides for maintaining your roof and home exterior
+                </div>
               </motion.div>
             ))}
           </div>
