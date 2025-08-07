@@ -127,7 +127,7 @@ export default function SidingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Transform your home's exterior with professional siding services. From vinyl to fiber cement, we install and repair all siding types with expert craftsmanship.
+                Transform your home&apos;s exterior with professional siding services. From vinyl to fiber cement, we install and repair all siding types with expert craftsmanship.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
