@@ -139,8 +139,8 @@ export default function Header() {
               className="w-12 h-12"
             />
             <div className="font-bold text-xl md:text-2xl">
-              <span className="text-primary-600 dark:text-primary-400">Miller</span>{" "}
-              <span className="text-primary-700 dark:text-primary-500">Roofguard</span>
+              <span className="text-blue-600 dark:text-blue-400">Miller</span>{" "}
+              <span className="text-red-500 dark:text-red-400">Roofguard</span>
             </div>
           </Link>
 
@@ -152,12 +152,12 @@ export default function Header() {
                   <div className="flex items-center">
                     <Link
                       href={item.href}
-                      className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium rounded-md flex items-center gap-1 group"
+                      className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium rounded-md flex items-center gap-1 group"
                     >
                       {item.label}
                     </Link>
                     <button
-                      className="p-1 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="p-1 hover:text-blue-600 dark:hover:text-blue-400"
                       onClick={() => toggleDropdown(item.label)}
                     >
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
@@ -168,7 +168,7 @@ export default function Header() {
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary-50 dark:hover:bg-gray-700 hover:text-primary-600 dark:hover:text-primary-400"
+                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400"
                           >
                             {child.label}
                           </Link>
@@ -179,7 +179,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium rounded-md block"
+                    className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium rounded-md block"
                   >
                     {item.label}
                   </Link>
@@ -195,8 +195,8 @@ export default function Header() {
               className={cn(
                 "hidden md:flex items-center gap-2 text-white font-medium rounded-full transition-all",
                 scrolled
-                  ? "bg-primary-600 hover:bg-primary-700 px-4 py-2"
-                  : "bg-primary-600/90 hover:bg-primary-600 backdrop-blur-sm px-4 py-2",
+                  ? "bg-blue-600 hover:bg-blue-700 px-4 py-2"
+                  : "bg-blue-600/90 hover:bg-blue-600 backdrop-blur-sm px-4 py-2",
               )}
             >
               <Phone className="h-4 w-4" />
@@ -273,7 +273,7 @@ export default function Header() {
           <div className="mt-8 space-y-4">
             <Link
               href="tel:4697653340"
-              className="flex items-center justify-center gap-2 bg-primary-600 text-white font-medium rounded-full px-6 py-3 w-full"
+              className="flex items-center justify-center gap-2 bg-blue-600 text-white font-medium rounded-full px-6 py-3 w-full"
               onClick={toggleMenu}
             >
               <Phone className="h-5 w-5" />
@@ -281,7 +281,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 bg-primary-500 text-white font-medium rounded-full px-6 py-3 w-full"
+              className="flex items-center justify-center gap-2 bg-red-500 text-white font-medium rounded-full px-6 py-3 w-full"
               onClick={toggleMenu}
             >
               Schedule Service

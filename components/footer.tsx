@@ -16,15 +16,15 @@ export default function Footer() {
             </p>
             <p className="text-sm text-gray-400">License: #RC123456</p>
             <div className="flex space-x-4 mt-4">
-              <Link href="https://facebook.com" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="https://facebook.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://instagram.com" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="https://instagram.com" className="text-gray-400 hover:text-pink-400 transition-colors">
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="https://twitter.com" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="https://twitter.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
@@ -63,17 +63,17 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary-500 flex-shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400">123 Main Street, Fort Worth, TX 76000</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary-500 flex-shrink-0" />
+                <Phone className="h-5 w-5 text-green-500 flex-shrink-0" />
                 <Link href="tel:4697653340" className="text-gray-400 hover:text-white transition-colors">
                   (469) 765-3340
                 </Link>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary-500 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-blue-500 flex-shrink-0" />
                 <Link
                   href="mailto:matt@millerroofs.com"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -82,7 +82,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="flex items-center gap-3">
-                <Clock className="h-5 w-5 text-primary-400 flex-shrink-0" />
+                <Clock className="h-5 w-5 text-yellow-500 flex-shrink-0" />
                 <span className="text-gray-400">24/7 Emergency Service</span>
               </li>
             </ul>
@@ -100,7 +100,7 @@ export default function Footer() {
               <span className="text-gray-400">Garland</span>
               <span className="text-gray-400">Mesquite</span>
               <span className="text-gray-400">Grand Prairie</span>
-              <Link href="/locations" className="text-primary-400 hover:text-primary-300 col-span-2">
+              <Link href="/locations" className="text-blue-400 hover:text-blue-300 col-span-2">
                 View All Locations →
               </Link>
             </div>

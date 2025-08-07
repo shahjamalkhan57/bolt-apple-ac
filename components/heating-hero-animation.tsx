@@ -56,11 +56,11 @@ export default function HeatingHeroAnimation() {
         this.speedY = Math.random() * 3 - 1.5
         this.color = isFlame
           ? Math.random() > 0.5
-            ? "#22c55e"
-            : "#16a34a"
+            ? "#ef4444"
+            : "#f97316"
           : Math.random() > 0.5
-          ? "#22c55e"
-          : "#16a34a"
+          ? "#f97316"
+          : "#ef4444"
         this.opacity = Math.random() * 0.5 + 0.1
         this.isFlame = isFlame
       }
