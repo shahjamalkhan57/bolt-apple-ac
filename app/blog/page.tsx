@@ -104,7 +104,6 @@ export default function BlogPage() {
                       5 min read
                     </span>
                   </div>
-                  <h2 className="text-xl font-bold mb-3 group-hover:text-[#E54B3B] dark:group-hover:text-[#E54B3B] transition-colors">
                   <h2 className="text-xl font-bold mb-3 group-hover:text-[#be1d1d] dark:group-hover:text-[#be1d1d] transition-colors">
                     {blog.title}
                   </h2>
