@@ -286,7 +286,7 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Recognizing these warning signs early can help you avoid costly damage to your home's interior
+              Recognizing these warning signs early can help you avoid costly damage to your home&apos;s interior
             </motion.p>
           </div>
 
@@ -363,7 +363,7 @@ export default function RoofReplacementPage() {
               </p>
 
               <p className="text-lg text-gray-700">
-                Our team will help you select the best materials based on your home's architecture, local climate conditions, energy efficiency goals, and budget requirements. We provide detailed estimates and explain the benefits of each option.
+                Our team will help you select the best materials based on your home&apos;s architecture, local climate conditions, energy efficiency goals, and budget requirements. We provide detailed estimates and explain the benefits of each option.
               </p>
 
               <div className="pt-4">
@@ -423,7 +423,7 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              Ready for a New Roof? We've Got You Covered!
+              Ready for a New Roof? We&apos;ve Got You Covered!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
