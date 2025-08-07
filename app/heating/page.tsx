@@ -17,7 +17,6 @@ import {
   DollarSign,
   Shield,
 } from "lucide-react"
-import HeatingHeroAnimation from "@/components/heating-hero-animation"
 import ServiceRequestForm from "@/components/service-request-form"
 import ParallaxSection from "@/components/parallax-section"
 import CalendlyWidget from "@/components/calendly-widget"
@@ -83,9 +82,6 @@ export default function HeatingPage() {
     <main className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-red-50 to-white">
-        <div className="absolute inset-0 z-0">
-          <HeatingHeroAnimation />
-        </div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
