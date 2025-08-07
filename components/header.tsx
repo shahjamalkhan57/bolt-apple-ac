@@ -10,10 +10,6 @@ import { useMobile } from "@/hooks/use-mobile"
 
 const navItems = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "Roofing",
     href: "/roofing-services",
     children: [
