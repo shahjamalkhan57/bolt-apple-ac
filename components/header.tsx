@@ -25,7 +25,7 @@ const navItems = [
     ],
   },
   {
-    label: "Exterior Services",
+    label: "Exterior",
     href: "/exterior-services",
     children: [
       { label: "Gutters", href: "/exterior-services/gutters" },
@@ -36,7 +36,7 @@ const navItems = [
     ],
   },
   {
-    label: "Interior Restoration",
+    label: "Restoration",
     href: "/interior-restoration",
     children: [
       { label: "Water Damage", href: "/interior-restoration/water-damage" },
