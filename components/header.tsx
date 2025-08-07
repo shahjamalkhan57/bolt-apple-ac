@@ -118,7 +118,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2" : "bg-transparent py-4",
         emergencyBannerVisible && !scrolled ? "mt-10" : "mt-0",
       )}
@@ -206,7 +206,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 bg-white dark:bg-gray-900 z-40 lg:hidden transition-transform duration-300 ease-in-out",
+          "fixed inset-0 bg-white dark:bg-gray-900 z-50 lg:hidden transition-transform duration-300 ease-in-out",
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
