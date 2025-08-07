@@ -43,9 +43,14 @@ export default function Footer() {
               <li>
                 <Link href="/interior-restoration" className="text-gray-400 hover:text-white transition-colors">
                   Interior Restoration
+                </Link>
+              </li>
+              <li>
                 <Link href="/exterior-services" className="text-gray-400 hover:text-white transition-colors">
                   Exterior Services
                 </Link>
+              </li>
+              <li>
                 <Link href="/emergency-services" className="text-gray-400 hover:text-white transition-colors">
                   24/7 Emergency Services
                 </Link>
@@ -121,5 +126,4 @@ export default function Footer() {
     </footer>
   )
 }
-  )
 }
