@@ -22,7 +22,7 @@ export default function EmergencyBanner() {
             initial={false}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="bg-gradient-to-r from-red-600 to-red-500 text-white overflow-hidden z-50"
+            className="bg-gradient-to-r from-[#E54B3B] to-[#2C3E50] text-white overflow-hidden z-50"
           >
             <div className="container mx-auto px-4 py-2">
               <div className="flex items-center justify-between">
@@ -39,7 +39,7 @@ export default function EmergencyBanner() {
 
                   <button
                     onClick={closeEmergencyBanner}
-                    className="p-1 hover:bg-red-700/20 rounded-full transition-colors"
+                    className="p-1 hover:bg-[#2C3E50]/20 rounded-full transition-colors"
                     aria-label="Close banner"
                   >
                     <X className="h-4 w-4" />

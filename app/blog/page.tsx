@@ -38,9 +38,9 @@ export default function BlogPage() {
   return (
     <main className="pt-24">
       {/* Hero Section */}
-      <section className="relative min-h-[40vh] flex items-center bg-gradient-to-b from-blue-50 to-white dark:from-blue-950 dark:to-gray-900">
+      <section className="relative min-h-[40vh] flex items-center bg-gradient-to-b from-red-50 to-white dark:from-[#2C3E50] dark:to-gray-900">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#E54B3B]/10 to-transparent"></div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.1 }}
@@ -105,6 +105,7 @@ export default function BlogPage() {
                     </span>
                   </div>
                   <h2 className="text-xl font-bold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <h2 className="text-xl font-bold mb-3 group-hover:text-[#E54B3B] dark:group-hover:text-[#E54B3B] transition-colors">
                     {blog.title}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
@@ -112,12 +113,12 @@ export default function BlogPage() {
                   </p>
                   <Link
                     href={`/blog/${blog.slug}`}
-                    className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium group-hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-[#E54B3B] dark:text-[#E54B3B] font-medium group-hover:gap-3 transition-all"
                   >
-                    Read More
+                Roofing Insights & Tips
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                </div>
+                Expert advice, industry updates, and helpful guides for maintaining your roof and home exterior
               </motion.div>
             ))}
           </div>

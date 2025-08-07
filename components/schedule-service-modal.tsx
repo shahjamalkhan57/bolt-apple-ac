@@ -79,8 +79,8 @@ export function ScheduleServiceModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className="group relative overflow-hidden rounded-full bg-white border-2 border-blue-600 px-6 py-4 text-blue-600 shadow-lg transition-transform hover:scale-105 active:scale-95">
-          <span className="absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+        <button className="group relative overflow-hidden rounded-full bg-white border-2 border-[#E54B3B] px-6 py-4 text-[#E54B3B] shadow-lg transition-transform hover:scale-105 active:scale-95">
+          <span className="absolute inset-0 bg-gradient-to-r from-red-100 to-red-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
           <span className="relative flex items-center justify-center gap-2 font-bold">
             Schedule Service
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
