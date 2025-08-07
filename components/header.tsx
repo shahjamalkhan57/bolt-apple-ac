@@ -162,7 +162,6 @@ export default function Header() {
                     >
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                     </button>
-                    <div className="absolute top-full left-0 mt-1 w-60 bg-white dark:bg-[#2C3E50] rounded-md shadow-lg overflow-hidden z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
                     <div className="absolute top-full left-0 mt-1 w-60 bg-white dark:bg-[#0f1724] rounded-md shadow-lg overflow-hidden z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
                       <div className="py-2">
                         {item.children.map((child) => (
