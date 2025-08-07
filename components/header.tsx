@@ -130,8 +130,8 @@ export default function Header() {
             <Image 
               src="https://i.postimg.cc/5y4MCmPd/Ginsoy-CA-1.png"
               alt="Matt Miller Contracting Logo"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
               className="w-12 h-12"
             />
           </Link>
