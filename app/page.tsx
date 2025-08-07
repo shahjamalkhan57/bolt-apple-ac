@@ -295,7 +295,7 @@ export default function Home() {
               Roofing Emergency? We&apos;ve Got You Covered.
             </h2>
             <p className="text-xl mb-8">
-              Storm damage? Major leaks? Call Matt anytime — we'll secure your roof fast and prevent further damage.
+              Storm damage? Major leaks? Call Matt anytime — we&apos;ll secure your roof fast and prevent further damage.
             </p>
             <Link
               href="tel:4697653340"
