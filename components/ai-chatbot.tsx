@@ -91,7 +91,7 @@ export default function AIChatbot() {
           setShowNotification(false)
         }}
         className={cn(
-          "fixed bottom-6 right-6 z-[9999] bg-[#E54B3B] text-white p-4 rounded-full shadow-lg hover:bg-[#2C3E50] transition-all duration-300",
+          "fixed bottom-6 right-6 z-[9999] bg-[#be1d1d] text-white p-4 rounded-full shadow-lg hover:bg-[#0f1724] transition-all duration-300",
           isOpen && "scale-0 opacity-0",
         )}
       >
@@ -115,7 +115,7 @@ export default function AIChatbot() {
             className="fixed bottom-[80px] right-6 z-[9999] w-[calc(100vw-2rem)] sm:w-[400px] h-[500px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col"
           >
             {/* Header */}
-            <div className="bg-[#E54B3B] p-4 flex items-center justify-between text-white">
+            <div className="bg-[#be1d1d] p-4 flex items-center justify-between text-white">
               <div className="flex items-center gap-2">
                 <Bot className="h-6 w-6" />
                 <h3 className="font-semibold">Roofing Assistant</h3>
@@ -143,7 +143,7 @@ export default function AIChatbot() {
                     className={cn(
                       "max-w-[80%] rounded-2xl px-4 py-2",
                       message.role === "user"
-                        ? "bg-[#E54B3B] text-white"
+                        ? "bg-[#be1d1d] text-white"
                         : "bg-gray-100 dark:bg-gray-700",
                     )}
                   >
@@ -195,7 +195,7 @@ export default function AIChatbot() {
                 <button
                   type="submit"
                   disabled={isLoading || !inputValue.trim()}
-                  className="bg-[#E54B3B] text-white p-2 rounded-full hover:bg-[#2C3E50] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-[#be1d1d] text-white p-2 rounded-full hover:bg-[#0f1724] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="h-5 w-5" />
                 </button>
