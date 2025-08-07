@@ -160,7 +160,7 @@ export default function Home() {
               type="video/mp4"
             />
           </video>
-          <div className="absolute inset-0 bg-white-40 opacity-60 z-0"></div>
+          <div className="absolute inset-0 bg-white-80 opacity-60 z-0"></div>
         </div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
