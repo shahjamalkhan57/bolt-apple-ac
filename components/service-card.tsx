@@ -22,16 +22,20 @@ export default function ServiceCard({ service, index }: ServiceProps) {
 
   const getIcon = () => {
     switch (service.icon) {
-      case "snowflake":
+      case "home":
+        return <Settings className="h-8 w-8" />
+      case "building":
+        return <AlertCircle className="h-8 w-8" />
+      case "droplet":
         return <Snowflake className="h-8 w-8" />
-      case "flame":
+      case "zap":
         return <Flame className="h-8 w-8" />
       case "alert-circle":
         return <AlertCircle className="h-8 w-8" />
       case "settings":
         return <Settings className="h-8 w-8" />
       default:
-        return <Snowflake className="h-8 w-8" />
+        return <Settings className="h-8 w-8" />
     }
   }
 

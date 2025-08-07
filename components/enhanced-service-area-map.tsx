@@ -51,8 +51,8 @@ export default function EnhancedServiceAreaMap({
   const mapRef = useRef<any>(null)
   const areasPerPage = 6
 
-  // Center map on Rockwall, TX
-  const mapCenter: [number, number] = [32.8998, -96.4594]
+  // Center map on Dallas-Fort Worth area
+  const mapCenter: [number, number] = [32.7555, -97.3308]
   const totalPages = Math.ceil(serviceAreas.length / areasPerPage)
   const paginatedAreas = serviceAreas.slice(
     currentPage * areasPerPage,

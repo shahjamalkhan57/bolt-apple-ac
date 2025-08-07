@@ -133,7 +133,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2 relative z-50">
             <Image 
               src="https://i.postimg.cc/wMCR2Hdf/cropped-cropped-Apple-icon-1.png"
-              alt="Apple AC & Heat Logo"
+              alt="Matt Miller Contracting Logo"
               width={50}
               height={50}
               className="w-12 h-12"

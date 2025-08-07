@@ -11,9 +11,9 @@ interface Message {
 }
 
 const sampleQuestions = [
-  "My AC isn't cooling properly",
-  "How do I know if my heater needs replacing?",
-  "Do you offer emergency repairs?",
+  "I have a roof leak after the storm",
+  "How much does a roof replacement cost?",
+  "Do you offer emergency tarping?",
   "How much does a service call cost?",
 ]
 
@@ -22,7 +22,7 @@ export default function AIChatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! I'm your HVAC assistant. How can I help you today?",
+      content: "Hi! I'm your roofing assistant. How can I help you today?",
     },
   ])
   const [inputValue, setInputValue] = useState("")

@@ -11,14 +11,15 @@ import { toast } from "sonner"
 import { ArrowRight } from "lucide-react"
 
 const serviceTypes = [
-  "AC Repair",
-  "AC Installation",
-  "AC Maintenance",
-  "Heating Repair",
-  "Heating Installation",
-  "Heating Maintenance",
+  "Roof Repair",
+  "Roof Replacement",
+  "Hail Damage Repair",
+  "Emergency Tarping",
+  "Gutter Installation",
+  "Siding Repair",
+  "Water Damage Restoration",
   "Emergency Service",
-  "General Maintenance",
+  "General Inspection",
 ]
 
 export function ScheduleServiceModal() {

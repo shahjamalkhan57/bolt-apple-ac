@@ -28,7 +28,7 @@ export default function EmergencyBanner() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5 animate-pulse" />
-                  <p className="text-sm font-medium">HVAC Emergency? We offer 24/7 service!</p>
+                  <p className="text-sm font-medium">Roofing Emergency? We offer 24/7 service!</p>
                 </div>
 
                 <div className="flex items-center gap-4">

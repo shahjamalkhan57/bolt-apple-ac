@@ -27,106 +27,105 @@ const serviceAreas: Array<{
   address?: string
 }> = [
   {
-    name: "Rockwall",
-    coordinates: [32.8998, -96.4594],
+    name: "Fort Worth",
+    coordinates: [32.7555, -97.3308],
     isMainOffice: true,
-    address: "709 Country Club, Rockwall, TX 75032",
+    address: "123 Main Street, Fort Worth, TX 76000",
   },
-  { name: "Dallas", coordinates: [32.7767, -96.797] },
+  { name: "Dallas", coordinates: [32.7767, -96.7970] },
+  { name: "Arlington", coordinates: [32.7357, -97.1081] },
   { name: "Plano", coordinates: [33.0198, -96.6989] },
+  { name: "Irving", coordinates: [32.8140, -96.9489] },
   { name: "Garland", coordinates: [32.9126, -96.6389] },
   { name: "Mesquite", coordinates: [32.7668, -96.5992] },
-  { name: "Rowlett", coordinates: [32.9029, -96.5638] },
-  { name: "Forney", coordinates: [32.7474, -96.4719] },
-  { name: "Fate", coordinates: [32.9371, -96.3868] },
-  { name: "Sunnyvale", coordinates: [32.7968, -96.5683] },
+  { name: "Grand Prairie", coordinates: [32.7460, -96.9978] },
 ]
 
 export default function Home() {
   const services = [
     {
-      title: "Air Conditioning",
-      icon: "snowflake",
+      title: "Roofing Services",
+      icon: "home",
       description:
-        "Beat the Rockwall heat with Apple AC & Heat! Our skilled technicians promptly handle all your AC repair needs, restoring cool comfort to your home.",
+        "From minor leaks to full roof replacements, we deliver lasting protection with premium materials and professional installation.",
       services: [
-        "AC Installation",
-        "AC Repair",
-        "AC Maintenance",
-        "Duct Installation & Repair",
+        "Roof Replacement",
+        "Roof Repair",
+        "Shingles (Asphalt, Metal, Tile, Slate)",
+        "Hail Damage Repair",
+        "Emergency Tarping",
       ],
-      color: "from-blue-500 to-cyan-400",
-      animation: "cool-breeze",
-      href: "/air-conditioning",
+      color: "from-red-500 to-orange-500",
+      animation: "warm-glow",
+      href: "/roofing-services",
     },
     {
-      title: "Heating",
-      icon: "flame",
+      title: "Exterior Services",
+      icon: "building",
       description:
-        "The Winter months in Texas can be very volatile. Our certified professionals offer top tier heating repair and maintenance services, ensuring a cozy, warm home.",
+        "Protect your property's structure and curb appeal with quality exterior upgrades.",
       services: [
-        "Furnace Installation",
-        "Furnace Repair",
-        "Furnace Service",
-        "Heat Pumps",
+        "Gutters",
+        "Siding",
+        "Windows",
+        "Fence Repair & Re-staining",
       ],
-      color: "from-orange-500 to-red-500",
+      color: "from-blue-500 to-cyan-500",
       animation: "warm-glow",
-      href: "/heating",
+      href: "/exterior-services",
+    },
+    {
+      title: "Interior Restoration",
+      icon: "droplet",
+      description:
+        "Fix storm-related interior damage quickly and correctly with professional restoration.",
+      services: [
+        "Water Damage",
+        "Drywall & Ceiling Repair",
+        "Leak-Related Damage",
+      ],
+      color: "from-green-500 to-emerald-500",
+      animation: "cool-breeze",
+      href: "/interior-restoration",
     },
     {
       title: "Emergency Services",
-      icon: "alert-circle",
+      icon: "zap",
       description:
-        "Are you experiencing a sudden AC breakdown in the sweltering Rockwall summer heat? Don't suffer through unbearable temperatures! Apple AC & Heat offers 24/7 Emergency HVAC services.",
+        "Storm damage or sudden leaks? Don't wait. We provide 24/7 emergency tarping and repairs to secure your home fast.",
       services: [
         "24/7 Emergency Response",
-        "Same-Day Service",
-        "Weekend & Holiday Service",
+        "Same-Day Tarping",
+        "Storm Damage Repairs",
       ],
       color: "from-purple-500 to-pink-500",
       animation: "pulse",
-      href: "/emergency",
-    },
-    {
-      title: "Maintenance",
-      icon: "settings",
-      description:
-        "Make sure your family stays cool in the Summer and warm in the Winter with our HVAC tune up services. This easy and affordable service can save you money (and time).",
-      services: [
-        "Seasonal Tune-Ups",
-        "Filter Replacement",
-        "System Inspection",
-        "Performance Optimization",
-      ],
-      color: "from-green-500 to-emerald-400",
-      animation: "rotate",
-      href: "/maintenance",
+      href: "/emergency-services",
     },
   ]
 
   const testimonials = [
     {
       name: "Jay McConnell",
-      text: "Came out took way more time to figure out the problem than another company did like a week ago… got it fixed and explained to my wife and I how to keep up with the maintenance side as well! Very pleased with this company!!",
+      text: "Matt showed up right away after a storm, took the time to diagnose everything thoroughly, and helped us prevent further damage. We really appreciated his honesty and attention to detail!",
       rating: 5,
       image: "/placeholder.svg?height=100&width=100",
     },
     {
       name: "Roger Weikum",
-      text: "Was more that fair with every aspect of his service call. He helped me save money in keeping my system running efficiently. I would highly recommend John.",
+      text: "Very fair pricing and great workmanship. Matt helped us figure out an affordable solution and made sure everything was up to code. Highly recommend!",
       rating: 5,
       image: "/placeholder.svg?height=100&width=100",
     },
     {
       name: "Michelle McZick",
-      text: "I have used Apple A/C and Heat Services twice now. Today's occurrence my motor/blower in my unit inside went out. Each and every time Jon came through when I needed him same day and fixed the issue. I will continue to refer people to him.",
+      text: "Had a roof leak after a hailstorm — Matt came the same day and tarped everything before the next rain hit. He's been my go-to roofer ever since.",
       rating: 5,
       image: "/placeholder.svg?height=100&width=100",
     },
     {
       name: "Andrea Bass",
-      text: "Rarely will I take the time to review but. Holy Cow! This service tech and company went out of their way to help me out over the 4th of July. Honest, timely and empathetic going forward I will use them exclusively. Thank you!",
+      text: "Matt went above and beyond, even over a holiday weekend. Super honest and incredibly reliable. I'll never use anyone else!",
       rating: 5,
       image: "/placeholder.svg?height=100&width=100",
     },
@@ -135,13 +134,13 @@ export default function Home() {
   const features = [
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Experienced and Certified Technicians",
+      title: "Personally Managed by Matt Miller",
     },
-    { icon: <Clock className="h-8 w-8" />, title: "24/7 Emergency Service" },
-    { icon: <Award className="h-8 w-8" />, title: "Honest Pricing" },
+    { icon: <Clock className="h-8 w-8" />, title: "24/7 Emergency Roofing Response" },
+    { icon: <Award className="h-8 w-8" />, title: "Transparent Estimates" },
     {
       icon: <ThumbsUp className="h-8 w-8" />,
-      title: "Customer Satisfaction Guaranteed",
+      title: "Workmanship Guaranteed",
     },
   ]
 
@@ -156,14 +155,13 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
               <div className="inline-block animate-bounce-slow bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-2">
-                #TACLA108385E Licensed & Insured
+                #RC123456 Licensed & Insured
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-red-500 to-blue-600 animate-gradient">
-                Apple AC <span className="text-red-500">&</span> Heat
+                Matt Miller Contracting
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
-                Revolutionizing comfort in Rockwall, TX and surrounding areas
-                with cutting-edge HVAC solutions.
+                Protecting homes in Dallas–Fort Worth, TX and nearby areas with expert roofing and storm restoration services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -184,19 +182,19 @@ export default function Home() {
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
                   src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg"
-                  alt="HVAC technician working on an air conditioning unit"
+                  alt="Roofing professional inspecting roof damage"
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">
-                    Building comfort that lasts a lifetime
+                    Reliable roofing that stands the test of time
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="h-4 w-4 text-red-400" />
                     <p className="text-sm">
-                      Rockwall, TX and surrounding areas
+                      Dallas–Fort Worth, TX and surrounding areas
                     </p>
                   </div>
                 </div>
@@ -220,9 +218,7 @@ export default function Home() {
               Our Promise to You
             </h2>
             <p className="text-xl text-gray-700 mb-12">
-              &quot;At Apple AC & Heat in Rockwall, TX, our goal is to build a
-              reputation with customers needing HVAC repair and replacement
-              services that lasts a lifetime.&quot;
+              "At Matt Miller Contracting, our mission is to build trust through honest, high-quality roofing and restoration services that last a lifetime."
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {features.map((feature, index) => (
@@ -249,7 +245,7 @@ export default function Home() {
               Our Premium Services
             </h2>
             <p className="text-lg text-gray-600">
-              Comprehensive HVAC solutions tailored to your comfort needs
+              Trusted roofing and exterior solutions to safeguard your home
             </p>
           </div>
 
@@ -269,8 +265,7 @@ export default function Home() {
               Service Areas
             </h2>
             <p className="text-lg text-gray-600">
-              Providing top-quality HVAC services across Rockwall and
-              surrounding areas
+              Delivering professional roofing across Dallas–Fort Worth and nearby communities
             </p>
           </div>
           <EnhancedServiceAreaMap serviceAreas={serviceAreas} />
@@ -287,12 +282,10 @@ export default function Home() {
               <span className="font-semibold">24/7 Emergency Services</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              HVAC Emergency? We&apos;ve Got You Covered!
+              Roofing Emergency? We&apos;ve Got You Covered.
             </h2>
             <p className="text-xl mb-8">
-              Don&apos;t suffer through unbearable temperatures! Our skilled
-              technicians work swiftly to restore your comfort, ensuring you can
-              stay cool even in the hottest Texas summers.
+              Storm damage? Major leaks? Call Matt anytime — we'll secure your roof fast and prevent further damage.
             </p>
             <Link
               href="tel:4697653340"
@@ -313,8 +306,7 @@ export default function Home() {
               What Our Customers Say
             </h2>
             <p className="text-lg text-gray-600">
-              Don&apos;t just take our word for it - hear from our satisfied
-              customers
+              Don&apos;t just take our word for it — hear from homeowners we've helped
             </p>
           </div>
 
@@ -327,11 +319,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">
-              Ready for Ultimate Comfort?
+              Ready to Protect Your Home?
             </h2>
             <p className="text-xl mb-8">
-              Experience the Apple AC & Heat difference today. Schedule your
-              service appointment below.
+              Experience the Matt Miller Contracting difference. Schedule your service appointment today.
             </p>
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <CalendlyWidget />
