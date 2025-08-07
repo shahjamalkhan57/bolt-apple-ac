@@ -329,7 +329,7 @@ export default function HailDamageRepairPage() {
             className="text-center mt-12"
           >
             <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
-              Hail damage isn't always immediately visible. Our trained professionals know exactly what to look for and can identify damage that might be missed by untrained eyes. Don't let hidden damage compromise your roof's integrity.
+              Hail damage isn&apos;t always immediately visible. Our trained professionals know exactly what to look for and can identify damage that might be missed by untrained eyes. Don't let hidden damage compromise your roof&apos;s integrity.
             </p>
             <Link
               href="tel:4697653340"
@@ -362,7 +362,7 @@ export default function HailDamageRepairPage() {
                   Insurance Claim Experts
                 </h3>
                 <p className="text-gray-700">
-                  We work directly with your insurance company and will be present during the adjuster's inspection to ensure all damage is properly documented and covered.
+                  We work directly with your insurance company and will be present during the adjuster&apos;s inspection to ensure all damage is properly documented and covered.
                 </p>
               </div>
 
@@ -431,7 +431,7 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              Don't Let Hail Damage Go Unrepaired!
+              Don&apos;t Let Hail Damage Go Unrepaired!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
