@@ -127,7 +127,7 @@ export default function GuttersPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Protect your home's foundation with professional gutter services. From seamless installation to storm damage repair, we keep water flowing where it should.
+                Protect your home&apos;s foundation with professional gutter services. From seamless installation to storm damage repair, we keep water flowing where it should.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -172,7 +172,7 @@ export default function GuttersPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Gutter Solutions</p>
-                  <p className="text-sm mt-2">Protecting your home's foundation</p>
+                  <p className="text-sm mt-2">Protecting your home&apos;s foundation</p>
                 </div>
               </div>
             </motion.div>
@@ -349,7 +349,7 @@ export default function GuttersPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don't let water damage compromise your home's foundation and structure. Matt Miller Contracting provides professional gutter installation, repair, and maintenance services to keep your property protected year-round.
+              Don&apos;t let water damage compromise your home&apos;s foundation and structure. Matt Miller Contracting provides professional gutter installation, repair, and maintenance services to keep your property protected year-round.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
