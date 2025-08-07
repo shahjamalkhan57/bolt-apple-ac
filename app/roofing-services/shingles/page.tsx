@@ -252,7 +252,7 @@ export default function ShinglesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from a variety of premium shingle materials to match your home's style and performance needs
+              Choose from a variety of premium shingle materials to match your home&apos;s style and performance needs
             </motion.p>
           </div>
 
@@ -351,7 +351,7 @@ export default function ShinglesPage() {
               </div>
 
               <p className="text-lg text-gray-700">
-                Proper shingle installation is critical to your roof's performance and longevity. Our experienced team begins with thorough preparation, including deck inspection, proper underlayment installation, and precise shingle alignment.
+                Proper shingle installation is critical to your roof&apos;s performance and longevity. Our experienced team begins with thorough preparation, including deck inspection, proper underlayment installation, and precise shingle alignment.
               </p>
 
               <p className="text-lg text-gray-700">
