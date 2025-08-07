@@ -432,7 +432,7 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don't wait until small problems become major headaches. Matt Miller Contracting provides complete roof replacement services with premium materials, expert installation, and comprehensive warranties. Our experienced team ensures your new roof will protect your home for decades to come.
+              Don&apos;t wait until small problems become major headaches. Matt Miller Contracting provides complete roof replacement services with premium materials, expert installation, and comprehensive warranties. Our experienced team ensures your new roof will protect your home for decades to come.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
