@@ -10,7 +10,6 @@ import {
   ThumbsUp,
   Zap,
 } from "lucide-react"
-import HeroAnimation from "@/components/hero-animation"
 import ServiceCard from "@/components/service-card"
 import TestimonialCarousel from "@/components/testimonial-carousel"
 import FloatingCTA from "@/components/floating-cta"
@@ -149,7 +148,19 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-sky-50 to-white">
         <div className="absolute inset-0 z-0">
-          <HeroAnimation />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          >
+            <source
+              src="https://video-previews.elements.envatousercontent.com/files/46370c9d-cf6c-4821-bd00-4656d5929553/video_preview_h264.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
         </div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
