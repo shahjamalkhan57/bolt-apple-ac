@@ -126,12 +126,12 @@ export default function ServiceCard({ service, index }: ServiceProps) {
 
         <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
           <Link
-            href={`/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
+            href={service.href || `/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
             className={`inline-flex items-center gap-2 font-medium text-transparent bg-clip-text bg-gradient-to-r ${service.color} group-hover:underline`}
           >
             Learn more about {service.title}
             <ArrowRight
-              className={`h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r ${service.color} group-hover:translate-x-1 transition-transform`}
+          <Link href={service.href || `/${service.title.toLowerCase().replace(/\s+/g, "-")}`} className="block">
             />
           </Link>
         </div>
