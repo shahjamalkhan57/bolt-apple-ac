@@ -349,7 +349,7 @@ export default function ReStainingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don't let weathered wood detract from your property's beauty. Matt Miller Contracting provides expert staining and restoration services that protect your investment and enhance your home's curb appeal.
+              Don&apos;t let weathered wood detract from your property&apos;s beauty. Matt Miller Contracting provides expert staining and restoration services that protect your investment and enhance your home's curb appeal.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
