@@ -139,8 +139,8 @@ export default function Header() {
               className="w-12 h-12"
             />
             <div className="font-bold text-xl md:text-2xl">
-              <span className="text-[#be1d1d] dark:text-[#be1d1d]">Miller</span>{" "}
-              <span className="text-[#0f1724] dark:text-[#0f1724]">Roofguard</span>
+              <span className="text-[#E54B3B] dark:text-[#E54B3B]">Miller</span>{" "}
+              <span className="text-[#2C3E50] dark:text-[#2C3E50]">Roofguard</span>
             </div>
           </Link>
 
@@ -152,23 +152,23 @@ export default function Header() {
                   <div className="flex items-center">
                     <Link
                       href={item.href}
-                      className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] font-medium rounded-md flex items-center gap-1 group"
+                      className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#E54B3B] dark:hover:text-[#E54B3B] font-medium rounded-md flex items-center gap-1 group"
                     >
                       {item.label}
                     </Link>
                     <button
-                      className="p-1 hover:text-[#be1d1d] dark:hover:text-[#be1d1d]"
+                      className="p-1 hover:text-[#E54B3B] dark:hover:text-[#E54B3B]"
                       onClick={() => toggleDropdown(item.label)}
                     >
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                     </button>
-                    <div className="absolute top-full left-0 mt-1 w-60 bg-white dark:bg-[#0f1724] rounded-md shadow-lg overflow-hidden z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
+                    <div className="absolute top-full left-0 mt-1 w-60 bg-white dark:bg-[#2C3E50] rounded-md shadow-lg overflow-hidden z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
                       <div className="py-2">
                         {item.children.map((child) => (
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-red-50 dark:hover:bg-[#be1d1d]/10 hover:text-[#be1d1d] dark:hover:text-[#be1d1d]"
+                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-red-50 dark:hover:bg-[#E54B3B]/10 hover:text-[#E54B3B] dark:hover:text-[#E54B3B]"
                           >
                             {child.label}
                           </Link>
@@ -179,7 +179,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] font-medium rounded-md block"
+                    className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#E54B3B] dark:hover:text-[#E54B3B] font-medium rounded-md block"
                   >
                     {item.label}
                   </Link>
@@ -195,8 +195,8 @@ export default function Header() {
               className={cn(
                 "hidden md:flex items-center gap-2 text-white font-medium rounded-full transition-all",
                 scrolled
-                  ? "bg-[#be1d1d] hover:bg-[#0f1724] px-4 py-2"
-                  : "bg-[#be1d1d]/90 hover:bg-[#be1d1d] backdrop-blur-sm px-4 py-2",
+                  ? "bg-[#E54B3B] hover:bg-[#2C3E50] px-4 py-2"
+                  : "bg-[#E54B3B]/90 hover:bg-[#E54B3B] backdrop-blur-sm px-4 py-2",
               )}
             >
               <Phone className="h-4 w-4" />
@@ -253,7 +253,7 @@ export default function Header() {
                         <Link
                           key={child.label}
                           href={child.href}
-                          className="block py-2 text-gray-600 dark:text-gray-400 hover:text-[#be1d1d] dark:hover:text-[#be1d1d]"
+                          className="block py-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
                           onClick={toggleMenu}
                         >
                           {child.label}
@@ -273,7 +273,7 @@ export default function Header() {
           <div className="mt-8 space-y-4">
             <Link
               href="tel:4697653340"
-              className="flex items-center justify-center gap-2 bg-[#be1d1d] text-white font-medium rounded-full px-6 py-3 w-full"
+              className="flex items-center justify-center gap-2 bg-[#E54B3B] text-white font-medium rounded-full px-6 py-3 w-full"
               onClick={toggleMenu}
             >
               <Phone className="h-5 w-5" />
@@ -281,7 +281,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 bg-[#0f1724] text-white font-medium rounded-full px-6 py-3 w-full"
+              className="flex items-center justify-center gap-2 bg-[#2C3E50] text-white font-medium rounded-full px-6 py-3 w-full"
               onClick={toggleMenu}
             >
               Schedule Service
