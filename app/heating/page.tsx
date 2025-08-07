@@ -82,7 +82,7 @@ export default function HeatingPage() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-orange-50 to-white">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-primary-50 to-white">
         <div className="absolute inset-0 z-0">
           <HeatingHeroAnimation />
         </div>
@@ -93,7 +93,7 @@ export default function HeatingPage() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-block bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-2"
+                className="inline-block bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-2"
               >
                 #1 Heating Service in Rockwall, TX
               </motion.div>
@@ -101,7 +101,7 @@ export default function HeatingPage() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-red-500 to-orange-600 animate-gradient"
+                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-primary-500 to-primary-600 animate-gradient"
               >
                 HVAC Heating Service in Rockwall
               </motion.h1>
@@ -122,9 +122,9 @@ export default function HeatingPage() {
               >
                 <Link
                   href="tel:4697653340"
-                  className="group relative overflow-hidden rounded-full bg-orange-600 px-6 py-4 text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  className="group relative overflow-hidden rounded-full bg-primary-600 px-6 py-4 text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="relative flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
                     (469) 765-3340
@@ -132,9 +132,9 @@ export default function HeatingPage() {
                 </Link>
                 <Link
                   href="#service-form"
-                  className="group relative overflow-hidden rounded-full bg-white border-2 border-orange-600 px-6 py-4 text-orange-600 shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  className="group relative overflow-hidden rounded-full bg-white border-2 border-primary-600 px-6 py-4 text-primary-600 shadow-lg transition-transform hover:scale-105 active:scale-95"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-orange-100 to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary-100 to-primary-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="relative flex items-center justify-center gap-2 font-bold">
                     Schedule Service
                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -148,7 +148,7 @@ export default function HeatingPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
                   src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg"
@@ -199,9 +199,9 @@ export default function HeatingPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-primary-100"
               >
-                <div className="bg-gradient-to-br from-orange-500 to-red-500 w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-primary-500 to-primary-600 w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -223,7 +223,7 @@ export default function HeatingPage() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
                   src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
@@ -232,7 +232,7 @@ export default function HeatingPage() {
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
-                <div className="absolute top-4 left-4 bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-bold">
+                <div className="absolute top-4 left-4 bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">
                   HVAC Furnace Maintenance
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function HeatingPage() {
               className="space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-bold">Dallas Furnace Repair</h2>
-              <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+              <div className="w-20 h-1.5 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full"></div>
               <p className="text-lg text-gray-700">
                 Routine maintenance is vital to the lifespan, efficiency, and safety of your heating system. At Apple AC
                 & Heat, we champion these regular checks as a preventive measure against untimely breakdowns, especially
@@ -268,7 +268,7 @@ export default function HeatingPage() {
               <div className="pt-4">
                 <Link
                   href="#service-form"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Schedule Maintenance
                   <ArrowRight className="h-5 w-5" />
@@ -280,7 +280,7 @@ export default function HeatingPage() {
       </ParallaxSection>
 
       {/* Signs Your Furnace Needs Repair */}
-      <section className="py-24 bg-gradient-to-b from-white to-orange-50">
+      <section className="py-24 bg-gradient-to-b from-white to-primary-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <motion.h2
@@ -312,10 +312,10 @@ export default function HeatingPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-primary-100"
               >
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-orange-500 to-red-500 p-3 rounded-xl text-white">
+                  <div className="bg-gradient-to-br from-primary-500 to-primary-600 p-3 rounded-xl text-white">
                     {sign.icon}
                   </div>
                   <div>
@@ -341,7 +341,7 @@ export default function HeatingPage() {
             </p>
             <Link
               href="tel:4697653340"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Phone className="h-5 w-5" />
               Contact Apple AC & Heat Today
@@ -362,11 +362,11 @@ export default function HeatingPage() {
               className="space-y-6 order-2 md:order-1"
             >
               <h2 className="text-3xl md:text-4xl font-bold">Heating Repair & Replacement Service</h2>
-              <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+              <div className="w-20 h-1.5 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full"></div>
 
-              <div className="bg-orange-50 dark:bg-orange-900/10 rounded-xl p-6 border border-orange-100 dark:border-orange-800/20">
+              <div className="bg-primary-50 dark:bg-primary-900/10 rounded-xl p-6 border border-primary-100 dark:border-primary-800/20">
                 <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-orange-600" />
+                  <Clock className="h-5 w-5 text-primary-600" />
                   24/7 Heating Repairs
                 </h3>
                 <p className="text-gray-700">
@@ -390,7 +390,7 @@ export default function HeatingPage() {
               <div className="pt-4">
                 <Link
                   href="#service-form"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Get Your HVAC System Fixed
                   <ArrowRight className="h-5 w-5" />
@@ -405,7 +405,7 @@ export default function HeatingPage() {
               transition={{ duration: 0.6 }}
               className="relative order-1 md:order-2"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
                   src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
@@ -414,7 +414,7 @@ export default function HeatingPage() {
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
-                <div className="absolute top-4 left-4 bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-bold">
+                <div className="absolute top-4 left-4 bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">
                   Air Conditioner covered in snow
                 </div>
               </div>
@@ -424,7 +424,7 @@ export default function HeatingPage() {
       </section>
 
       {/* Emergency Call-Out Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1600')] opacity-10 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -435,7 +435,7 @@ export default function HeatingPage() {
               transition={{ duration: 0.5 }}
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
-              <Zap className="h-5 w-5 text-yellow-300" />
+              <Zap className="h-5 w-5 text-primary-200" />
               <span className="font-semibold">24/7 Emergency Heating Services</span>
             </motion.div>
             <motion.h2
@@ -480,14 +480,14 @@ export default function HeatingPage() {
             >
               <Link
                 href="tel:4697653340"
-                className="group relative overflow-hidden inline-flex items-center gap-2 bg-white text-red-600 font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+                className="group relative overflow-hidden inline-flex items-center gap-2 bg-white text-primary-600 font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (469) 765-3340</span>
               </Link>
               <Link
                 href="#service-form"
-                className="group relative overflow-hidden inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                className="group relative overflow-hidden inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-primary-500/10"
               >
                 <Calendar className="h-6 w-6" />
                 <span>Schedule Service</span>

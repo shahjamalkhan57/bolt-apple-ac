@@ -85,7 +85,7 @@ export default function ServiceCard({ service, index }: ServiceProps) {
       <div className="p-8">
         <div className="flex items-start justify-between">
           <motion.div
-            className={`w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 bg-gradient-to-br ${service.color}`}
+            className={`w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 bg-gradient-to-br ${service.color} shadow-lg`}
             {...getAnimation()}
           >
             {getIcon()}
@@ -115,7 +115,7 @@ export default function ServiceCard({ service, index }: ServiceProps) {
               className="flex items-center gap-2"
             >
               <div
-                className={`w-5 h-5 rounded-full flex items-center justify-center bg-gradient-to-br ${service.color}`}
+                className={`w-5 h-5 rounded-full flex items-center justify-center bg-gradient-to-br ${service.color} shadow-sm`}
               >
                 <Check className="h-3 w-3 text-white" />
               </div>
@@ -127,11 +127,11 @@ export default function ServiceCard({ service, index }: ServiceProps) {
         <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
           <Link
             href={`/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
-            className={`inline-flex items-center gap-2 font-medium text-transparent bg-clip-text bg-gradient-to-r ${service.color} group-hover:underline`}
+            className={`inline-flex items-center gap-2 font-medium text-primary-600 hover:text-primary-700 group-hover:underline transition-colors`}
           >
             Learn more about {service.title}
             <ArrowRight
-              className={`h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r ${service.color} group-hover:translate-x-1 transition-transform`}
+              className={`h-4 w-4 text-primary-600 group-hover:translate-x-1 transition-transform`}
             />
           </Link>
         </div>
