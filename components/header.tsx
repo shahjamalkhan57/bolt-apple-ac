@@ -14,7 +14,7 @@ const navItems = [
     href: "/",
   },
   {
-    label: "Roofing Services",
+    label: "Roofing",
     href: "/roofing-services",
     children: [
       { label: "Roof Replacement", href: "/roofing-services/replacement" },
