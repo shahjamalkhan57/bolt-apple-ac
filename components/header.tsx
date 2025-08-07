@@ -132,7 +132,7 @@ export default function Header() {
               alt="Matt Miller Contracting Logo"
               width={100}
               height={100}
-              className="w-12 h-12"
+              className="w-13 h-13"
             />
           </Link>
 
