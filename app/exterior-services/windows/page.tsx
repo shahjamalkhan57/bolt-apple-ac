@@ -127,7 +127,7 @@ export default function WindowsPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Enhance your home's comfort, security, and energy efficiency with professional window services. From installation to repair, we handle all your window needs.
+                Enhance your home&apos;s comfort, security, and energy efficiency with professional window services. From installation to repair, we handle all your window needs.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -245,7 +245,7 @@ export default function WindowsPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from our selection of high-quality window styles to match your home's design
+              Choose from our selection of high-quality window styles to match your home&apos;s design
             </motion.p>
           </div>
 
@@ -349,7 +349,7 @@ export default function WindowsPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Whether you need new window installation, storm damage repair, or energy-efficient replacements, Matt Miller Contracting provides expert window services that enhance your home's comfort, security, and value.
+              Whether you need new window installation, storm damage repair, or energy-efficient replacements, Matt Miller Contracting provides expert window services that enhance your home&apos;s comfort, security, and value.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
