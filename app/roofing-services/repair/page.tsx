@@ -107,7 +107,7 @@ export default function RoofRepairPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Don't let a small roof problem become a major headache. Matt Miller Contracting provides fast, reliable roof repair services to protect your home and prevent costly damage.
+                Don&apos;t let a small roof problem become a major headache. Matt Miller Contracting provides fast, reliable roof repair services to protect your home and prevent costly damage.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -241,16 +241,16 @@ export default function RoofRepairPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Fast Emergency Roof Repair</h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
               <p className="text-lg text-gray-700">
-                When your roof is damaged, time is critical. Water damage can escalate quickly, causing extensive damage to your home's interior, insulation, and structure. That's why Matt Miller Contracting offers 24/7 emergency roof repair services.
+                When your roof is damaged, time is critical. Water damage can escalate quickly, causing extensive damage to your home&apos;s interior, insulation, and structure. That's why Matt Miller Contracting offers 24/7 emergency roof repair services.
               </p>
               <p className="text-lg text-gray-700">
                 Our experienced team responds quickly to assess the damage and implement immediate solutions to stop leaks and prevent further damage. We provide temporary tarping services when needed and work efficiently to complete permanent repairs.
               </p>
               <p className="text-lg text-gray-700">
-                We work directly with your insurance company to ensure proper documentation and maximize your coverage. Our goal is to restore your roof's integrity quickly and effectively, giving you peace of mind.
+                We work directly with your insurance company to ensure proper documentation and maximize your coverage. Our goal is to restore your roof&apos;s integrity quickly and effectively, giving you peace of mind.
               </p>
               <p className="text-lg text-gray-700 font-semibold">
-                Don't wait when you have a roof emergency. Call Matt Miller Contracting immediately for fast, professional repair services.
+                Don&apos;t wait when you have a roof emergency. Call Matt Miller Contracting immediately for fast, professional repair services.
               </p>
               <div className="pt-4">
                 <Link
@@ -321,7 +321,7 @@ export default function RoofRepairPage() {
             className="text-center mt-12"
           >
             <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
-              At Matt Miller Contracting, we recommend addressing roof issues as soon as they're discovered. Small repairs now can prevent major problems and expensive replacements later.
+              At Matt Miller Contracting, we recommend addressing roof issues as soon as they&apos;re discovered. Small repairs now can prevent major problems and expensive replacements later.
             </p>
             <Link
               href="tel:4697653340"
@@ -432,7 +432,7 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              When you notice signs of roof damage, time is critical. What starts as a small leak can quickly become major water damage affecting your home's structure, insulation, and belongings. Matt Miller Contracting provides fast, professional roof repair services to stop problems before they escalate.
+              When you notice signs of roof damage, time is critical. What starts as a small leak can quickly become major water damage affecting your home&apos;s structure, insulation, and belongings. Matt Miller Contracting provides fast, professional roof repair services to stop problems before they escalate.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
