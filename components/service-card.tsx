@@ -130,13 +130,9 @@ export default function ServiceCard({ service, index }: ServiceProps) {
             className={`inline-flex items-center gap-2 font-medium text-transparent bg-clip-text bg-gradient-to-r ${service.color} group-hover:underline`}
           >
             Learn more about {service.title}
-            <ArrowRight
-          <Link href={service.href || `/${service.title.toLowerCase().replace(/\s+/g, "-")}`} className="block">
-            />
+            <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>
     </motion.div>
   )
-  )
-}
