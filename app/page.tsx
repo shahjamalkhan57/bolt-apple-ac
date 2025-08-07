@@ -316,7 +316,7 @@ export default function Home() {
               What Our Customers Say
             </h2>
             <p className="text-lg text-gray-600">
-              Don&apos;t just take our word for it — hear from homeowners we've helped
+              Don&apos;t just take our word for it — hear from homeowners we&apos;ve helped
             </p>
           </div>
 
