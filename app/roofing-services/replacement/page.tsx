@@ -148,7 +148,7 @@ export default function RoofReplacementPage() {
                   alt="Professional Roof Replacement"
                   width={600}
                   height={600}
-                  className="w-full h-[1vh] object-cover rounded-2xl"
+                  className="w-full h-[50vh] object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Roof Replacement</p>
