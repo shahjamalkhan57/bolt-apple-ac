@@ -192,7 +192,7 @@ export default function Home() {
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
                   src="https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg"
-                  alt={\Roofing professional inspecting roof damage`}`
+                  alt={`Roofing professional inspecting roof damage`}
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl"
