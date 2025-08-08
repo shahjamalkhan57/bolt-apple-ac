@@ -194,7 +194,7 @@ export default function Home() {
                   src="https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg"
                   alt={`Roofing professional inspecting roof damage`}
                   width={600}
-                  height={600}
+                  height={400}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
