@@ -195,7 +195,7 @@ export default function Home() {
                   alt={`Roofing professional inspecting roof damage`}
                   width={600}
                   height={400}
-                  className="w-full h-half object-cover rounded-2xl"
+                  className="w-full h-min object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">
