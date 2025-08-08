@@ -391,7 +391,7 @@ export default function RoofReplacementPage() {
                   alt="Premium Roofing Materials"
                   width={600}
                   height={600}
-                  className="w-full h-auto object-cover rounded-2xl"
+                  className="w-full h-[50vh] object-cover rounded-2xl"
                 />
                 <div className="absolute top-4 left-4 bg-[#be1d1d] text-white px-4 py-2 rounded-full text-sm font-bold">
                   Premium Materials Available
