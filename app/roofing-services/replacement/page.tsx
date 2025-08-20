@@ -348,15 +348,10 @@ export default function RoofReplacementPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Premium Roofing Materials</h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
-              <div className="bg-red-50 rounded-xl p-6 border border-red-100">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-[#be1d1d]" />
-                  Quality Materials & Warranties
-                </h3>
-                <p className="text-gray-700">
-                  We work with top manufacturers like GAF, Owens Corning, and CertainTeed to provide you with the highest quality roofing materials. All our installations come with comprehensive manufacturer warranties and our own workmanship guarantee.
-                </p>
-              </div>
+
+              <p className="text-lg text-gray-700">
+                We work with top manufacturers like GAF, Owens Corning, and CertainTeed to provide you with the highest quality roofing materials. All our installations come with comprehensive manufacturer warranties and our own workmanship guarantee.
+              </p>
 
               <p className="text-lg text-gray-700">
                 Whether you prefer traditional asphalt shingles, architectural shingles, metal roofing, or specialty materials like slate or tile, we have the expertise to install your chosen system properly and efficiently.

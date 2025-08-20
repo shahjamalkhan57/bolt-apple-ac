@@ -365,7 +365,7 @@ export default function HailDamageRepairPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Hail Damage Services</span>
+              <span className="font-semibold">Hail Damage Restoration Experts</span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -441,7 +441,7 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get expert assessment and insurance claim assistance at no cost to you
+                Get expert hail damage assessment and consultation at no cost to you
               </motion.p>
             </div>
 

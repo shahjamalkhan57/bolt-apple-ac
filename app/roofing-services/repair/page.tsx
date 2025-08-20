@@ -348,22 +348,13 @@ export default function RoofRepairPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Storm Damage Repair Specialists</h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
-              <div className="bg-red-50 rounded-xl p-6 border border-red-100">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-[#be1d1d]" />
-                  Insurance Claim Assistance
-                </h3>
-                <p className="text-gray-700">
-                  We work directly with your insurance company to document damage, provide detailed estimates, and ensure you receive the maximum coverage for your roof repair or replacement needs.
-                </p>
-              </div>
 
               <p className="text-lg text-gray-700">
                 Texas weather can be unpredictable, with severe storms, hail, and high winds causing significant roof damage. Our team has extensive experience in storm damage assessment and repair, helping homeowners restore their roofs quickly and effectively.
               </p>
 
               <p className="text-lg text-gray-700">
-                We provide comprehensive storm damage services including emergency tarping, detailed damage assessment, insurance documentation, and complete repair or replacement services. Our goal is to make the process as smooth as possible for you.
+                We provide comprehensive storm damage services including emergency tarping, detailed damage assessment, and complete repair or replacement services. Our goal is to make the process as smooth as possible for you with transparent pricing and quality workmanship.
               </p>
 
               <div className="pt-4">
