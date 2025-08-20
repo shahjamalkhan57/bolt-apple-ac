@@ -156,7 +156,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover z-0"
           >
             <source
-              src="https://video-previews.elements.envatousercontent.com/files/46370c9d-cf6c-4821-bd00-4656d5929553/video_preview_h264.mp4"
+              src="https://youtu.be/FEJOb_tIx7A"
               type="video/mp4"
             />
           </video>
