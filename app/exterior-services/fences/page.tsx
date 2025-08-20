@@ -34,18 +34,6 @@ export default function FencesPage() {
       description:
         "Low-maintenance vinyl fencing that resists weather, insects, and rot while maintaining its appearance.",
     },
-    {
-      icon: <Home className="h-6 w-6" />,
-      title: "Chain Link Fencing",
-      description:
-        "Durable and affordable chain link fencing for security and property boundaries with optional privacy slats.",
-    },
-    {
-      icon: <Wrench className="h-6 w-6" />,
-      title: "Ornamental Iron",
-      description:
-        "Elegant wrought iron and aluminum fencing that combines security with sophisticated style.",
-    },
   ]
 
   const services = [

@@ -63,18 +63,13 @@ export default function HailDamageRepairPage() {
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
-      title: "Insurance Documentation",
-      description: "Detailed documentation and photography of damage to support your insurance claim process.",
-      icon: <FileText className="h-6 w-6" />,
-    },
-    {
       title: "Emergency Tarping",
       description: "Immediate temporary protection to prevent further damage while insurance claims are processed.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
       title: "Complete Restoration",
-      description: "Full roof replacement or repair using insurance proceeds to restore your roof to pre-storm condition.",
+      description: "Full roof replacement or repair to restore your roof to pre-storm condition with quality materials.",
       icon: <Home className="h-6 w-6" />,
     },
   ]
@@ -115,7 +110,7 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5 }}
                 className="inline-block bg-[#be1d1d] text-white px-4 py-1 rounded-full text-sm font-medium mb-2"
               >
-                Insurance Claim Specialists
+                Hail Damage Repair Specialists
               </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: -20 }}
@@ -131,7 +126,7 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Texas hailstorms can cause significant roof damage. Matt Miller Contracting specializes in hail damage assessment, insurance claims assistance, and complete roof restoration in the Dallas-Fort Worth area.
+                Texas hailstorms can cause significant roof damage. Matt Miller Contracting specializes in hail damage assessment and complete roof restoration in the Dallas-Fort Worth area.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -153,7 +148,7 @@ export default function HailDamageRepairPage() {
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
                 >
                   <span className="flex items-center justify-center gap-2 font-bold">
-                    Free Damage Assessment
+                    Free Hail Assessment
                     <ArrowRight className="h-5 w-5" />
                   </span>
                 </Link>
@@ -298,49 +293,6 @@ export default function HailDamageRepairPage() {
             </motion.p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {damageTypes.map((damage, index) => (
-              <motion.div
-                key={damage.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#0f1724] p-3 rounded-xl text-white">
-                    {damage.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{damage.title}</h3>
-                    <p className="text-gray-600">{damage.description}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-center mt-12"
-          >
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
-              Hail damage isn&apos;t always immediately visible. Our trained professionals know exactly what to look for and can identify damage that might be missed by untrained eyes. Don't let hidden damage compromise your roof&apos;s integrity.
-            </p>
-            <Link
-              href="tel:4697653340"
-              className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <Phone className="h-5 w-5" />
-              Schedule Free Assessment
-            </Link>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Why Choose Us */}
       <section className="py-24 bg-white">
@@ -356,22 +308,13 @@ export default function HailDamageRepairPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Why Choose Matt Miller Contracting?</h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
-              <div className="bg-red-50 rounded-xl p-6 border border-red-100">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-[#be1d1d]" />
-                  Insurance Claim Experts
-                </h3>
-                <p className="text-gray-700">
-                  We work directly with your insurance company and will be present during the adjuster&apos;s inspection to ensure all damage is properly documented and covered.
-                </p>
-              </div>
 
               <p className="text-lg text-gray-700">
-                With years of experience in hail damage restoration, we understand the complexities of insurance claims and the importance of thorough documentation. Our team knows exactly what adjusters look for and how to present damage in a way that maximizes your coverage.
+                With years of experience in hail damage restoration, we understand the importance of thorough assessment and quality repairs. Our team knows exactly what to look for and provides detailed documentation of all damage.
               </p>
 
               <p className="text-lg text-gray-700">
-                We provide detailed reports with photographs and measurements, handle all communication with your insurance company, and ensure that repairs are completed to the highest standards using quality materials.
+                We provide detailed reports with photographs and measurements, and ensure that repairs are completed to the highest standards using quality materials. Contact us directly to discuss your specific needs and repair options.
               </p>
 
               <div className="pt-4">
