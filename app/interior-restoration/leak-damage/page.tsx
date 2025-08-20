@@ -96,12 +96,6 @@ export default function LeakDamagePage() {
       description:
         "Full restoration services return your home to its original condition or better.",
     },
-  ]
-
-  return (
-    <main className="overflow-hidden">
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-red-50 to-white">
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
