@@ -156,7 +156,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover z-0"
           >
             <source
-              src="https://youtu.be/FEJOb_tIx7A"
+              src="https://streamable.com/e/eohqvl?"
               type="video/mp4"
             />
           </video>
