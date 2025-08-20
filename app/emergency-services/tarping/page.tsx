@@ -96,6 +96,12 @@ export default function TarpingPage() {
       description:
         "Professional emergency protection gives you time to plan permanent repairs without stress.",
     },
+  ]
+
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-red-50 via-white to-blue-50 overflow-hidden">
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
