@@ -365,7 +365,7 @@ export default function HailDamageRepairPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Hail Damage Restoration Experts</span>
+              <span className="font-semibold">Professional Hail Damage Services</span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
