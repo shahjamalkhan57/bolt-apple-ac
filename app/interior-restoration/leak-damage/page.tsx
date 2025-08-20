@@ -96,6 +96,13 @@ export default function LeakDamagePage() {
       description:
         "Full restoration services return your home to its original condition or better.",
     },
+  ]
+
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative min-h-screen bg-gradient-to-br from-red-50 via-white to-blue-50 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
