@@ -64,7 +64,7 @@ export default function HailDamageRepairPage() {
     },
     {
       title: "Emergency Tarping",
-      description: "Immediate temporary protection to prevent further damage while insurance claims are processed.",
+      description: "Immediate temporary protection to prevent further damage while repairs are planned and scheduled.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
@@ -72,29 +72,6 @@ export default function HailDamageRepairPage() {
       description: "Full roof replacement or repair to restore your roof to pre-storm condition with quality materials.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
-
-  const insuranceSteps = [
-    {
-      step: "1",
-      title: "Contact Your Insurance",
-      description: "Call your insurance company to report the hail damage and start your claim."
-    },
-    {
-      step: "2",
-      title: "Schedule Inspection",
-      description: "We'll inspect your roof and document all damage for your insurance adjuster."
-    },
-    {
-      step: "3",
-      title: "Meet with Adjuster",
-      description: "We'll be present during the adjuster's visit to ensure all damage is identified."
-    },
-    {
-      step: "4",
-      title: "Begin Restoration",
-      description: "Once approved, we'll begin the restoration process using insurance proceeds."
-    }
   ]
 
   return (
@@ -171,7 +148,7 @@ export default function HailDamageRepairPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Hail Damage Assessment</p>
-                  <p className="text-sm mt-2">Insurance claim assistance included</p>
+                  <p className="text-sm mt-2">Professional damage evaluation</p>
                 </div>
               </div>
             </motion.div>
@@ -199,11 +176,11 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From initial assessment to complete restoration, we handle every aspect of your hail damage claim
+              From initial assessment to complete restoration, we handle every aspect of your hail damage repair
             </motion.p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -223,51 +200,6 @@ export default function HailDamageRepairPage() {
           </div>
         </div>
       </section>
-
-      {/* Insurance Process */}
-      <ParallaxSection>
-        <div className="container mx-auto px-4 py-24">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-3xl md:text-4xl font-bold mb-4"
-            >
-              Insurance Claim Process
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-lg text-gray-600"
-            >
-              We guide you through every step of the insurance claim process to ensure maximum coverage
-            </motion.p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {insuranceSteps.map((step, index) => (
-              <motion.div
-                key={step.step}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 text-center"
-              >
-                <div className="bg-[#be1d1d] w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </ParallaxSection>
 
       {/* Types of Hail Damage */}
       <section className="py-24 bg-gradient-to-b from-white to-red-50">
@@ -293,6 +225,30 @@ export default function HailDamageRepairPage() {
             </motion.p>
           </div>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {damageTypes.map((damage, index) => (
+              <motion.div
+                key={damage.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#0f1724] p-3 rounded-xl text-white">
+                    {damage.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">{damage.title}</h3>
+                    <p className="text-gray-600">{damage.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us */}
       <section className="py-24 bg-white">
@@ -308,7 +264,6 @@ export default function HailDamageRepairPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Why Choose Matt Miller Contracting?</h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
-
               <p className="text-lg text-gray-700">
                 With years of experience in hail damage restoration, we understand the importance of thorough assessment and quality repairs. Our team knows exactly what to look for and provides detailed documentation of all damage.
               </p>
@@ -322,7 +277,7 @@ export default function HailDamageRepairPage() {
                   href="#service-form"
                   className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Start Your Claim Today
+                  Start Your Assessment Today
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </div>
@@ -339,13 +294,13 @@ export default function HailDamageRepairPage() {
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
                   src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
-                  alt="Insurance Claim Process"
+                  alt="Professional Assessment Process"
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute top-4 left-4 bg-[#be1d1d] text-white px-4 py-2 rounded-full text-sm font-bold">
-                  Insurance Specialists
+                  Professional Assessment
                 </div>
               </div>
             </motion.div>
@@ -383,7 +338,7 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              After a hailstorm, time is critical. Hidden damage can lead to leaks, mold, and structural issues if not addressed promptly. Matt Miller Contracting provides comprehensive hail damage assessment and works with your insurance company to ensure complete restoration.
+              After a hailstorm, time is critical. Hidden damage can lead to leaks, mold, and structural issues if not addressed promptly. Matt Miller Contracting provides comprehensive hail damage assessment and professional restoration services.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -392,7 +347,7 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl mb-8"
             >
-              We handle everything from initial damage assessment to final restoration, working directly with your insurance adjuster to maximize your coverage. Don't navigate the claims process alone - let our experts guide you through every step.
+              We handle everything from initial damage assessment to final restoration. Contact us directly for expert evaluation and transparent pricing on all repair work.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -441,7 +396,7 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get expert assessment and insurance claim assistance at no cost to you
+                Get expert assessment and professional repair services at no cost to you
               </motion.p>
             </div>
 
@@ -457,7 +412,5 @@ export default function HailDamageRepairPage() {
         </div>
       </section>
     </main>
-  )
-}
   )
 }

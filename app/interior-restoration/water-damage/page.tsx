@@ -85,12 +85,6 @@ export default function WaterDamagePage() {
         "Quick water extraction and drying prevents mold and mildew growth that can cause health issues.",
     },
     {
-      icon: <DollarSign className="h-6 w-6" />,
-      title: "Insurance Assistance",
-      description:
-        "We work directly with insurance companies to document damage and maximize your coverage.",
-    },
-    {
       icon: <Home className="h-6 w-6" />,
       title: "Complete Restoration",
       description:

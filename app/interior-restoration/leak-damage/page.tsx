@@ -85,12 +85,6 @@ export default function LeakDamagePage() {
         "Professional restoration prevents mold growth that can cause serious health issues.",
     },
     {
-      icon: <DollarSign className="h-6 w-6" />,
-      title: "Insurance Assistance",
-      description:
-        "We work with insurance companies to document damage and maximize your coverage.",
-    },
-    {
       icon: <Home className="h-6 w-6" />,
       title: "Complete Restoration",
       description:
