@@ -441,7 +441,7 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get expert hail damage assessment and consultation at no cost to you
+                Get expert assessment and insurance claim assistance at no cost to you
               </motion.p>
             </div>
 
@@ -457,5 +457,7 @@ export default function HailDamageRepairPage() {
         </div>
       </section>
     </main>
+  )
+}
   )
 }
