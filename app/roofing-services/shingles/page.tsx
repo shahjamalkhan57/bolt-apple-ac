@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -16,10 +16,10 @@ import {
   Calendar,
   DollarSign,
   Layers,
-} from "lucide-react"
-import ServiceRequestForm from "@/components/service-request-form"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
+} from "lucide-react";
+import ServiceRequestForm from "@/components/service-request-form";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function ShinglesPage() {
   const shingleTypes = [
@@ -47,30 +47,34 @@ export default function ShinglesPage() {
       description:
         "Natural stone roofing that provides unmatched longevity and timeless beauty for luxury homes.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Shingle Installation",
-      description: "Professional installation of new shingle roofing systems with proper underlayment and ventilation.",
+      description:
+        "Professional installation of new shingle roofing systems with proper underlayment and ventilation.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Shingle Replacement",
-      description: "Expert replacement of damaged, missing, or worn shingles with matching materials and colors.",
+      description:
+        "Expert replacement of damaged, missing, or worn shingles with matching materials and colors.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Shingle Repair",
-      description: "Quick repair of individual shingles to prevent leaks and maintain your roof's integrity.",
+      description:
+        "Quick repair of individual shingles to prevent leaks and maintain your roof's integrity.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Material Consultation",
-      description: "Expert guidance in selecting the best shingle type and style for your home and budget.",
+      description:
+        "Expert guidance in selecting the best shingle type and style for your home and budget.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -103,7 +107,7 @@ export default function ShinglesPage() {
       description:
         "Shingle roofs are relatively easy to maintain and individual shingles can be replaced as needed.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -134,7 +138,10 @@ export default function ShinglesPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                From asphalt to metal, tile to slate - Matt Miller Contracting provides expert installation and repair of all shingle types. Choose the perfect roofing solution for your home's style and budget.
+                From asphalt to metal, tile to slate - Matt Miller Contracting
+                provides expert installation and repair of all shingle types.
+                Choose the perfect roofing solution for your home&apos;s style
+                and budget.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -178,8 +185,12 @@ export default function ShinglesPage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">Expert Shingle Installation</p>
-                  <p className="text-sm mt-2">All shingle types and styles available</p>
+                  <p className="font-bold text-xl">
+                    Expert Shingle Installation
+                  </p>
+                  <p className="text-sm mt-2">
+                    All shingle types and styles available
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -207,7 +218,8 @@ export default function ShinglesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Professional installation, repair, and replacement services for all types of shingle roofing
+              Professional installation, repair, and replacement services for
+              all types of shingle roofing
             </motion.p>
           </div>
 
@@ -252,7 +264,8 @@ export default function ShinglesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from a variety of premium shingle materials to match your home&apos;s style and performance needs
+              Choose from a variety of premium shingle materials to match your
+              home&apos;s style and performance needs
             </motion.p>
           </div>
 
@@ -297,7 +310,8 @@ export default function ShinglesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Discover the advantages that make shingle roofing the most popular choice for homeowners
+              Discover the advantages that make shingle roofing the most popular
+              choice for homeowners
             </motion.p>
           </div>
 
@@ -337,7 +351,9 @@ export default function ShinglesPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6 order-2 md:order-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Professional Shingle Installation</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Professional Shingle Installation
+              </h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
               <div className="bg-red-50 rounded-xl p-6 border border-red-100">
@@ -346,16 +362,23 @@ export default function ShinglesPage() {
                   Quality Installation Guarantee
                 </h3>
                 <p className="text-gray-700">
-                  Our certified installers follow manufacturer specifications and industry best practices to ensure your shingle roof is installed correctly and will perform for decades to come.
+                  Our certified installers follow manufacturer specifications
+                  and industry best practices to ensure your shingle roof is
+                  installed correctly and will perform for decades to come.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700">
-                Proper shingle installation is critical to your roof&apos;s performance and longevity. Our experienced team begins with thorough preparation, including deck inspection, proper underlayment installation, and precise shingle alignment.
+                Proper shingle installation is critical to your roof&apos;s
+                performance and longevity. Our experienced team begins with
+                thorough preparation, including deck inspection, proper
+                underlayment installation, and precise shingle alignment.
               </p>
 
               <p className="text-lg text-gray-700">
-                We use only premium materials and follow strict installation protocols to ensure optimal weather protection, proper ventilation, and maximum lifespan for your new shingle roof.
+                We use only premium materials and follow strict installation
+                protocols to ensure optimal weather protection, proper
+                ventilation, and maximum lifespan for your new shingle roof.
               </p>
 
               <div className="pt-4">
@@ -406,7 +429,9 @@ export default function ShinglesPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Premium Shingle Roofing Solutions</span>
+              <span className="font-semibold">
+                Premium Shingle Roofing Solutions
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -424,7 +449,11 @@ export default function ShinglesPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Whether you need a complete shingle roof installation, replacement, or repair, Matt Miller Contracting has the expertise and materials to deliver exceptional results. We work with all shingle types and offer comprehensive warranties on both materials and workmanship.
+              Whether you need a complete shingle roof installation,
+              replacement, or repair, Matt Miller Contracting has the expertise
+              and materials to deliver exceptional results. We work with all
+              shingle types and offer comprehensive warranties on both materials
+              and workmanship.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -433,7 +462,9 @@ export default function ShinglesPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl mb-8"
             >
-              Our team will help you select the perfect shingle type and style for your home, budget, and performance requirements. Contact us today for a free consultation and detailed estimate.
+              Our team will help you select the perfect shingle type and style
+              for your home, budget, and performance requirements. Contact us
+              today for a free consultation and detailed estimate.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -482,7 +513,8 @@ export default function ShinglesPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get expert consultation on shingle options and professional installation services
+                Get expert consultation on shingle options and professional
+                installation services
               </motion.p>
             </div>
 
@@ -498,5 +530,5 @@ export default function ShinglesPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

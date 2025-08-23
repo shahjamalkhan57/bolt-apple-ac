@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -16,10 +16,10 @@ import {
   Calendar,
   DollarSign,
   Droplets,
-} from "lucide-react"
-import ServiceRequestForm from "@/components/service-request-form"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
+} from "lucide-react";
+import ServiceRequestForm from "@/components/service-request-form";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function RoofRepairPage() {
   const repairSigns = [
@@ -53,30 +53,34 @@ export default function RoofRepairPage() {
       description:
         "Damaged flashing around chimneys, vents, or roof edges can allow water infiltration and needs immediate repair.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Emergency Leak Repair",
-      description: "Fast response to stop active leaks and prevent further damage to your home's interior.",
+      description:
+        "Fast response to stop active leaks and prevent further damage to your home's interior.",
       icon: <Droplets className="h-6 w-6" />,
     },
     {
       title: "Shingle Replacement",
-      description: "Professional replacement of damaged, missing, or worn shingles with matching materials.",
+      description:
+        "Professional replacement of damaged, missing, or worn shingles with matching materials.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Flashing Repair",
-      description: "Expert repair and replacement of roof flashing to prevent water infiltration.",
+      description:
+        "Expert repair and replacement of roof flashing to prevent water infiltration.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Storm Damage Repair",
-      description: "Comprehensive assessment and repair of hail, wind, and storm damage to restore your roof.",
+      description:
+        "Comprehensive assessment and repair of hail, wind, and storm damage to restore your roof.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -107,7 +111,9 @@ export default function RoofRepairPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Don&apos;t let a small roof problem become a major headache. Matt Miller Contracting provides fast, reliable roof repair services to protect your home and prevent costly damage.
+                Don&apos;t let a small roof problem become a major headache.
+                Matt Miller Contracting provides fast, reliable roof repair
+                services to protect your home and prevent costly damage.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -151,8 +157,12 @@ export default function RoofRepairPage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">Fast & Reliable Roof Repair</p>
-                  <p className="text-sm mt-2">Emergency services available 24/7</p>
+                  <p className="font-bold text-xl">
+                    Fast & Reliable Roof Repair
+                  </p>
+                  <p className="text-sm mt-2">
+                    Emergency services available 24/7
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -180,7 +190,8 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From minor repairs to major storm damage restoration, we handle all types of roofing issues
+              From minor repairs to major storm damage restoration, we handle
+              all types of roofing issues
             </motion.p>
           </div>
 
@@ -238,19 +249,31 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Fast Emergency Roof Repair</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Fast Emergency Roof Repair
+              </h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
               <p className="text-lg text-gray-700">
-                When your roof is damaged, time is critical. Water damage can escalate quickly, causing extensive damage to your home&apos;s interior, insulation, and structure. That's why Matt Miller Contracting offers 24/7 emergency roof repair services.
+                When your roof is damaged, time is critical. Water damage can
+                escalate quickly, causing extensive damage to your home&apos;s
+                interior, insulation, and structure. That&apos;s why Matt Miller
+                Contracting offers 24/7 emergency roof repair services.
               </p>
               <p className="text-lg text-gray-700">
-                Our experienced team responds quickly to assess the damage and implement immediate solutions to stop leaks and prevent further damage. We provide temporary tarping services when needed and work efficiently to complete permanent repairs.
+                Our experienced team responds quickly to assess the damage and
+                implement immediate solutions to stop leaks and prevent further
+                damage. We provide temporary tarping services when needed and
+                work efficiently to complete permanent repairs.
               </p>
               <p className="text-lg text-gray-700">
-                We work directly with your insurance company to ensure proper documentation and maximize your coverage. Our goal is to restore your roof&apos;s integrity quickly and effectively, giving you peace of mind.
+                We work directly with your insurance company to ensure proper
+                documentation and maximize your coverage. Our goal is to restore
+                your roof&apos;s integrity quickly and effectively, giving you
+                peace of mind.
               </p>
               <p className="text-lg text-gray-700 font-semibold">
-                Don&apos;t wait when you have a roof emergency. Call Matt Miller Contracting immediately for fast, professional repair services.
+                Don&apos;t wait when you have a roof emergency. Call Matt Miller
+                Contracting immediately for fast, professional repair services.
               </p>
               <div className="pt-4">
                 <Link
@@ -286,7 +309,8 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Early detection of these issues can prevent minor problems from becoming major expenses
+              Early detection of these issues can prevent minor problems from
+              becoming major expenses
             </motion.p>
           </div>
 
@@ -321,7 +345,9 @@ export default function RoofRepairPage() {
             className="text-center mt-12"
           >
             <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
-              At Matt Miller Contracting, we recommend addressing roof issues as soon as they&apos;re discovered. Small repairs now can prevent major problems and expensive replacements later.
+              At Matt Miller Contracting, we recommend addressing roof issues as
+              soon as they&apos;re discovered. Small repairs now can prevent
+              major problems and expensive replacements later.
             </p>
             <Link
               href="tel:4697653340"
@@ -345,16 +371,24 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6 order-2 md:order-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Storm Damage Repair Specialists</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Storm Damage Repair Specialists
+              </h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
-
               <p className="text-lg text-gray-700">
-                Texas weather can be unpredictable, with severe storms, hail, and high winds causing significant roof damage. Our team has extensive experience in storm damage assessment and repair, helping homeowners restore their roofs quickly and effectively.
+                Texas weather can be unpredictable, with severe storms, hail,
+                and high winds causing significant roof damage. Our team has
+                extensive experience in storm damage assessment and repair,
+                helping homeowners restore their roofs quickly and effectively.
               </p>
 
               <p className="text-lg text-gray-700">
-                We provide comprehensive storm damage services including emergency tarping, detailed damage assessment, and complete repair or replacement services. Our goal is to make the process as smooth as possible for you with transparent pricing and quality workmanship.
+                We provide comprehensive storm damage services including
+                emergency tarping, detailed damage assessment, and complete
+                repair or replacement services. Our goal is to make the process
+                as smooth as possible for you with transparent pricing and
+                quality workmanship.
               </p>
 
               <div className="pt-4">
@@ -414,7 +448,7 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              Don't Let Roof Damage Get Worse!
+              Don&apos;t Let Roof Damage Get Worse!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -423,7 +457,11 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              When you notice signs of roof damage, time is critical. What starts as a small leak can quickly become major water damage affecting your home&apos;s structure, insulation, and belongings. Matt Miller Contracting provides fast, professional roof repair services to stop problems before they escalate.
+              When you notice signs of roof damage, time is critical. What
+              starts as a small leak can quickly become major water damage
+              affecting your home&apos;s structure, insulation, and belongings.
+              Matt Miller Contracting provides fast, professional roof repair
+              services to stop problems before they escalate.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -432,7 +470,10 @@ export default function RoofRepairPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl mb-8"
             >
-              Our experienced team is available 24/7 for emergency repairs and provides transparent pricing with no hidden fees. We work with your insurance company to ensure proper coverage and get your roof restored quickly and professionally.
+              Our experienced team is available 24/7 for emergency repairs and
+              provides transparent pricing with no hidden fees. We work with
+              your insurance company to ensure proper coverage and get your roof
+              restored quickly and professionally.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -497,5 +538,5 @@ export default function RoofRepairPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

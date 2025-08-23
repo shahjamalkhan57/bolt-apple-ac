@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -16,9 +16,9 @@ import {
   Calendar,
   DollarSign,
   TreePine,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function FencesPage() {
   const fenceTypes = [
@@ -34,30 +34,34 @@ export default function FencesPage() {
       description:
         "Low-maintenance vinyl fencing that resists weather, insects, and rot while maintaining its appearance.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Fence Installation",
-      description: "Complete fence installation with proper post setting and alignment for long-lasting performance.",
+      description:
+        "Complete fence installation with proper post setting and alignment for long-lasting performance.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Fence Repair",
-      description: "Expert repair of damaged fence sections, posts, and gates to restore functionality and appearance.",
+      description:
+        "Expert repair of damaged fence sections, posts, and gates to restore functionality and appearance.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Gate Installation",
-      description: "Professional installation of gates with proper hardware and alignment for smooth operation.",
+      description:
+        "Professional installation of gates with proper hardware and alignment for smooth operation.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Storm Damage Restoration",
-      description: "Quick repair and replacement of storm-damaged fencing to restore your property's security.",
+      description:
+        "Quick repair and replacement of storm-damaged fencing to restore your property's security.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -84,7 +88,7 @@ export default function FencesPage() {
       description:
         "Secure fencing keeps children and pets safe while allowing them to enjoy the outdoors.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -115,7 +119,9 @@ export default function FencesPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Enhance your property's privacy, security, and curb appeal with professional fence services. From wood to vinyl, we install and repair all fence types.
+                Enhance your property&apos;s privacy, security, and curb appeal
+                with professional fence services. From wood to vinyl, we install
+                and repair all fence types.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -188,7 +194,8 @@ export default function FencesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From installation to repair, we provide comprehensive fencing solutions for your property
+              From installation to repair, we provide comprehensive fencing
+              solutions for your property
             </motion.p>
           </div>
 
@@ -233,7 +240,8 @@ export default function FencesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from our selection of high-quality fencing materials to match your needs and style
+              Choose from our selection of high-quality fencing materials to
+              match your needs and style
             </motion.p>
           </div>
 
@@ -278,7 +286,8 @@ export default function FencesPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Discover why professional fence installation is a valuable addition to your property
+              Discover why professional fence installation is a valuable
+              addition to your property
             </motion.p>
           </div>
 
@@ -337,7 +346,10 @@ export default function FencesPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Whether you need privacy fencing, security barriers, or decorative boundaries, Matt Miller Contracting provides expert fence installation and repair services that enhance your property's value and functionality.
+              Whether you need privacy fencing, security barriers, or decorative
+              boundaries, Matt Miller Contracting provides expert fence
+              installation and repair services that enhance your property&apos;s
+              value and functionality.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -402,5 +414,5 @@ export default function FencesPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
