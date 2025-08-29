@@ -293,7 +293,7 @@ export default function HailDamageRepairPage() {
               <div className="absolute -inset-4 bg-[#be1d1d] rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
-                  src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
+                  src="https://images.pexels.com/photos/48895/roof-plate-tiles-brick-black-48895.jpeg"
                   alt="Professional Assessment Process"
                   width={600}
                   height={600}
