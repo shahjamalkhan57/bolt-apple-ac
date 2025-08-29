@@ -412,7 +412,7 @@ export default function RoofRepairPage() {
               <div className="absolute -inset-4 bg-[#be1d1d] rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
-                  src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
+                  src="https://images.pexels.com/photos/45206/roofing-tile-red-wall-45206.jpeg"
                   alt="Storm Damage Repair"
                   width={600}
                   height={600}
