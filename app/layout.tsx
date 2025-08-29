@@ -12,9 +12,9 @@ import AIChatbot from "@/components/ai-chatbot"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Apple AC & Heat | HVAC Services in Rockwall, TX",
-  description: "Professional HVAC services in Rockwall, TX and surrounding areas. Heating, cooling, and emergency repairs with 24/7 service available.",
-  keywords: "HVAC, air conditioning, heating, repair, maintenance, Rockwall, Texas",
+  title: "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
+  description: "Professional roofing, exterior, and storm restoration services in Dallas-Fort Worth area. 24/7 emergency services, licensed contractors, and comprehensive warranties.",
+  keywords: "roofing contractors, storm restoration, emergency roofing, Dallas Fort Worth, roof repair, roof replacement, exterior services",
 }
 
 export default function RootLayout({

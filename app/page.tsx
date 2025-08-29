@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import {
@@ -18,6 +19,31 @@ import ScheduleServiceModal from "@/components/schedule-service-modal"
 import AIChatbot from "@/components/ai-chatbot"
 import CalendlyWidget from "@/components/calendly-widget"
 import EnhancedServiceAreaMap from "@/components/enhanced-service-area-map"
+
+export const metadata: Metadata = {
+  title: "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
+  description: "Professional roofing, exterior, and storm restoration services in Dallas-Fort Worth area. 24/7 emergency services, licensed contractors, and comprehensive warranties. Call (469) 765-3340.",
+  keywords: "roofing contractors, storm restoration, emergency roofing, Dallas Fort Worth, roof repair, roof replacement, exterior services, Matt Miller Contracting",
+  openGraph: {
+    title: "Matt Miller Contracting | Expert Roofing & Storm Restoration",
+    description: "Protecting homes in Dallas-Fort Worth with expert roofing and storm restoration services. Licensed contractors with 24/7 emergency response.",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Professional roofing contractor inspecting roof damage",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Matt Miller Contracting | Expert Roofing & Storm Restoration",
+    description: "Professional roofing and storm restoration services in Dallas-Fort Worth. 24/7 emergency response available.",
+    images: ["https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg"],
+  },
+}
 
 const serviceAreas: Array<{
   name: string

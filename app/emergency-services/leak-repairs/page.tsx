@@ -1,5 +1,6 @@
 "use client"
 
+import { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -19,6 +20,31 @@ import {
 } from "lucide-react"
 import ParallaxSection from "@/components/parallax-section"
 import CalendlyWidget from "@/components/calendly-widget"
+
+export const metadata: Metadata = {
+  title: "24/7 Emergency Leak Repair Services | Matt Miller Contracting",
+  description: "Immediate emergency leak repair in Dallas-Fort Worth. 24/7 response for roof leaks, ceiling leaks, and water damage. Stop leaks before they cause major damage.",
+  keywords: "emergency leak repair, 24/7 leak repair, roof leaks, ceiling leaks, water damage, Dallas Fort Worth, immediate leak response",
+  openGraph: {
+    title: "24/7 Emergency Leak Repair Services | Matt Miller Contracting",
+    description: "Immediate emergency leak repair services in Dallas-Fort Worth. Professional response available 24/7 to stop water damage.",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Emergency leak repair and water damage prevention",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "24/7 Emergency Leak Repair Services | Matt Miller Contracting",
+    description: "Immediate emergency leak repair available 24/7 in Dallas-Fort Worth area.",
+    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
+  },
+}
 
 export default function LeakRepairsPage() {
   const leakTypes = [
