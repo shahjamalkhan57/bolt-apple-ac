@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Layers,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Expert Siding Installation & Repair Services | Matt Miller Contracting",
-  description: "Professional siding installation and repair in Dallas-Fort Worth. Vinyl, fiber cement, wood, and metal siding options. Storm damage restoration and energy-efficient solutions.",
-  keywords: "siding installation, siding repair, vinyl siding, fiber cement siding, Dallas Fort Worth, storm damage, energy efficiency",
-  openGraph: {
-    title: "Expert Siding Installation & Repair | Matt Miller Contracting",
-    description: "Transform your home's exterior with professional siding services in Dallas-Fort Worth. All siding types available with expert installation.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional siding installation and repair",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Expert Siding Installation & Repair | Matt Miller Contracting",
-    description: "Professional siding installation and repair services in Dallas-Fort Worth area. All siding types available.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function SidingPage() {
   const sidingTypes = [
@@ -72,30 +46,34 @@ export default function SidingPage() {
       description:
         "Long-lasting steel or aluminum siding that provides superior protection against severe weather.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Siding Installation",
-      description: "Complete siding installation with proper insulation and moisture barriers for optimal performance.",
+      description:
+        "Complete siding installation with proper insulation and moisture barriers for optimal performance.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Siding Repair",
-      description: "Expert repair of damaged, cracked, or loose siding to restore your home's protection and appearance.",
+      description:
+        "Expert repair of damaged, cracked, or loose siding to restore your home's protection and appearance.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Siding Replacement",
-      description: "Full or partial siding replacement using premium materials and professional installation techniques.",
+      description:
+        "Full or partial siding replacement using premium materials and professional installation techniques.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Storm Damage Restoration",
-      description: "Comprehensive assessment and repair of hail, wind, and storm damage to your home's siding.",
+      description:
+        "Comprehensive assessment and repair of hail, wind, and storm damage to your home's siding.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function SidingPage() {
       description:
         "Modern siding materials require minimal maintenance while providing decades of protection.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -153,7 +131,9 @@ export default function SidingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Transform your home&apos;s exterior with professional siding services. From vinyl to fiber cement, we install and repair all siding types with expert craftsmanship.
+                Transform your home&apos;s exterior with professional siding
+                services. From vinyl to fiber cement, we install and repair all
+                siding types with expert craftsmanship.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -198,7 +178,9 @@ export default function SidingPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Siding Solutions</p>
-                  <p className="text-sm mt-2">Protecting and beautifying your home</p>
+                  <p className="text-sm mt-2">
+                    Protecting and beautifying your home
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +208,8 @@ export default function SidingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From installation to repair, we provide comprehensive siding solutions for your home
+              From installation to repair, we provide comprehensive siding
+              solutions for your home
             </motion.p>
           </div>
 
@@ -271,7 +254,8 @@ export default function SidingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from our selection of premium siding materials to match your style and budget
+              Choose from our selection of premium siding materials to match
+              your style and budget
             </motion.p>
           </div>
 
@@ -316,7 +300,8 @@ export default function SidingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Discover why professional siding installation is a smart investment for your home
+              Discover why professional siding installation is a smart
+              investment for your home
             </motion.p>
           </div>
 
@@ -357,7 +342,9 @@ export default function SidingPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Siding Services</span>
+              <span className="font-semibold">
+                Professional Siding Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -375,7 +362,10 @@ export default function SidingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Whether you need new siding installation, storm damage repair, or a complete exterior makeover, Matt Miller Contracting delivers exceptional results with premium materials and expert craftsmanship.
+              Whether you need new siding installation, storm damage repair, or
+              a complete exterior makeover, Matt Miller Contracting delivers
+              exceptional results with premium materials and expert
+              craftsmanship.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -440,5 +430,5 @@ export default function SidingPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

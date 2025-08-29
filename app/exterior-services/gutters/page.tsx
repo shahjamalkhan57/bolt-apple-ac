@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Droplets,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Professional Gutter Installation & Repair Services | Matt Miller Contracting",
-  description: "Expert gutter installation, repair, and cleaning in Dallas-Fort Worth. Seamless gutters, gutter guards, and storm damage restoration. Protect your home's foundation.",
-  keywords: "gutter installation, gutter repair, seamless gutters, gutter guards, Dallas Fort Worth, foundation protection, storm damage",
-  openGraph: {
-    title: "Professional Gutter Services | Matt Miller Contracting",
-    description: "Expert gutter installation and repair services in Dallas-Fort Worth. Seamless gutters and gutter guards to protect your home.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional gutter installation and repair",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Professional Gutter Services | Matt Miller Contracting",
-    description: "Expert gutter installation, repair, and cleaning services in Dallas-Fort Worth area.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function GuttersPage() {
   const gutterTypes = [
@@ -72,30 +46,34 @@ export default function GuttersPage() {
       description:
         "Professional repair of damaged, sagging, or leaking gutters to restore proper water drainage.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Gutter Installation",
-      description: "Complete gutter system installation with proper slope and secure mounting for optimal water flow.",
+      description:
+        "Complete gutter system installation with proper slope and secure mounting for optimal water flow.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Gutter Cleaning",
-      description: "Thorough cleaning and inspection to remove debris and ensure proper water drainage.",
+      description:
+        "Thorough cleaning and inspection to remove debris and ensure proper water drainage.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Gutter Repair",
-      description: "Expert repair of leaks, sagging sections, and damaged components to restore functionality.",
+      description:
+        "Expert repair of leaks, sagging sections, and damaged components to restore functionality.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Storm Damage Restoration",
-      description: "Complete assessment and repair of storm-damaged gutters and downspouts.",
+      description:
+        "Complete assessment and repair of storm-damaged gutters and downspouts.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function GuttersPage() {
       description:
         "Quality gutter systems provide decades of reliable service with minimal maintenance required.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -153,7 +131,9 @@ export default function GuttersPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Protect your home&apos;s foundation with professional gutter services. From seamless installation to storm damage repair, we keep water flowing where it should.
+                Protect your home&apos;s foundation with professional gutter
+                services. From seamless installation to storm damage repair, we
+                keep water flowing where it should.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -198,7 +178,9 @@ export default function GuttersPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Gutter Solutions</p>
-                  <p className="text-sm mt-2">Protecting your home&apos;s foundation</p>
+                  <p className="text-sm mt-2">
+                    Protecting your home&apos;s foundation
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +208,8 @@ export default function GuttersPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From installation to maintenance, we provide comprehensive gutter solutions for your home
+              From installation to maintenance, we provide comprehensive gutter
+              solutions for your home
             </motion.p>
           </div>
 
@@ -271,7 +254,8 @@ export default function GuttersPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from our range of high-quality gutter systems and accessories
+              Choose from our range of high-quality gutter systems and
+              accessories
             </motion.p>
           </div>
 
@@ -316,7 +300,8 @@ export default function GuttersPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Discover the important benefits of properly installed and maintained gutters
+              Discover the important benefits of properly installed and
+              maintained gutters
             </motion.p>
           </div>
 
@@ -357,7 +342,9 @@ export default function GuttersPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Gutter Services</span>
+              <span className="font-semibold">
+                Professional Gutter Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -375,7 +362,10 @@ export default function GuttersPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t let water damage compromise your home&apos;s foundation and structure. Matt Miller Contracting provides professional gutter installation, repair, and maintenance services to keep your property protected year-round.
+              Don&apos;t let water damage compromise your home&apos;s foundation
+              and structure. Matt Miller Contracting provides professional
+              gutter installation, repair, and maintenance services to keep your
+              property protected year-round.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -440,5 +430,5 @@ export default function GuttersPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

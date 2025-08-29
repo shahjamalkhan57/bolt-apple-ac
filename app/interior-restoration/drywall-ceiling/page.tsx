@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Layers,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Professional Drywall & Ceiling Repair Services | Matt Miller Contracting",
-  description: "Expert drywall and ceiling repair in Dallas-Fort Worth. Water damage restoration, hole repair, texture matching, and seamless finishing. Professional interior restoration.",
-  keywords: "drywall repair, ceiling repair, water damage restoration, texture matching, Dallas Fort Worth, interior restoration, hole repair",
-  openGraph: {
-    title: "Professional Drywall & Ceiling Repair | Matt Miller Contracting",
-    description: "Expert drywall and ceiling repair services in Dallas-Fort Worth. Seamless repairs and water damage restoration for perfect results.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional drywall and ceiling repair services",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Professional Drywall & Ceiling Repair | Matt Miller Contracting",
-    description: "Expert drywall and ceiling repair services in Dallas-Fort Worth area. Seamless repairs and restoration.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function DrywallCeilingPage() {
   const repairTypes = [
@@ -72,30 +46,34 @@ export default function DrywallCeilingPage() {
       description:
         "Professional texture matching and application to ensure repairs blend seamlessly with existing surfaces.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Hole & Crack Repair",
-      description: "Expert repair of holes, cracks, and damaged areas in drywall with professional finishing techniques.",
+      description:
+        "Expert repair of holes, cracks, and damaged areas in drywall with professional finishing techniques.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Water Damage Restoration",
-      description: "Complete restoration of water-damaged drywall and ceilings including moisture remediation.",
+      description:
+        "Complete restoration of water-damaged drywall and ceilings including moisture remediation.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
       title: "Texture & Paint Matching",
-      description: "Professional texture application and paint matching to ensure seamless repairs.",
+      description:
+        "Professional texture application and paint matching to ensure seamless repairs.",
       icon: <Layers className="h-6 w-6" />,
     },
     {
       title: "Complete Replacement",
-      description: "Full drywall and ceiling replacement when damage is extensive or beyond repair.",
+      description:
+        "Full drywall and ceiling replacement when damage is extensive or beyond repair.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function DrywallCeilingPage() {
       description:
         "Proper repairs prevent moisture infiltration and structural issues that can lead to bigger problems.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -153,7 +131,9 @@ export default function DrywallCeilingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Restore your interior walls and ceilings to perfect condition with professional drywall and ceiling repair services. From small holes to water damage restoration.
+                Restore your interior walls and ceilings to perfect condition
+                with professional drywall and ceiling repair services. From
+                small holes to water damage restoration.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -197,8 +177,12 @@ export default function DrywallCeilingPage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">Expert Drywall & Ceiling Repair</p>
-                  <p className="text-sm mt-2">Professional interior restoration</p>
+                  <p className="font-bold text-xl">
+                    Expert Drywall & Ceiling Repair
+                  </p>
+                  <p className="text-sm mt-2">
+                    Professional interior restoration
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +210,8 @@ export default function DrywallCeilingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From minor repairs to complete restoration, we handle all your interior wall and ceiling needs
+              From minor repairs to complete restoration, we handle all your
+              interior wall and ceiling needs
             </motion.p>
           </div>
 
@@ -271,7 +256,8 @@ export default function DrywallCeilingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Professional repair services for all types of drywall and ceiling damage
+              Professional repair services for all types of drywall and ceiling
+              damage
             </motion.p>
           </div>
 
@@ -357,7 +343,9 @@ export default function DrywallCeilingPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Interior Restoration</span>
+              <span className="font-semibold">
+                Professional Interior Restoration
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -375,7 +363,10 @@ export default function DrywallCeilingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t let damaged walls and ceilings detract from your home&apos;s beauty. Matt Miller Contracting provides expert drywall and ceiling repair services that restore your interior to perfect condition with seamless, professional results.
+              Don&apos;t let damaged walls and ceilings detract from your
+              home&apos;s beauty. Matt Miller Contracting provides expert
+              drywall and ceiling repair services that restore your interior to
+              perfect condition with seamless, professional results.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -440,5 +431,5 @@ export default function DrywallCeilingPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

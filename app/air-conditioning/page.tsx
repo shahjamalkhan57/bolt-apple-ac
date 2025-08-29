@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -19,55 +18,33 @@ import {
   Wind,
   Fan,
   Thermometer,
-} from "lucide-react"
-import HeroAnimation from "@/components/hero-animation"
-import ServiceRequestForm from "@/components/service-request-form"
-import ParallaxSection from "@/components/parallax-section"
-import { useState } from "react"
-import { ScheduleServiceModal } from "@/components/schedule-service-modal"
-
-export const metadata: Metadata = {
-  title: "Air Conditioning Services in Rockwall, TX | Apple AC & Heat",
-  description: "Professional AC installation, repair, and maintenance services in Rockwall, TX. 24/7 emergency AC repair available. Licensed HVAC contractors serving Dallas-Fort Worth area.",
-  keywords: "air conditioning, AC repair, AC installation, HVAC services, Rockwall TX, emergency AC repair, Dallas Fort Worth",
-  openGraph: {
-    title: "Expert Air Conditioning Services | Apple AC & Heat",
-    description: "Keep your home cool with professional AC services in Rockwall, TX. Installation, repair, and maintenance by licensed HVAC experts.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional AC technician working on air conditioning unit",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Expert Air Conditioning Services | Apple AC & Heat",
-    description: "Professional AC installation, repair, and maintenance in Rockwall, TX. 24/7 emergency service available.",
-    images: ["https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg"],
-  },
-}
+} from "lucide-react";
+import HeroAnimation from "@/components/hero-animation";
+import ServiceRequestForm from "@/components/service-request-form";
+import ParallaxSection from "@/components/parallax-section";
+import { useState } from "react";
+import { ScheduleServiceModal } from "@/components/schedule-service-modal";
 
 const features = [
   {
     icon: <Fan className="h-6 w-6" />,
     title: "AC Installation",
-    description: "Professional installation of new AC systems with top brands like Lennox, Trane, and Goodman.",
+    description:
+      "Professional installation of new AC systems with top brands like Lennox, Trane, and Goodman.",
   },
   {
     icon: <Wrench className="h-6 w-6" />,
     title: "AC Repair",
-    description: "Expert diagnosis and repair services for all AC makes and models.",
+    description:
+      "Expert diagnosis and repair services for all AC makes and models.",
   },
   {
     icon: <Thermometer className="h-6 w-6" />,
     title: "AC Maintenance",
-    description: "Regular maintenance to keep your system running efficiently and prevent costly repairs.",
+    description:
+      "Regular maintenance to keep your system running efficiently and prevent costly repairs.",
   },
-]
+];
 
 const warningSignsList = [
   "Sudden increases in electric bills",
@@ -76,10 +53,10 @@ const warningSignsList = [
   "Loud noises from the unit",
   "Persistent humidity issues",
   "Unit is over 10 years old",
-]
+];
 
 export default function AirConditioningPage() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <main className="pt-24">
@@ -93,7 +70,8 @@ export default function AirConditioningPage() {
             transition={{ duration: 1 }}
             className="absolute inset-0"
             style={{
-              backgroundImage: "url('https://images.pexels.com/photos/3637830/pexels-photo-3637830.jpeg')",
+              backgroundImage:
+                "url('https://images.pexels.com/photos/3637830/pexels-photo-3637830.jpeg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -115,8 +93,9 @@ export default function AirConditioningPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                Keep your home cool and comfortable with our professional AC installation, repair, and maintenance services
-                in Rockwall and surrounding areas.
+                Keep your home cool and comfortable with our professional AC
+                installation, repair, and maintenance services in Rockwall and
+                surrounding areas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -146,8 +125,12 @@ export default function AirConditioningPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <p className="text-lg font-semibold">Professional AC Services</p>
-                    <p className="text-sm opacity-90">Available 24/7 for Emergency Repairs</p>
+                    <p className="text-lg font-semibold">
+                      Professional AC Services
+                    </p>
+                    <p className="text-sm opacity-90">
+                      Available 24/7 for Emergency Repairs
+                    </p>
                   </div>
                 </div>
               </div>
@@ -160,9 +143,12 @@ export default function AirConditioningPage() {
       <ParallaxSection className="py-24 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4">Comprehensive AC Solutions</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Comprehensive AC Solutions
+            </h2>
             <p className="text-gray-600 dark:text-gray-300">
-              From installation to maintenance, we provide complete air conditioning services for your home or business.
+              From installation to maintenance, we provide complete air
+              conditioning services for your home or business.
             </p>
           </div>
 
@@ -180,7 +166,9 @@ export default function AirConditioningPage() {
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {feature.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -197,7 +185,9 @@ export default function AirConditioningPage() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold mb-6">Signs Your AC Needs Attention</h2>
+              <h2 className="text-3xl font-bold mb-6">
+                Signs Your AC Needs Attention
+              </h2>
               <div className="space-y-4">
                 {warningSignsList.map((sign, index) => (
                   <motion.div
@@ -231,8 +221,9 @@ export default function AirConditioningPage() {
               />
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl max-w-xs">
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Don&apos;t wait until your AC completely breaks down. Regular maintenance can prevent costly repairs and extend
-                  your system&apos;s life.
+                  Don&apos;t wait until your AC completely breaks down. Regular
+                  maintenance can prevent costly repairs and extend your
+                  system&apos;s life.
                 </p>
               </div>
             </motion.div>
@@ -252,7 +243,8 @@ export default function AirConditioningPage() {
             >
               <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
               <p className="text-xl mb-8 opacity-90">
-                Contact us today for a free consultation and estimate. Our expert technicians are ready to help!
+                Contact us today for a free consultation and estimate. Our
+                expert technicians are ready to help!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -283,7 +275,9 @@ export default function AirConditioningPage() {
               <Zap className="h-8 w-8 animate-pulse" />
               <div>
                 <h3 className="text-xl font-bold">24/7 Emergency AC Service</h3>
-                <p className="opacity-90">We&apos;re here when you need us most</p>
+                <p className="opacity-90">
+                  We&apos;re here when you need us most
+                </p>
               </div>
             </div>
             <Link
@@ -297,5 +291,5 @@ export default function AirConditioningPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

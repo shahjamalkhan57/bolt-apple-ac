@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Droplets,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "24/7 Water Damage Restoration Services | Matt Miller Contracting",
-  description: "Emergency water damage restoration in Dallas-Fort Worth. Professional water extraction, structural drying, and complete restoration. 24/7 response to minimize damage.",
-  keywords: "water damage restoration, emergency water extraction, structural drying, Dallas Fort Worth, 24/7 water damage, mold prevention",
-  openGraph: {
-    title: "24/7 Water Damage Restoration | Matt Miller Contracting",
-    description: "Professional water damage restoration services in Dallas-Fort Worth. Emergency response available 24/7 to minimize damage and restore your home.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional water damage restoration services",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "24/7 Water Damage Restoration | Matt Miller Contracting",
-    description: "Emergency water damage restoration available 24/7 in Dallas-Fort Worth area.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function WaterDamagePage() {
   const damageTypes = [
@@ -72,30 +46,34 @@ export default function WaterDamagePage() {
       description:
         "Air conditioning condensation problems and heating system leaks can create ongoing moisture issues and damage.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Emergency Water Extraction",
-      description: "Immediate water removal using professional-grade equipment to prevent further damage and mold growth.",
+      description:
+        "Immediate water removal using professional-grade equipment to prevent further damage and mold growth.",
       icon: <Droplets className="h-6 w-6" />,
     },
     {
       title: "Structural Drying",
-      description: "Complete drying of affected areas using industrial dehumidifiers and air movers to restore normal moisture levels.",
+      description:
+        "Complete drying of affected areas using industrial dehumidifiers and air movers to restore normal moisture levels.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Damage Assessment",
-      description: "Thorough inspection and documentation of all water damage for insurance claims and restoration planning.",
+      description:
+        "Thorough inspection and documentation of all water damage for insurance claims and restoration planning.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Complete Restoration",
-      description: "Full restoration of damaged areas including drywall, flooring, and structural repairs to pre-loss condition.",
+      description:
+        "Full restoration of damaged areas including drywall, flooring, and structural repairs to pre-loss condition.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -116,7 +94,7 @@ export default function WaterDamagePage() {
       description:
         "Full-service restoration returns your home to its original condition or better.",
     },
-  ]
+  ];
 
   return (
     <main className="min-h-screen">
@@ -148,7 +126,9 @@ export default function WaterDamagePage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                When water damage strikes, every minute counts. Matt Miller Contracting provides immediate emergency response and complete restoration services to get your home back to normal.
+                When water damage strikes, every minute counts. Matt Miller
+                Contracting provides immediate emergency response and complete
+                restoration services to get your home back to normal.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -192,8 +172,12 @@ export default function WaterDamagePage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">Emergency Water Damage Response</p>
-                  <p className="text-sm mt-2">24/7 professional restoration services</p>
+                  <p className="font-bold text-xl">
+                    Emergency Water Damage Response
+                  </p>
+                  <p className="text-sm mt-2">
+                    24/7 professional restoration services
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -221,7 +205,8 @@ export default function WaterDamagePage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From emergency response to complete restoration, we handle every aspect of water damage recovery
+              From emergency response to complete restoration, we handle every
+              aspect of water damage recovery
             </motion.p>
           </div>
 
@@ -266,7 +251,8 @@ export default function WaterDamagePage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              We handle water damage from all sources with professional expertise and equipment
+              We handle water damage from all sources with professional
+              expertise and equipment
             </motion.p>
           </div>
 
@@ -311,7 +297,8 @@ export default function WaterDamagePage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Professional restoration ensures complete recovery and prevents long-term problems
+              Professional restoration ensures complete recovery and prevents
+              long-term problems
             </motion.p>
           </div>
 
@@ -352,7 +339,9 @@ export default function WaterDamagePage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">24/7 Emergency Water Damage Services</span>
+              <span className="font-semibold">
+                24/7 Emergency Water Damage Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -370,7 +359,10 @@ export default function WaterDamagePage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Water damage gets worse every hour. Don&apos;t wait - call Matt Miller Contracting immediately for emergency water extraction and professional restoration services. We&apos;re available 24/7 to minimize damage and get your life back to normal.
+              Water damage gets worse every hour. Don&apos;t wait - call Matt
+              Miller Contracting immediately for emergency water extraction and
+              professional restoration services. We&apos;re available 24/7 to
+              minimize damage and get your life back to normal.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -419,7 +411,8 @@ export default function WaterDamagePage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Contact us immediately for emergency water damage restoration services
+                Contact us immediately for emergency water damage restoration
+                services
               </motion.p>
             </div>
 
@@ -435,5 +428,5 @@ export default function WaterDamagePage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

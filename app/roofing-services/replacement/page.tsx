@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,35 +16,10 @@ import {
   Calendar,
   DollarSign,
   Hammer,
-} from "lucide-react"
-import ServiceRequestForm from "@/components/service-request-form"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Professional Roof Replacement Services | Matt Miller Contracting",
-  description: "Complete roof replacement services in Dallas-Fort Worth area. Premium materials, expert installation, and comprehensive warranties. Licensed roofing contractors with 20+ years experience.",
-  keywords: "roof replacement, new roof installation, roofing contractors, Dallas Fort Worth, premium roofing materials, roof installation",
-  openGraph: {
-    title: "Professional Roof Replacement Services | Matt Miller Contracting",
-    description: "Transform your home with professional roof replacement. Premium materials, expert installation, and comprehensive warranties in Dallas-Fort Worth.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional roof replacement installation",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Professional Roof Replacement Services | Matt Miller Contracting",
-    description: "Complete roof replacement with premium materials and expert installation in Dallas-Fort Worth area.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ServiceRequestForm from "@/components/service-request-form";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function RoofReplacementPage() {
   const repairSigns = [
@@ -79,30 +53,34 @@ export default function RoofReplacementPage() {
       description:
         "A sagging or uneven roof line indicates structural issues that require immediate attention and likely full replacement.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Complete Roof Replacement",
-      description: "Full roof system replacement with premium materials and professional installation for maximum protection.",
+      description:
+        "Full roof system replacement with premium materials and professional installation for maximum protection.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Material Selection",
-      description: "Expert guidance in choosing the right roofing materials for your home, climate, and budget requirements.",
+      description:
+        "Expert guidance in choosing the right roofing materials for your home, climate, and budget requirements.",
       icon: <Hammer className="h-6 w-6" />,
     },
     {
       title: "Structural Assessment",
-      description: "Comprehensive evaluation of your roof structure to ensure proper support for your new roofing system.",
+      description:
+        "Comprehensive evaluation of your roof structure to ensure proper support for your new roofing system.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Warranty Protection",
-      description: "Comprehensive warranties on both materials and workmanship to protect your investment for years to come.",
+      description:
+        "Comprehensive warranties on both materials and workmanship to protect your investment for years to come.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -133,7 +111,10 @@ export default function RoofReplacementPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Is your roof showing signs of age or storm damage? Matt Miller Contracting provides complete roof replacement services with premium materials and expert installation in the Dallas-Fort Worth area.
+                Is your roof showing signs of age or storm damage? Matt Miller
+                Contracting provides complete roof replacement services with
+                premium materials and expert installation in the Dallas-Fort
+                Worth area.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -178,7 +159,9 @@ export default function RoofReplacementPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Roof Replacement</p>
-                  <p className="text-sm mt-2">Quality materials, professional installation</p>
+                  <p className="text-sm mt-2">
+                    Quality materials, professional installation
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -206,7 +189,8 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From material selection to final installation, we handle every aspect of your roof replacement project
+              From material selection to final installation, we handle every
+              aspect of your roof replacement project
             </motion.p>
           </div>
 
@@ -264,19 +248,33 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Our Roof Replacement Process</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Our Roof Replacement Process
+              </h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
               <p className="text-lg text-gray-700">
-                At Matt Miller Contracting, we follow a systematic approach to roof replacement that ensures quality, efficiency, and minimal disruption to your daily life. Our process begins with a comprehensive inspection and assessment of your current roof structure.
+                At Matt Miller Contracting, we follow a systematic approach to
+                roof replacement that ensures quality, efficiency, and minimal
+                disruption to your daily life. Our process begins with a
+                comprehensive inspection and assessment of your current roof
+                structure.
               </p>
               <p className="text-lg text-gray-700">
-                We then work with you to select the best materials for your specific needs, climate, and budget. Our experienced team handles all aspects of the installation, from removing the old roofing materials to installing your new roof system with precision and care.
+                We then work with you to select the best materials for your
+                specific needs, climate, and budget. Our experienced team
+                handles all aspects of the installation, from removing the old
+                roofing materials to installing your new roof system with
+                precision and care.
               </p>
               <p className="text-lg text-gray-700">
-                Every project includes thorough cleanup and a final inspection to ensure your complete satisfaction. We stand behind our work with comprehensive warranties on both materials and workmanship.
+                Every project includes thorough cleanup and a final inspection
+                to ensure your complete satisfaction. We stand behind our work
+                with comprehensive warranties on both materials and workmanship.
               </p>
               <p className="text-lg text-gray-700 font-semibold">
-                Trust Matt Miller Contracting for a roof replacement that protects your home and adds value to your property for decades to come.
+                Trust Matt Miller Contracting for a roof replacement that
+                protects your home and adds value to your property for decades
+                to come.
               </p>
               <div className="pt-4">
                 <Link
@@ -312,7 +310,8 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Recognizing these warning signs early can help you avoid costly damage to your home&apos;s interior
+              Recognizing these warning signs early can help you avoid costly
+              damage to your home&apos;s interior
             </motion.p>
           </div>
 
@@ -347,7 +346,10 @@ export default function RoofReplacementPage() {
             className="text-center mt-12"
           >
             <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
-              At Matt Miller Contracting, we recommend having your roof inspected regularly, especially after severe weather events. Early detection of these issues can help you plan for replacement and avoid emergency situations.
+              At Matt Miller Contracting, we recommend having your roof
+              inspected regularly, especially after severe weather events. Early
+              detection of these issues can help you plan for replacement and
+              avoid emergency situations.
             </p>
             <Link
               href="tel:4697653340"
@@ -371,7 +373,9 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6 order-2 md:order-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Premium Roofing Materials</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Premium Roofing Materials
+              </h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
               <div className="bg-red-50 rounded-xl p-6 border border-red-100">
@@ -380,16 +384,25 @@ export default function RoofReplacementPage() {
                   Quality Materials & Warranties
                 </h3>
                 <p className="text-gray-700">
-                  We work with top manufacturers like GAF, Owens Corning, and CertainTeed to provide you with the highest quality roofing materials. All our installations come with comprehensive manufacturer warranties and our own workmanship guarantee.
+                  We work with top manufacturers like GAF, Owens Corning, and
+                  CertainTeed to provide you with the highest quality roofing
+                  materials. All our installations come with comprehensive
+                  manufacturer warranties and our own workmanship guarantee.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700">
-                Whether you prefer traditional asphalt shingles, architectural shingles, metal roofing, or specialty materials like slate or tile, we have the expertise to install your chosen system properly and efficiently.
+                Whether you prefer traditional asphalt shingles, architectural
+                shingles, metal roofing, or specialty materials like slate or
+                tile, we have the expertise to install your chosen system
+                properly and efficiently.
               </p>
 
               <p className="text-lg text-gray-700">
-                Our team will help you select the best materials based on your home&apos;s architecture, local climate conditions, energy efficiency goals, and budget requirements. We provide detailed estimates and explain the benefits of each option.
+                Our team will help you select the best materials based on your
+                home&apos;s architecture, local climate conditions, energy
+                efficiency goals, and budget requirements. We provide detailed
+                estimates and explain the benefits of each option.
               </p>
 
               <div className="pt-4">
@@ -440,7 +453,9 @@ export default function RoofReplacementPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Roof Replacement Services</span>
+              <span className="font-semibold">
+                Professional Roof Replacement Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -458,7 +473,11 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t wait until small problems become major headaches. Matt Miller Contracting provides complete roof replacement services with premium materials, expert installation, and comprehensive warranties. Our experienced team ensures your new roof will protect your home for decades to come.
+              Don&apos;t wait until small problems become major headaches. Matt
+              Miller Contracting provides complete roof replacement services
+              with premium materials, expert installation, and comprehensive
+              warranties. Our experienced team ensures your new roof will
+              protect your home for decades to come.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -467,7 +486,10 @@ export default function RoofReplacementPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl mb-8"
             >
-              We offer transparent pricing with no hidden fees and provide detailed estimates for your roof replacement project. Contact us today for a free consultation and expert guidance on the best roofing solution for your home.
+              We offer transparent pricing with no hidden fees and provide
+              detailed estimates for your roof replacement project. Contact us
+              today for a free consultation and expert guidance on the best
+              roofing solution for your home.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -516,7 +538,8 @@ export default function RoofReplacementPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get a free estimate and consultation for your roof replacement project
+                Get a free estimate and consultation for your roof replacement
+                project
               </motion.p>
             </div>
 
@@ -532,5 +555,5 @@ export default function RoofReplacementPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

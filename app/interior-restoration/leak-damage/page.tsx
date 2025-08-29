@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Droplets,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Leak-Related Damage Repair & Restoration | Matt Miller Contracting",
-  description: "Professional leak damage restoration in Dallas-Fort Worth. Expert leak detection, water damage repair, and mold prevention. Complete restoration services available.",
-  keywords: "leak damage repair, leak detection, water damage restoration, mold prevention, Dallas Fort Worth, interior restoration, leak repair",
-  openGraph: {
-    title: "Leak-Related Damage Repair & Restoration | Matt Miller Contracting",
-    description: "Professional leak damage restoration services in Dallas-Fort Worth. Expert detection and complete restoration to protect your home.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional leak damage repair and restoration",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Leak-Related Damage Repair & Restoration | Matt Miller Contracting",
-    description: "Expert leak damage restoration services in Dallas-Fort Worth area. Professional detection and repair.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function LeakDamagePage() {
   const leakSources = [
@@ -72,30 +46,34 @@ export default function LeakDamagePage() {
       description:
         "Air conditioning condensation issues and heating system problems can create ongoing moisture damage.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Leak Source Identification",
-      description: "Professional inspection to locate and identify all sources of water infiltration in your home.",
+      description:
+        "Professional inspection to locate and identify all sources of water infiltration in your home.",
       icon: <AlertTriangle className="h-6 w-6" />,
     },
     {
       title: "Water Damage Restoration",
-      description: "Complete restoration of leak-damaged areas including drying, cleaning, and structural repairs.",
+      description:
+        "Complete restoration of leak-damaged areas including drying, cleaning, and structural repairs.",
       icon: <Droplets className="h-6 w-6" />,
     },
     {
       title: "Mold Prevention & Remediation",
-      description: "Professional mold prevention and removal services to protect your family&apos;s health.",
+      description:
+        "Professional mold prevention and removal services to protect your family&apos;s health.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
       title: "Structural Repairs",
-      description: "Complete repair of structural damage caused by long-term leaks and water infiltration.",
+      description:
+        "Complete repair of structural damage caused by long-term leaks and water infiltration.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -116,7 +94,7 @@ export default function LeakDamagePage() {
       description:
         "Full restoration services return your home to its original condition or better.",
     },
-  ]
+  ];
 
   return (
     <main className="min-h-screen">
@@ -148,7 +126,9 @@ export default function LeakDamagePage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Stop leaks at their source and restore the damage they&apos;ve caused. Matt Miller Contracting provides comprehensive leak detection and damage restoration services.
+                Stop leaks at their source and restore the damage they&apos;ve
+                caused. Matt Miller Contracting provides comprehensive leak
+                detection and damage restoration services.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -192,8 +172,12 @@ export default function LeakDamagePage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">Expert Leak Damage Restoration</p>
-                  <p className="text-sm mt-2">Complete leak detection and repair</p>
+                  <p className="font-bold text-xl">
+                    Expert Leak Damage Restoration
+                  </p>
+                  <p className="text-sm mt-2">
+                    Complete leak detection and repair
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -221,7 +205,8 @@ export default function LeakDamagePage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From leak detection to complete restoration, we handle every aspect of leak-related damage
+              From leak detection to complete restoration, we handle every
+              aspect of leak-related damage
             </motion.p>
           </div>
 
@@ -266,7 +251,8 @@ export default function LeakDamagePage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              We identify and repair leaks from all sources to prevent ongoing damage
+              We identify and repair leaks from all sources to prevent ongoing
+              damage
             </motion.p>
           </div>
 
@@ -352,7 +338,9 @@ export default function LeakDamagePage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Emergency Leak Damage Services</span>
+              <span className="font-semibold">
+                Emergency Leak Damage Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -370,7 +358,10 @@ export default function LeakDamagePage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Leaks don&apos;t fix themselves - they only get worse. Matt Miller Contracting provides immediate leak detection and comprehensive damage restoration to protect your home and prevent costly repairs down the road.
+              Leaks don&apos;t fix themselves - they only get worse. Matt Miller
+              Contracting provides immediate leak detection and comprehensive
+              damage restoration to protect your home and prevent costly repairs
+              down the road.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -419,7 +410,8 @@ export default function LeakDamagePage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Contact us immediately for leak detection and damage restoration services
+                Contact us immediately for leak detection and damage restoration
+                services
               </motion.p>
             </div>
 
@@ -435,5 +427,5 @@ export default function LeakDamagePage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

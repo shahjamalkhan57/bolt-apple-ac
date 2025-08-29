@@ -1,6 +1,19 @@
 /* Custom styles for the map */
 .leaflet-container {
   font-family: inherit;
+  z-index: 10 !important;
+}
+
+.leaflet-control-container {
+  z-index: 20 !important;
+}
+
+.leaflet-popup-pane {
+  z-index: 30 !important;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 25 !important;
 }
 
 .custom-tooltip .leaflet-tooltip {
@@ -11,6 +24,7 @@
   padding: 6px 10px;
   font-family: inherit;
   transition: all 0.2s ease;
+  z-index: 25 !important;
 }
 
 .main-office-tooltip .leaflet-tooltip {
@@ -20,7 +34,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   padding: 8px 16px;
-  z-index: 1000 !important;
+  z-index: 30 !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -35,11 +49,12 @@
 /* Custom marker styles */
 .main-office-marker {
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
-  z-index: 1000 !important;
+  z-index: 30 !important;
 }
 
 .service-area-marker {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+  z-index: 25 !important;
 }
 
 /* Prevent map from capturing wheel events when scrolling the page */

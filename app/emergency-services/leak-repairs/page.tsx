@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Droplets,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "24/7 Emergency Leak Repair Services | Matt Miller Contracting",
-  description: "Immediate emergency leak repair in Dallas-Fort Worth. 24/7 response for roof leaks, ceiling leaks, and water damage. Stop leaks before they cause major damage.",
-  keywords: "emergency leak repair, 24/7 leak repair, roof leaks, ceiling leaks, water damage, Dallas Fort Worth, immediate leak response",
-  openGraph: {
-    title: "24/7 Emergency Leak Repair Services | Matt Miller Contracting",
-    description: "Immediate emergency leak repair services in Dallas-Fort Worth. Professional response available 24/7 to stop water damage.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Emergency leak repair and water damage prevention",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "24/7 Emergency Leak Repair Services | Matt Miller Contracting",
-    description: "Immediate emergency leak repair available 24/7 in Dallas-Fort Worth area.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function LeakRepairsPage() {
   const leakTypes = [
@@ -72,30 +46,34 @@ export default function LeakRepairsPage() {
       description:
         "Water in your attic can cause structural damage and mold growth if not addressed immediately.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Emergency Leak Detection",
-      description: "Rapid identification of leak sources using professional equipment and expertise.",
+      description:
+        "Rapid identification of leak sources using professional equipment and expertise.",
       icon: <AlertTriangle className="h-6 w-6" />,
     },
     {
       title: "Immediate Leak Stopping",
-      description: "Quick temporary repairs to stop active leaks and prevent further water damage.",
+      description:
+        "Quick temporary repairs to stop active leaks and prevent further water damage.",
       icon: <Droplets className="h-6 w-6" />,
     },
     {
       title: "Water Damage Prevention",
-      description: "Immediate measures to protect your belongings and prevent secondary damage.",
+      description:
+        "Immediate measures to protect your belongings and prevent secondary damage.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
       title: "Permanent Repairs",
-      description: "Complete permanent repair solutions once the emergency is under control.",
+      description:
+        "Complete permanent repair solutions once the emergency is under control.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function LeakRepairsPage() {
       description:
         "Fast response protects your home&apos;s structure and your personal belongings from water damage.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -153,7 +131,9 @@ export default function LeakRepairsPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Water leaks get worse every hour. Matt Miller Contracting provides immediate emergency leak repair services to stop water damage before it becomes a major problem.
+                Water leaks get worse every hour. Matt Miller Contracting
+                provides immediate emergency leak repair services to stop water
+                damage before it becomes a major problem.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -197,8 +177,12 @@ export default function LeakRepairsPage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">24/7 Emergency Leak Repair</p>
-                  <p className="text-sm mt-2">Stopping leaks before they cause major damage</p>
+                  <p className="font-bold text-xl">
+                    24/7 Emergency Leak Repair
+                  </p>
+                  <p className="text-sm mt-2">
+                    Stopping leaks before they cause major damage
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +210,8 @@ export default function LeakRepairsPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Fast response and professional repairs to stop leaks and prevent water damage
+              Fast response and professional repairs to stop leaks and prevent
+              water damage
             </motion.p>
           </div>
 
@@ -271,7 +256,8 @@ export default function LeakRepairsPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              We handle all types of urgent leak situations with immediate response
+              We handle all types of urgent leak situations with immediate
+              response
             </motion.p>
           </div>
 
@@ -375,7 +361,10 @@ export default function LeakRepairsPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t let a small leak become a major disaster. Matt Miller Contracting provides immediate emergency leak repair services 24/7. We&apos;ll stop the leak, assess the damage, and provide permanent solutions to protect your home.
+              Don&apos;t let a small leak become a major disaster. Matt Miller
+              Contracting provides immediate emergency leak repair services
+              24/7. We&apos;ll stop the leak, assess the damage, and provide
+              permanent solutions to protect your home.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -440,5 +429,5 @@ export default function LeakRepairsPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

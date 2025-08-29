@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -18,35 +17,10 @@ import {
   DollarSign,
   CloudRain,
   FileText,
-} from "lucide-react"
-import ServiceRequestForm from "@/components/service-request-form"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Hail Damage Repair & Restoration Services | Matt Miller Contracting",
-  description: "Expert hail damage assessment and repair in Dallas-Fort Worth. Professional storm damage restoration with insurance claim assistance. Free hail damage inspections available.",
-  keywords: "hail damage repair, storm damage restoration, roof hail damage, insurance claims, Dallas Fort Worth, emergency roof repair",
-  openGraph: {
-    title: "Hail Damage Repair & Restoration | Matt Miller Contracting",
-    description: "Professional hail damage assessment and repair services in Dallas-Fort Worth. Expert storm damage restoration with insurance assistance.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional hail damage assessment and repair",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Hail Damage Repair & Restoration | Matt Miller Contracting",
-    description: "Expert hail damage assessment and repair in Dallas-Fort Worth. Free inspections and insurance assistance.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ServiceRequestForm from "@/components/service-request-form";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function HailDamageRepairPage() {
   const damageTypes = [
@@ -80,25 +54,28 @@ export default function HailDamageRepairPage() {
       description:
         "Hail can cause soft spots or bruising in shingles that may not be immediately visible but compromise performance.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Hail Damage Assessment",
-      description: "Comprehensive inspection to identify all hail damage, including hidden damage not visible from the ground.",
+      description:
+        "Comprehensive inspection to identify all hail damage, including hidden damage not visible from the ground.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Emergency Tarping",
-      description: "Immediate temporary protection to prevent further damage while repairs are planned and scheduled.",
+      description:
+        "Immediate temporary protection to prevent further damage while repairs are planned and scheduled.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
       title: "Complete Restoration",
-      description: "Full roof replacement or repair to restore your roof to pre-storm condition with quality materials.",
+      description:
+        "Full roof replacement or repair to restore your roof to pre-storm condition with quality materials.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -129,7 +106,9 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Texas hailstorms can cause significant roof damage. Matt Miller Contracting specializes in hail damage assessment and complete roof restoration in the Dallas-Fort Worth area.
+                Texas hailstorms can cause significant roof damage. Matt Miller
+                Contracting specializes in hail damage assessment and complete
+                roof restoration in the Dallas-Fort Worth area.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -173,7 +152,9 @@ export default function HailDamageRepairPage() {
                   className="w-full h-auto object-cover rounded-2xl"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">Expert Hail Damage Assessment</p>
+                  <p className="font-bold text-xl">
+                    Expert Hail Damage Assessment
+                  </p>
                   <p className="text-sm mt-2">Professional damage evaluation</p>
                 </div>
               </div>
@@ -202,7 +183,8 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From initial assessment to complete restoration, we handle every aspect of your hail damage repair
+              From initial assessment to complete restoration, we handle every
+              aspect of your hail damage repair
             </motion.p>
           </div>
 
@@ -247,7 +229,8 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Understanding different types of hail damage helps ensure nothing is missed during inspection
+              Understanding different types of hail damage helps ensure nothing
+              is missed during inspection
             </motion.p>
           </div>
 
@@ -287,15 +270,23 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6 order-2 md:order-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold">Why Choose Matt Miller Contracting?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Why Choose Matt Miller Contracting?
+              </h2>
               <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
 
               <p className="text-lg text-gray-700">
-                With years of experience in hail damage restoration, we understand the importance of thorough assessment and quality repairs. Our team knows exactly what to look for and provides detailed documentation of all damage.
+                With years of experience in hail damage restoration, we
+                understand the importance of thorough assessment and quality
+                repairs. Our team knows exactly what to look for and provides
+                detailed documentation of all damage.
               </p>
 
               <p className="text-lg text-gray-700">
-                We provide detailed reports with photographs and measurements, and ensure that repairs are completed to the highest standards using quality materials. Contact us directly to discuss your specific needs and repair options.
+                We provide detailed reports with photographs and measurements,
+                and ensure that repairs are completed to the highest standards
+                using quality materials. Contact us directly to discuss your
+                specific needs and repair options.
               </p>
 
               <div className="pt-4">
@@ -346,7 +337,9 @@ export default function HailDamageRepairPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Hail Damage Restoration Experts</span>
+              <span className="font-semibold">
+                Hail Damage Restoration Experts
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -364,7 +357,10 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              After a hailstorm, time is critical. Hidden damage can lead to leaks, mold, and structural issues if not addressed promptly. Matt Miller Contracting provides comprehensive hail damage assessment and professional restoration services.
+              After a hailstorm, time is critical. Hidden damage can lead to
+              leaks, mold, and structural issues if not addressed promptly. Matt
+              Miller Contracting provides comprehensive hail damage assessment
+              and professional restoration services.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -373,7 +369,9 @@ export default function HailDamageRepairPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl mb-8"
             >
-              We handle everything from initial damage assessment to final restoration. Contact us directly for expert evaluation and transparent pricing on all repair work.
+              We handle everything from initial damage assessment to final
+              restoration. Contact us directly for expert evaluation and
+              transparent pricing on all repair work.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -422,7 +420,8 @@ export default function HailDamageRepairPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get expert assessment and professional repair services at no cost to you
+                Get expert assessment and professional repair services at no
+                cost to you
               </motion.p>
             </div>
 
@@ -438,5 +437,5 @@ export default function HailDamageRepairPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Eye,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Professional Window Installation & Repair Services | Matt Miller Contracting",
-  description: "Expert window installation and repair in Dallas-Fort Worth. Energy-efficient windows, storm damage restoration, and professional installation. Enhance comfort and security.",
-  keywords: "window installation, window repair, energy efficient windows, Dallas Fort Worth, storm damage, window replacement",
-  openGraph: {
-    title: "Professional Window Installation & Repair | Matt Miller Contracting",
-    description: "Enhance your home with professional window services in Dallas-Fort Worth. Energy-efficient installation and expert repairs.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional window installation and repair",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Professional Window Installation & Repair | Matt Miller Contracting",
-    description: "Expert window installation and repair services in Dallas-Fort Worth area. Energy-efficient solutions available.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function WindowsPage() {
   const windowTypes = [
@@ -72,30 +46,34 @@ export default function WindowsPage() {
       description:
         "Horizontal sliding windows that are easy to operate and perfect for areas with limited space.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Window Installation",
-      description: "Professional installation of new windows with proper sealing and insulation for energy efficiency.",
+      description:
+        "Professional installation of new windows with proper sealing and insulation for energy efficiency.",
       icon: <Home className="h-6 w-6" />,
     },
     {
       title: "Window Replacement",
-      description: "Complete window replacement with modern, energy-efficient windows to improve comfort and value.",
+      description:
+        "Complete window replacement with modern, energy-efficient windows to improve comfort and value.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Window Repair",
-      description: "Expert repair of damaged windows, frames, and hardware to restore functionality and appearance.",
+      description:
+        "Expert repair of damaged windows, frames, and hardware to restore functionality and appearance.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Storm Damage Restoration",
-      description: "Emergency window repair and replacement after storm damage to secure your home quickly.",
+      description:
+        "Emergency window repair and replacement after storm damage to secure your home quickly.",
       icon: <Shield className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function WindowsPage() {
       description:
         "New windows significantly increase your home's value and curb appeal for potential buyers.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -153,7 +131,9 @@ export default function WindowsPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Enhance your home&apos;s comfort, security, and energy efficiency with professional window services. From installation to repair, we handle all your window needs.
+                Enhance your home&apos;s comfort, security, and energy
+                efficiency with professional window services. From installation
+                to repair, we handle all your window needs.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -198,7 +178,9 @@ export default function WindowsPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Window Solutions</p>
-                  <p className="text-sm mt-2">Enhancing comfort and efficiency</p>
+                  <p className="text-sm mt-2">
+                    Enhancing comfort and efficiency
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +208,8 @@ export default function WindowsPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From installation to repair, we provide comprehensive window solutions for your home
+              From installation to repair, we provide comprehensive window
+              solutions for your home
             </motion.p>
           </div>
 
@@ -271,7 +254,8 @@ export default function WindowsPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Choose from our selection of high-quality window styles to match your home&apos;s design
+              Choose from our selection of high-quality window styles to match
+              your home&apos;s design
             </motion.p>
           </div>
 
@@ -316,7 +300,8 @@ export default function WindowsPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Discover why professional window installation is a valuable investment for your home
+              Discover why professional window installation is a valuable
+              investment for your home
             </motion.p>
           </div>
 
@@ -357,7 +342,9 @@ export default function WindowsPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Window Services</span>
+              <span className="font-semibold">
+                Professional Window Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -375,7 +362,10 @@ export default function WindowsPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Whether you need new window installation, storm damage repair, or energy-efficient replacements, Matt Miller Contracting provides expert window services that enhance your home&apos;s comfort, security, and value.
+              Whether you need new window installation, storm damage repair, or
+              energy-efficient replacements, Matt Miller Contracting provides
+              expert window services that enhance your home&apos;s comfort,
+              security, and value.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -440,5 +430,5 @@ export default function WindowsPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

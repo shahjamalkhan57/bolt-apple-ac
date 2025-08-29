@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   CloudRain,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "24/7 Emergency Roof Tarping Services | Matt Miller Contracting",
-  description: "Immediate emergency roof tarping in Dallas-Fort Worth. 24/7 storm damage response to prevent further water damage. Professional emergency roofing services available now.",
-  keywords: "emergency roof tarping, 24/7 emergency roofing, storm damage, emergency roof repair, Dallas Fort Worth, immediate roof protection",
-  openGraph: {
-    title: "24/7 Emergency Roof Tarping Services | Matt Miller Contracting",
-    description: "Immediate emergency roof protection in Dallas-Fort Worth. Professional tarping services available 24/7 to prevent further damage.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Emergency roof tarping and storm damage protection",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "24/7 Emergency Roof Tarping Services | Matt Miller Contracting",
-    description: "Immediate emergency roof protection available 24/7 in Dallas-Fort Worth area.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function TarpingPage() {
   const emergencyScenarios = [
@@ -72,30 +46,34 @@ export default function TarpingPage() {
       description:
         "Large hail can create holes or severely damage roofing materials, necessitating immediate temporary repairs.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "24/7 Emergency Response",
-      description: "Immediate response to roof emergencies with professional tarping services available around the clock.",
+      description:
+        "Immediate response to roof emergencies with professional tarping services available around the clock.",
       icon: <Clock className="h-6 w-6" />,
     },
     {
       title: "Professional Tarping",
-      description: "High-quality tarps and professional installation techniques to provide maximum protection.",
+      description:
+        "High-quality tarps and professional installation techniques to provide maximum protection.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
       title: "Damage Assessment",
-      description: "Complete assessment of damage while providing emergency protection for insurance documentation.",
+      description:
+        "Complete assessment of damage while providing emergency protection for insurance documentation.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Permanent Repairs",
-      description: "Follow-up with permanent repair solutions once emergency protection is in place.",
+      description:
+        "Follow-up with permanent repair solutions once emergency protection is in place.",
       icon: <Home className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function TarpingPage() {
       description:
         "Professional emergency protection gives you time to plan permanent repairs without stress.",
     },
-  ]
+  ];
 
   return (
     <main className="min-h-screen">
@@ -153,7 +131,9 @@ export default function TarpingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                When storms damage your roof, every minute counts. Matt Miller Contracting provides immediate emergency tarping services to protect your home from further damage.
+                When storms damage your roof, every minute counts. Matt Miller
+                Contracting provides immediate emergency tarping services to
+                protect your home from further damage.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -198,7 +178,9 @@ export default function TarpingPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">24/7 Emergency Tarping</p>
-                  <p className="text-sm mt-2">Immediate protection when you need it most</p>
+                  <p className="text-sm mt-2">
+                    Immediate protection when you need it most
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +208,8 @@ export default function TarpingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From immediate response to permanent repairs, we protect your home every step of the way
+              From immediate response to permanent repairs, we protect your home
+              every step of the way
             </motion.p>
           </div>
 
@@ -357,7 +340,9 @@ export default function TarpingPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">24/7 Emergency Tarping Available</span>
+              <span className="font-semibold">
+                24/7 Emergency Tarping Available
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -375,7 +360,10 @@ export default function TarpingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              When storm damage leaves your roof exposed, every minute counts. Matt Miller Contracting provides immediate emergency tarping services 24/7 to protect your home from further damage. Don&apos;t wait - call now!
+              When storm damage leaves your roof exposed, every minute counts.
+              Matt Miller Contracting provides immediate emergency tarping
+              services 24/7 to protect your home from further damage. Don&apos;t
+              wait - call now!
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -440,5 +428,5 @@ export default function TarpingPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

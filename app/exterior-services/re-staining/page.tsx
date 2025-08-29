@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Phone,
@@ -17,34 +16,9 @@ import {
   Calendar,
   DollarSign,
   Paintbrush,
-} from "lucide-react"
-import ParallaxSection from "@/components/parallax-section"
-import CalendlyWidget from "@/components/calendly-widget"
-
-export const metadata: Metadata = {
-  title: "Professional Wood Staining & Restoration Services | Matt Miller Contracting",
-  description: "Expert wood staining and restoration in Dallas-Fort Worth. Deck staining, fence staining, and siding restoration. Protect and beautify your exterior wood surfaces.",
-  keywords: "wood staining, deck staining, fence staining, wood restoration, Dallas Fort Worth, exterior wood protection, re-staining services",
-  openGraph: {
-    title: "Professional Wood Staining & Restoration | Matt Miller Contracting",
-    description: "Protect and beautify your exterior wood with professional staining services in Dallas-Fort Worth. Expert restoration and maintenance.",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Professional wood staining and restoration",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Professional Wood Staining & Restoration | Matt Miller Contracting",
-    description: "Expert wood staining and restoration services in Dallas-Fort Worth area. Deck, fence, and siding staining.",
-    images: ["https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"],
-  },
-}
+} from "lucide-react";
+import ParallaxSection from "@/components/parallax-section";
+import CalendlyWidget from "@/components/calendly-widget";
 
 export default function ReStainingPage() {
   const stainingServices = [
@@ -72,30 +46,34 @@ export default function ReStainingPage() {
       description:
         "Complete restoration including cleaning, sanding, and staining to bring weathered wood back to life.",
     },
-  ]
+  ];
 
   const services = [
     {
       title: "Surface Preparation",
-      description: "Thorough cleaning, sanding, and preparation to ensure optimal stain adhesion and longevity.",
+      description:
+        "Thorough cleaning, sanding, and preparation to ensure optimal stain adhesion and longevity.",
       icon: <Wrench className="h-6 w-6" />,
     },
     {
       title: "Premium Stain Application",
-      description: "Professional application of high-quality stains and sealers for maximum protection and beauty.",
+      description:
+        "Professional application of high-quality stains and sealers for maximum protection and beauty.",
       icon: <Paintbrush className="h-6 w-6" />,
     },
     {
       title: "Color Matching",
-      description: "Expert color matching and consultation to achieve the perfect look for your property.",
+      description:
+        "Expert color matching and consultation to achieve the perfect look for your property.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
     {
       title: "Maintenance Programs",
-      description: "Ongoing maintenance programs to keep your stained surfaces looking their best year-round.",
+      description:
+        "Ongoing maintenance programs to keep your stained surfaces looking their best year-round.",
       icon: <Clock className="h-6 w-6" />,
     },
-  ]
+  ];
 
   const benefits = [
     {
@@ -122,7 +100,7 @@ export default function ReStainingPage() {
       description:
         "Premium stains and professional application provide years of protection and beauty.",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -153,7 +131,9 @@ export default function ReStainingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Protect and beautify your wood surfaces with professional staining services. From decks to fences, we restore and maintain your exterior wood features.
+                Protect and beautify your wood surfaces with professional
+                staining services. From decks to fences, we restore and maintain
+                your exterior wood features.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -198,7 +178,9 @@ export default function ReStainingPage() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                   <p className="font-bold text-xl">Expert Staining Solutions</p>
-                  <p className="text-sm mt-2">Protecting and beautifying wood</p>
+                  <p className="text-sm mt-2">
+                    Protecting and beautifying wood
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -226,7 +208,8 @@ export default function ReStainingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From preparation to application, we provide comprehensive wood staining solutions
+              From preparation to application, we provide comprehensive wood
+              staining solutions
             </motion.p>
           </div>
 
@@ -271,7 +254,8 @@ export default function ReStainingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Professional staining for all your exterior wood surfaces and structures
+              Professional staining for all your exterior wood surfaces and
+              structures
             </motion.p>
           </div>
 
@@ -316,7 +300,8 @@ export default function ReStainingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              Discover why professional wood staining is essential for maintaining your exterior surfaces
+              Discover why professional wood staining is essential for
+              maintaining your exterior surfaces
             </motion.p>
           </div>
 
@@ -357,7 +342,9 @@ export default function ReStainingPage() {
               className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
             >
               <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="font-semibold">Professional Staining Services</span>
+              <span className="font-semibold">
+                Professional Staining Services
+              </span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -375,7 +362,10 @@ export default function ReStainingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t let weathered wood detract from your property&apos;s beauty. Matt Miller Contracting provides expert staining and restoration services that protect your investment and enhance your home&apos;s curb appeal.
+              Don&apos;t let weathered wood detract from your property&apos;s
+              beauty. Matt Miller Contracting provides expert staining and
+              restoration services that protect your investment and enhance your
+              home&apos;s curb appeal.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -424,7 +414,8 @@ export default function ReStainingPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-gray-600"
               >
-                Get expert wood staining and restoration services for your property
+                Get expert wood staining and restoration services for your
+                property
               </motion.p>
             </div>
 
@@ -440,5 +431,5 @@ export default function ReStainingPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
