@@ -164,7 +164,7 @@ export default function LeakRepairsPage() {
               <div className="absolute -inset-4 bg-[#be1d1d] rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
-                  src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg"
+                  src="https://images.pexels.com/photos/31771166/pexels-photo-31771166.jpeg"
                   alt="Emergency Leak Repair"
                   width={600}
                   height={600}
