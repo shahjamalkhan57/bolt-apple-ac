@@ -402,7 +402,7 @@ export default function HeatingPage() {
               <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
-                  src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
+                  src="https://images.pexels.com/photos/45206/roofing-tile-red-wall-45206.jpeg"
                   alt="Air Conditioner covered in snow"
                   width={600}
                   height={600}
