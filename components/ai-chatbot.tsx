@@ -47,7 +47,7 @@ export default function AIChatbot() {
     setInputValue("")
 
     try {
-      const response = await fetch("https://orangepeeldust.app.n8n.cloud/webhook/acheat", {
+      const response = await fetch("https://orangepeeldust.app.n8n.cloud/webhook/9bd2eec0-7928-4139-a2dd-e28ce6f49813", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
