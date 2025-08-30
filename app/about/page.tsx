@@ -50,22 +50,26 @@ export default function AboutPage() {
     {
       year: "2006",
       title: "Started in Roofing",
-      description: "Matt began his roofing career, learning the trade from experienced professionals.",
+      description:
+        "Matt began his roofing career, learning the trade from experienced professionals.",
     },
     {
       year: "2015",
       title: "Lead Contractor",
-      description: "Advanced to lead contractor role, managing complex projects and training new team members.",
+      description:
+        "Advanced to lead contractor role, managing complex projects and training new team members.",
     },
     {
       year: "2020",
       title: "Storm Damage Specialist",
-      description: "Specialized in storm damage restoration, helping hundreds of families after severe weather.",
+      description:
+        "Specialized in storm damage restoration, helping hundreds of families after severe weather.",
     },
     {
       year: "2024",
       title: "Founded Matt Miller Contracting",
-      description: "Established his own company to provide personalized, high-quality roofing services.",
+      description:
+        "Established his own company to provide personalized, high-quality roofing services.",
     },
   ];
 
@@ -167,7 +171,7 @@ export default function AboutPage() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Matt's Story
+                Matt&apos;s Story
               </h2>
               <div className="w-20 h-1.5 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-full mx-auto mb-8"></div>
             </motion.div>
@@ -181,8 +185,8 @@ export default function AboutPage() {
                 className="space-y-6"
               >
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Matt Miller's journey in roofing began 18 years ago with a
-                  simple goal: to master the craft of protecting homes. Over
+                  Matt Miller&apos;s journey in roofing began 18 years ago with
+                  a simple goal: to master the craft of protecting homes. Over
                   nearly two decades, he has worked with multiple roofing
                   companies throughout the Dallas-Fort Worth area, gaining
                   invaluable experience and building a reputation for quality
@@ -232,11 +236,15 @@ export default function AboutPage() {
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="h-5 w-5 text-green-500" />
-                      <span className="text-gray-700">Storm Damage Specialist</span>
+                      <span className="text-gray-700">
+                        Storm Damage Specialist
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="h-5 w-5 text-green-500" />
-                      <span className="text-gray-700">24/7 Emergency Service</span>
+                      <span className="text-gray-700">
+                        24/7 Emergency Service
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -266,7 +274,8 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              The principles that guide everything we do at Matt Miller Contracting
+              The principles that guide everything we do at Matt Miller
+              Contracting
             </motion.p>
           </div>
 
@@ -311,7 +320,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600"
             >
-              From apprentice to business owner - Matt's path to excellence
+              From apprentice to business owner - Matt&apos;s path to excellence
             </motion.p>
           </div>
 
@@ -340,7 +349,9 @@ export default function AboutPage() {
                       <div className="text-2xl font-bold text-[#be1d1d] mb-2">
                         {milestone.year}
                       </div>
-                      <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
+                      <h3 className="text-xl font-bold mb-2">
+                        {milestone.title}
+                      </h3>
                       <p className="text-gray-600">{milestone.description}</p>
                     </div>
                   </div>
@@ -364,10 +375,12 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl font-bold mb-6">Ready to Work Together?</h2>
+              <h2 className="text-4xl font-bold mb-6">
+                Ready to Work Together?
+              </h2>
               <p className="text-xl mb-8 opacity-90">
-                Experience the Matt Miller Contracting difference. Let's discuss
-                your roofing and exterior needs today.
+                Experience the Matt Miller Contracting difference. Let`&apos;s
+                discuss your roofing and exterior needs today.
               </p>
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 <CalendlyWidget />

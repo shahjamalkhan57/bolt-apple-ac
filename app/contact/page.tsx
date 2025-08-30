@@ -54,9 +54,22 @@ export default function ContactPage() {
   ];
 
   const serviceAreas = [
-    "Fort Worth", "Dallas", "Arlington", "Plano", "Irving", "Garland",
-    "Mesquite", "Grand Prairie", "Carrollton", "Richardson", "Lewisville",
-    "Flower Mound", "Grapevine", "Euless", "Bedford", "Hurst"
+    "Fort Worth",
+    "Dallas",
+    "Arlington",
+    "Plano",
+    "Irving",
+    "Garland",
+    "Mesquite",
+    "Grand Prairie",
+    "Carrollton",
+    "Richardson",
+    "Lewisville",
+    "Flower Mound",
+    "Grapevine",
+    "Euless",
+    "Bedford",
+    "Hurst",
   ];
 
   return (
@@ -93,8 +106,9 @@ export default function ContactPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Ready to protect your home? Get in touch with Dallas-Fort Worth's
-              trusted roofing experts for your free estimate and consultation.
+              Ready to protect your home? Get in touch with Dallas-Fort
+              Worth&apos;s trusted roofing experts for your free estimate and
+              consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -183,7 +197,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xl font-bold">24/7 Emergency Service</h3>
                 <p className="opacity-90">
-                  Storm damage or urgent repairs? We're here when you need us most
+                  Storm damage or urgent repairs? We&apos;re here when you need
+                  us most
                 </p>
               </div>
             </div>
@@ -240,7 +255,9 @@ export default function ContactPage() {
                   className="text-center p-3 rounded-lg hover:bg-red-50 transition-colors"
                 >
                   <MapPin className="h-5 w-5 text-[#be1d1d] mx-auto mb-2" />
-                  <span className="text-sm font-medium text-gray-700">{area}</span>
+                  <span className="text-sm font-medium text-gray-700">
+                    {area}
+                  </span>
                 </motion.div>
               ))}
             </div>
