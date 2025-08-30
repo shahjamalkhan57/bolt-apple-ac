@@ -215,13 +215,12 @@ export default function Home() {
             </div>
             <div className="relative lg:max-w-md">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-3xl blur-3xl opacity-20 animate-pulse-slow"></div>
-              <div className="relative mb-4 text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#0f1724] mb-2">
-                  Get A FREE Roof Inspection!
-                </h2>
-                <p className="text-gray-600">Schedule your complimentary inspection today</p>
-              </div>
               <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-200 p-2">
+                <div className="mb-4 text-center">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#0f1724] mb-2">
+                    Get A FREE Roof Inspection!
+                  </h2>
+                </div>
                 <ServiceRequestForm serviceType="Homepage Service Request" />
               </div>
             </div>
