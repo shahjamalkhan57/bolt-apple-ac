@@ -238,7 +238,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Our Promise to You
             </h2>
-            <p className="text-xl text-gray-700 mb-3">
+            <p className="text-xl text-gray-700 mb-12">
               At Matt Miller Contracting, our mission is to build trust through honest, high-quality roofing and restoration services that last a lifetime.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
