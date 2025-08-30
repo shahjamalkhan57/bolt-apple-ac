@@ -216,6 +216,14 @@ export default function Home() {
             <div className="relative lg:max-w-md">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-3xl blur-3xl opacity-20 animate-pulse-slow"></div>
               <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-200 p-2">
+                <div className="text-center mb-6 p-4">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#0f1724] mb-2">
+                    Get A FREE Roof Inspection!
+                  </h2>
+                  <p className="text-gray-600 text-sm">
+                    Schedule your complimentary inspection today
+                  </p>
+                </div>
                 <ServiceRequestForm serviceType="Homepage Service Request" />
               </div>
             </div>
@@ -228,7 +236,7 @@ export default function Home() {
 
       {/* Value Proposition */}
       <ParallaxSection>
-        <div className="container mx-auto px-4 py-24">
+        <div className="w-full px-8 py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Our Promise to You
@@ -236,23 +244,23 @@ export default function Home() {
             <p className="text-xl text-gray-700 mb-12">
               At Matt Miller Contracting, our mission is to build trust through honest, high-quality roofing and restoration services that last a lifetime.
             </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 max-w-7xl mx-auto">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                  className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
                 >
                   <div className="bg-[#0f1724] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                     {feature.icon}
                   </div>
-                  <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
+                  <h3 className="font-bold text-lg mb-2 leading-tight">{feature.title}</h3>
                 </div>
               ))}
-              <div className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 <div className="bg-[#be1d1d] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                   <MapPin className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Serving All of DFW & Surrounding Areas</h3>
+                <h3 className="font-bold text-lg mb-2 leading-tight">Serving All of DFW & Surrounding Areas</h3>
               </div>
             </div>
           </div>
