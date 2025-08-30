@@ -19,6 +19,7 @@ import ScheduleServiceModal from "@/components/schedule-service-modal"
 import AIChatbot from "@/components/ai-chatbot"
 import CalendlyWidget from "@/components/calendly-widget"
 import EnhancedServiceAreaMap from "@/components/enhanced-service-area-map"
+import ServiceRequestForm from "@/components/service-request-form"
 
 export const metadata: Metadata = {
   title: "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
@@ -167,6 +168,10 @@ export default function Home() {
       icon: <ThumbsUp className="h-8 w-8" />,
       title: "Workmanship Guaranteed",
     },
+    {
+      icon: <MapPin className="h-8 w-8" />,
+      title: "Serving All of DFW & Surrounding Areas",
+    },
   ]
 
   return (
@@ -215,25 +220,8 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
-              <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
-                <Image
-                  src="https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg"
-                  alt={`Roofing professional inspecting roof damage`}
-                  width={600}
-                  height={400}
-                  className="w-full h-[70vh] object-cover rounded-2xl"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                  <p className="font-bold text-xl">
-                    Reliable roofing that stands the test of time
-                  </p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <MapPin className="h-4 w-4 text-[#be1d1d]" />
-                    <p className="text-sm">
-                      Dallas–Fort Worth, TX and surrounding areas
-                    </p>
-                  </div>
-                </div>
+              <div className="relative">
+                <ServiceRequestForm serviceType="General Roofing Inquiry" />
               </div>
             </div>
           </div>
