@@ -224,6 +224,14 @@ export default function Home() {
                     Schedule your complimentary inspection today
                   </p>
                 </div>
+                <div className="text-center mb-6 p-4">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#0f1724] mb-2">
+                    Get A FREE Roof Inspection!
+                  </h2>
+                  <p className="text-gray-600 text-sm">
+                    Schedule your complimentary inspection today
+                  </p>
+                </div>
                 <ServiceRequestForm serviceType="Homepage Service Request" />
               </div>
             </div>
@@ -236,7 +244,7 @@ export default function Home() {
 
       {/* Value Proposition */}
       <ParallaxSection>
-        <div className="w-full px-8 py-24">
+        <div className="container mx-auto px-4 py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Our Promise to You
@@ -244,23 +252,23 @@ export default function Home() {
             <p className="text-xl text-gray-700 mb-12">
               At Matt Miller Contracting, our mission is to build trust through honest, high-quality roofing and restoration services that last a lifetime.
             </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                  className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
                 >
                   <div className="bg-[#0f1724] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                     {feature.icon}
                   </div>
-                  <h3 className="font-bold text-lg mb-2 leading-tight">{feature.title}</h3>
+                  <h3 className="font-bold text-base mb-2 leading-tight">{feature.title}</h3>
                 </div>
               ))}
-              <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 <div className="bg-[#be1d1d] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                   <MapPin className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-lg mb-2 leading-tight">Serving All of DFW & Surrounding Areas</h3>
+                <h3 className="font-bold text-base mb-2 leading-tight">Serving All of DFW & Surrounding Areas</h3>
               </div>
             </div>
           </div>
