@@ -49,10 +49,6 @@ const navItems = [
 		],
 	},
 	{
-		label: "Testimonials",
-		href: "/testimonials",
-	},
-	{
 		label: "Blog",
 		href: "/blog",
 	},
