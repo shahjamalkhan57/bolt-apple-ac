@@ -143,12 +143,11 @@ export default function Header() {
 							<div key={item.label} className="relative group">
 								{item.children ? (
 									<div className="flex items-center">
-										<Link
-											href={item.href}
-											className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] font-medium rounded-md flex items-center gap-1 group"
+										<span
+											className="px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] font-medium rounded-md flex items-center gap-1 group cursor-pointer"
 										>
 											{item.label}
-										</Link>
+										</span>
 										<button
 											className="p-1 hover:text-[#be1d1d] dark:hover:text-[#be1d1d]"
 											onClick={() => toggleDropdown(item.label)}
@@ -218,13 +217,11 @@ export default function Header() {
 							<div key={item.label} className="border-b border-gray-100 dark:border-gray-800 pb-4">
 								{item.children ? (
 									<div>
-										<Link
-											href={item.href}
-											className="flex items-center justify-between w-full py-2 text-lg font-medium"
-											onClick={toggleMenu}
+										<span
+											className="flex items-center justify-between w-full py-2 text-lg font-medium cursor-pointer"
 										>
 											{item.label}
-										</Link>
+										</span>
 										<button
 											className="flex items-center justify-between w-full"
 											onClick={() => toggleDropdown(item.label)}

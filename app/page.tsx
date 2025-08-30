@@ -16,7 +16,6 @@ import TestimonialCarousel from "@/components/testimonial-carousel"
 import FloatingCTA from "@/components/floating-cta"
 import ParallaxSection from "@/components/parallax-section"
 import ScheduleServiceModal from "@/components/schedule-service-modal"
-import AIChatbot from "@/components/ai-chatbot"
 import CalendlyWidget from "@/components/calendly-widget"
 import EnhancedServiceAreaMap from "@/components/enhanced-service-area-map"
 import ServiceRequestForm from "@/components/service-request-form"
@@ -168,10 +167,6 @@ export default function Home() {
       icon: <ThumbsUp className="h-8 w-8" />,
       title: "Workmanship Guaranteed",
     },
-    {
-      icon: <MapPin className="h-8 w-8" />,
-      title: "Serving All of DFW & Surrounding Areas",
-    },
   ]
 
   return (
@@ -218,10 +213,10 @@ export default function Home() {
                 <ScheduleServiceModal />
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
-              <div className="relative">
-                <ServiceRequestForm serviceType="General Roofing Inquiry" />
+            <div className="relative lg:max-w-md">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#be1d1d] to-[#0f1724] rounded-3xl blur-3xl opacity-20 animate-pulse-slow"></div>
+              <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-200 p-2">
+                <ServiceRequestForm serviceType="Homepage Service Request" />
               </div>
             </div>
           </div>
@@ -230,9 +225,6 @@ export default function Home() {
 
       {/* Floating CTA */}
       <FloatingCTA />
-
-      {/* AI Chatbot */}
-      <AIChatbot />
 
       {/* Value Proposition */}
       <ParallaxSection>
@@ -244,7 +236,7 @@ export default function Home() {
             <p className="text-xl text-gray-700 mb-12">
               At Matt Miller Contracting, our mission is to build trust through honest, high-quality roofing and restoration services that last a lifetime.
             </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -256,19 +248,32 @@ export default function Home() {
                   <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
                 </div>
               ))}
+              <div className="bg-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div className="bg-[#be1d1d] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                  <MapPin className="h-8 w-8" />
+                </div>
+                <h3 className="font-bold text-lg mb-2">Serving All of DFW & Surrounding Areas</h3>
+              </div>
             </div>
           </div>
         </div>
       </ParallaxSection>
 
       {/* Services Section */}
-      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-24 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg')"
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Our Premium Services
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Trusted roofing and exterior solutions to safeguard your home
             </p>
           </div>
