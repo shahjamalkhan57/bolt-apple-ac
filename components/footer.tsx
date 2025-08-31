@@ -15,7 +15,7 @@ export default function Footer() {
               Providing reliable roofing and restoration in Dallas–Fort Worth and surrounding areas.
             </p>
             <div className="flex space-x-4 mt-4">
-              <Link href="https://facebook.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
+              <Link href="https://www.facebook.com/profile.php?id=61579654303917" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
                 <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
