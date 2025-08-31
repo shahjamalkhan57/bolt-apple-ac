@@ -213,16 +213,11 @@ export default function Header() {
 							<div key={item.label} className="border-b border-gray-100 dark:border-gray-800 pb-4">
 								{item.children ? (
 									<div>
-										<span
-											className="flex items-center justify-between w-full py-2 text-lg font-medium cursor-pointer"
-										>
-											{item.label}
-										</span>
 										<button
-											className="flex items-center justify-between w-full"
+											className="flex items-center justify-between w-full py-2 text-lg font-medium cursor-pointer text-left"
 											onClick={() => toggleDropdown(item.label)}
 										>
-											<span className="sr-only">Toggle {item.label} menu</span>
+											{item.label}
 											<ChevronDown
 												className={cn(
 													"h-5 w-5 transition-transform",
@@ -232,7 +227,7 @@ export default function Header() {
 										</button>
 										<div
 											className={cn(
-												"mt-2 ml-4 space-y-2 transition-all duration-300",
+												"mt-2 ml-4 space-y-2 transition-all duration-300 overflow-hidden",
 												activeDropdown === item.label ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden",
 											)}
 										>
@@ -240,7 +235,7 @@ export default function Header() {
 												<Link
 													key={child.label}
 													href={child.href}
-													className="block py-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+													className="block py-2 text-gray-600 dark:text-gray-400 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] transition-colors"
 													onClick={toggleMenu}
 												>
 													{child.label}
@@ -249,7 +244,7 @@ export default function Header() {
 										</div>
 									</div>
 								) : (
-									<Link href={item.href} className="block py-2 text-lg font-medium" onClick={toggleMenu}>
+									<Link href={item.href} className="block py-3 text-lg font-medium hover:text-[#be1d1d] transition-colors" onClick={toggleMenu}>
 										{item.label}
 									</Link>
 								)}
@@ -257,10 +252,10 @@ export default function Header() {
 						))}
 					</nav>
 
-					<div className="mt-8 space-y-4">
+					<div className="mt-8 space-y-3">
 						<Link
 							href="tel:4697653340"
-							className="flex items-center justify-center gap-2 bg-[#E54B3B] text-white font-medium rounded-full px-6 py-3 w-full"
+							className="flex items-center justify-center gap-2 bg-[#be1d1d] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#be1d1d]/90 transition-colors"
 							onClick={toggleMenu}
 						>
 							<Phone className="h-5 w-5" />
@@ -268,7 +263,7 @@ export default function Header() {
 						</Link>
 						<Link
 							href="/contact"
-							className="flex items-center justify-center gap-2 bg-[#0f1724] text-white font-medium rounded-full px-6 py-3 w-full"
+							className="flex items-center justify-center gap-2 bg-[#0f1724] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#0f1724]/90 transition-colors"
 							onClick={toggleMenu}
 						>
 							Schedule Service
