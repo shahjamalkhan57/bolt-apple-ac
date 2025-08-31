@@ -60,7 +60,7 @@ export default function FloatingCTA() {
           className="bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 w-full transition-colors"
         >
           <Phone className="h-4 w-4" />
-          +1 (214) 789-7262
+          (214) 789-7262
         </Link>
       </div>
     </div>
