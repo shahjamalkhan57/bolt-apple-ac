@@ -23,10 +23,6 @@ export default function Footer() {
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="https://twitter.com" className="text-gray-400 hover:text-[#0f1724] transition-colors">
-                <Twitter className="h-6 w-6" />
-                <span className="sr-only">Twitter</span>
-              </Link>
             </div>
           </div>
 
