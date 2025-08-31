@@ -193,7 +193,7 @@ export default function Header() {
 
 						{/* Mobile Menu Button */}
 						<button className="lg:hidden relative z-50 p-2" onClick={toggleMenu} aria-label="Toggle menu">
-							{isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+							<Menu className="h-6 w-6" />
 						</button>
 					</div>
 				</div>
@@ -207,14 +207,37 @@ export default function Header() {
 				)}
 				style={{ zIndex: 9998 }}
 			>
-				<div className="container h-full mx-auto px-4 py-20 overflow-y-auto">
+				<div className="h-full flex flex-col">
+					{/* Mobile Navigation Header */}
+					<div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+						<Link href="/" className="flex items-center gap-2" onClick={toggleMenu}>
+							<Image
+								src="https://i.postimg.cc/5y4MCmPd/Ginsoy-CA-1.png"
+								alt="Matt Miller Contracting Logo"
+								width={40}
+								height={40}
+								className="w-10 h-10"
+							/>
+							<span className="font-bold text-lg">Matt Miller Contracting</span>
+						</Link>
+						<button
+							onClick={toggleMenu}
+							className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+							aria-label="Close menu"
+						>
+							<X className="h-6 w-6" />
+						</button>
+					</div>
+
+					{/* Mobile Navigation Content */}
+					<div className="flex-1 overflow-y-auto px-4 py-6">
 					<nav className="flex flex-col space-y-4">
 						{navItems.map((item) => (
 							<div key={item.label} className="border-b border-gray-100 dark:border-gray-800 pb-4">
 								{item.children ? (
 									<div>
 										<button
-											className="flex items-center justify-between w-full py-2 text-lg font-medium cursor-pointer text-left"
+											className="flex items-center justify-between w-full py-3 text-lg font-medium cursor-pointer text-left hover:text-[#be1d1d] transition-colors"
 											onClick={() => toggleDropdown(item.label)}
 										>
 											{item.label}
@@ -227,7 +250,7 @@ export default function Header() {
 										</button>
 										<div
 											className={cn(
-												"mt-2 ml-4 space-y-2 transition-all duration-300 overflow-hidden",
+												"mt-2 ml-4 space-y-2 transition-all duration-300",
 												activeDropdown === item.label ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden",
 											)}
 										>
@@ -235,7 +258,7 @@ export default function Header() {
 												<Link
 													key={child.label}
 													href={child.href}
-													className="block py-2 text-gray-600 dark:text-gray-400 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] transition-colors"
+													className="block py-2 pl-2 text-gray-600 dark:text-gray-400 hover:text-[#be1d1d] dark:hover:text-[#be1d1d] transition-colors border-l-2 border-transparent hover:border-[#be1d1d]"
 													onClick={toggleMenu}
 												>
 													{child.label}
@@ -244,18 +267,20 @@ export default function Header() {
 										</div>
 									</div>
 								) : (
-									<Link href={item.href} className="block py-3 text-lg font-medium hover:text-[#be1d1d] transition-colors" onClick={toggleMenu}>
+									<Link href={item.href} className="block py-3 text-lg font-medium hover:text-[#be1d1d] dark:hover:text-[#be1d1d] transition-colors" onClick={toggleMenu}>
 										{item.label}
 									</Link>
 								)}
 							</div>
 						))}
 					</nav>
+					</div>
 
-					<div className="mt-8 space-y-3">
+					{/* Mobile Navigation Footer */}
+					<div className="p-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
 						<Link
 							href="tel:4697653340"
-							className="flex items-center justify-center gap-2 bg-[#be1d1d] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#be1d1d]/90 transition-colors"
+							className="flex items-center justify-center gap-2 bg-[#be1d1d] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#be1d1d]/90 transition-all hover:scale-105 active:scale-95"
 							onClick={toggleMenu}
 						>
 							<Phone className="h-5 w-5" />
@@ -263,12 +288,13 @@ export default function Header() {
 						</Link>
 						<Link
 							href="/contact"
-							className="flex items-center justify-center gap-2 bg-[#0f1724] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#0f1724]/90 transition-colors"
+							className="flex items-center justify-center gap-2 bg-[#0f1724] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#0f1724]/90 transition-all hover:scale-105 active:scale-95"
 							onClick={toggleMenu}
 						>
 							Schedule Service
 						</Link>
 					</div>
+				</div>
 				</div>
 			</div>
 		</header>

@@ -25,16 +25,17 @@ export default function EmergencyBanner() {
             className="bg-[#be1d1d] text-white overflow-hidden z-50"
           >
             <div className="container mx-auto px-4 py-3">
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
-                <div className="flex items-center gap-2 text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-2 text-center sm:text-left flex-1">
                   <AlertTriangle className="h-5 w-5 animate-pulse" />
-                  <p className="text-sm font-medium">Roofing Emergency? We offer 24/7 service!</p>
+                  <p className="text-sm font-medium break-words">Roofing Emergency? We offer 24/7 service!</p>
                 </div>
 
-                <div className="flex items-center gap-2 sm:gap-4">
-                  <Link href="tel:4697653340" className="text-sm font-bold flex items-center gap-1 hover:underline whitespace-nowrap">
+                <div className="flex items-center gap-3 flex-shrink-0">
+                  <Link href="tel:4697653340" className="text-sm font-bold flex items-center gap-1 hover:underline">
                     <Phone className="h-4 w-4" />
-                    (469) 765-3340
+                    <span className="hidden xs:inline">(469) 765-3340</span>
+                    <span className="xs:hidden">Call</span>
                   </Link>
 
                   <button
