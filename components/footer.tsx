@@ -19,7 +19,7 @@ export default function Footer() {
                 <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://instagram.com" className="text-gray-400 hover:text-[#0f1724] transition-colors">
+              <Link href="https://www.instagram.com/millerroofguard/" className="text-gray-400 hover:text-[#0f1724] transition-colors">
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
