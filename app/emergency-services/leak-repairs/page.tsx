@@ -142,12 +142,12 @@ export default function LeakRepairsPage() {
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
                 <Link
-                  href="tel:4697653340"
+                  href="tel:2147897262"
                   className="rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-all hover:bg-[#be1d1d]/90 hover:scale-105 active:scale-95"
                 >
                   <span className="flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
-                    (469) 765-3340
+                    (214) 789-7262
                   </span>
                 </Link>
                 <Link

@@ -56,7 +56,7 @@ export default function FloatingCTA() {
         </div>
         
         <Link
-          href="tel:4697653340"
+          href="tel:2147897262"
           className="bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 w-full transition-colors"
         >
           <Phone className="h-4 w-4" />

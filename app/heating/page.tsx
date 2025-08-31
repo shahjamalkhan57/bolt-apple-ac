@@ -122,12 +122,12 @@ export default function HeatingPage() {
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
                 <Link
-                  href="tel:4697653340"
+                  href="tel:2147897262"
                   className="rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-all hover:bg-[#be1d1d]/90 hover:scale-105 active:scale-95"
                 >
                   <span className="flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
-                    (469) 765-3340
+                    (214) 789-7262
                   </span>
                 </Link>
                 <Link
@@ -349,11 +349,11 @@ export default function HeatingPage() {
               home remains warm and comfortable through the colder months.
             </p>
             <Link
-              href="tel:4697653340"
+              href="tel:2147897262"
               className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Phone className="h-5 w-5" />
-              Contact Apple AC & Heat Today
+              Call Now: (214) 789-7262
             </Link>
           </motion.div>
         </div>
@@ -499,11 +499,11 @@ export default function HeatingPage() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link
-                href="tel:4697653340"
+                href="tel:2147897262"
                 className="inline-flex items-center gap-2 bg-white text-[#be1d1d] font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <Phone className="h-6 w-6 animate-pulse" />
-                <span>Call Now: (469) 765-3340</span>
+                <span>Call Now: (214) 789-7262</span>
               </Link>
               <Link
                 href="#service-form"

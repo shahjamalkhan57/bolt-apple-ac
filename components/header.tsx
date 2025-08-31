@@ -179,7 +179,7 @@ export default function Header() {
 					{/* Right Side Actions */}
 					<div className="flex items-center gap-2 md:gap-4">
 						<Link
-							href="tel:4697653340"
+							href="tel:2147897262"
 							className={cn(
 								"hidden md:flex items-center gap-2 text-white font-medium rounded-full transition-all",
 								scrolled
@@ -279,12 +279,12 @@ export default function Header() {
 					{/* Mobile Navigation Footer */}
 					<div className="p-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
 						<Link
-							href="tel:4697653340"
+							href="tel:2147897262"
 							className="flex items-center justify-center gap-2 bg-[#be1d1d] text-white font-semibold rounded-full px-6 py-4 w-full hover:bg-[#be1d1d]/90 transition-all hover:scale-105 active:scale-95"
 							onClick={toggleMenu}
 						>
 							<Phone className="h-5 w-5" />
-							<span>(469) 765-3340</span>
+							<span>(214) 789-7262</span>
 						</Link>
 						<Link
 							href="/contact"

@@ -24,7 +24,8 @@ export default function ContactPage() {
       title: "Call Us",
       description: "Speak directly with Matt for immediate assistance",
       contact: "(469) 765-3340",
-      href: "tel:4697653340",
+      contact: "(214) 789-7262",
+      href: "tel:2147897262",
       available: "24/7 Emergency Service",
     },
     {
@@ -112,11 +113,11 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="tel:4697653340"
+                href="tel:2147897262"
                 className="inline-flex items-center justify-center gap-2 bg-[#be1d1d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#be1d1d]/90 transition-colors"
               >
                 <Phone className="h-5 w-5" />
-                Call Now: (469) 765-3340
+                Call Now: (214) 789-7262
               </Link>
               <Link
                 href="#schedule-service"
@@ -203,11 +204,11 @@ export default function ContactPage() {
               </div>
             </div>
             <Link
-              href="tel:4697653340"
+              href="tel:2147897262"
               className="inline-flex items-center gap-2 bg-white text-[#be1d1d] px-6 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors"
             >
               <Phone className="h-5 w-5" />
-              Emergency: (469) 765-3340
+              Emergency: (214) 789-7262
             </Link>
           </motion.div>
         </div>
