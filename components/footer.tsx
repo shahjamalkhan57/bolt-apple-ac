@@ -36,7 +36,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/roof-replacement" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/roofing-services/replacement" className="text-gray-400 hover:text-white transition-colors">
                   Roofing Services
                 </Link>
               </li>
