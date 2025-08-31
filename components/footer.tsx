@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Matt Miller Contracting</h3>
+            <h3 className="text-xl font-bold">Miller Roofguard</h3>
             <p className="text-gray-400">
               Providing reliable roofing and restoration in Dallas–Fort Worth and surrounding areas.
             </p>
