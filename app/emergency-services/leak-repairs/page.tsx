@@ -378,7 +378,7 @@ export default function LeakRepairsPage() {
                 className="inline-flex items-center gap-2 bg-white text-[#be1d1d] font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <Phone className="h-6 w-6 animate-pulse" />
-                <span>Emergency: (469) 765-3340</span>
+                <span>Emergency: (214) 789-7262</span>
               </Link>
               <Link
                 href="#service-form"
