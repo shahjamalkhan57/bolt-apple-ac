@@ -26,7 +26,7 @@ export default function EmergencyBanner() {
           >
             <div className="container mx-auto px-4 py-3">
               <div className="flex items-center justify- gap-2">
-                <div className="flex items-right gap-2 text-center sm:text-left flex-1">
+                <div className="flex items-center gap-2 text-center sm:text-left flex-1">
                   <AlertTriangle className="h-5 w-5 animate-pulse" />
                   <p className="text-xs font-medium whitespace-nowrap flex-shrink-0">Roofing Emergency? We offer 24/7 service!</p>
                 </div>
