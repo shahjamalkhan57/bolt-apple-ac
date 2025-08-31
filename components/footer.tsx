@@ -41,17 +41,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/interior-restoration" className="text-gray-400 hover:text-white transition-colors">
-                  Interior Restoration
+                <Link href="/interior-restoration/leak-damage" className="text-gray-400 hover:text-white transition-colors">
+                  Leak Damage
                 </Link>
               </li>
               <li>
-                <Link href="/exterior-services" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/exterior-services/fences" className="text-gray-400 hover:text-white transition-colors">
                   Exterior Services
                 </Link>
               </li>
               <li>
-                <Link href="/emergency-services" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/emergency-services/tarping" className="text-gray-400 hover:text-white transition-colors">
                   24/7 Emergency Services
                 </Link>
               </li>
