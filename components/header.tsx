@@ -188,7 +188,7 @@ export default function Header() {
 							)}
 						>
 							<Phone className="h-4 w-4" />
-							<span>+1 (214) 789-7262</span>
+							<span>(214) 789-7262</span>
 						</Link>
 
 						{/* Mobile Menu Button */}
