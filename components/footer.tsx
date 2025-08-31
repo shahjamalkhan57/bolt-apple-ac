@@ -14,7 +14,6 @@ export default function Footer() {
             <p className="text-gray-400">
               Providing reliable roofing and restoration in Dallas–Fort Worth and surrounding areas.
             </p>
-            <p className="text-sm text-gray-400">License: #RC123456</p>
             <div className="flex space-x-4 mt-4">
               <Link href="https://facebook.com" className="text-gray-400 hover:text-[#be1d1d] transition-colors">
                 <Facebook className="h-6 w-6" />
