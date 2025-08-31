@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#0f1724] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">123 Main Street, Fort Worth, TX 76000</span>
+                <span className="text-gray-400">Fort Worth, TX 76000</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#0f1724] flex-shrink-0" />
@@ -78,7 +78,7 @@ export default function Footer() {
                   href="mailto:matt@millerroofs.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  matt@millerroofs.com
+                  matt@millerroofguard.com
                 </Link>
               </li>
               <li className="flex items-center gap-3">
@@ -108,14 +108,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© {currentYear} All rights reserved, Matt Miller Contracting</p>
+          <p>{currentYear} Miller Roofguard</p>
           <div className="mt-4 flex justify-center space-x-6">
-            <Link href="/privacy" className="hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:text-white transition-colors">
-              Terms of Service
-            </Link>
             <Link href="/sitemap" className="hover:text-white transition-colors">
               Sitemap
             </Link>
