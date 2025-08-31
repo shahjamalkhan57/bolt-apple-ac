@@ -34,7 +34,7 @@ export default function EmergencyBanner() {
                 <div className="flex items-center gap-3 flex-shrink-0">
                   <Link href="tel:4697653340" className="text-sm font-bold flex items-center gap-1 hover:underline">
                     <Phone className="h-4 w-4" />
-                    <span className="hidden xs:inline">(469) 765-3340</span>
+                   className="text-sm font-bold flex items-center gap-1 hover:underline"
                     <span className="xs:hidden">Call</span>
                   </Link>
 
