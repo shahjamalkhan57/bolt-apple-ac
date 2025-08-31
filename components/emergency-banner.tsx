@@ -24,22 +24,22 @@ export default function EmergencyBanner() {
             exit={{ height: 0, opacity: 0 }}
             className="bg-[#be1d1d] text-white overflow-hidden z-50"
           >
-            <div className="container mx-auto px-4 py-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
+            <div className="container mx-auto px-4 py-3">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+                <div className="flex items-center gap-2 text-center sm:text-left">
                   <AlertTriangle className="h-5 w-5 animate-pulse" />
                   <p className="text-sm font-medium">Roofing Emergency? We offer 24/7 service!</p>
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <Link href="tel:4697653340" className="text-sm font-bold flex items-center gap-1 hover:underline">
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <Link href="tel:4697653340" className="text-sm font-bold flex items-center gap-1 hover:underline whitespace-nowrap">
                     <Phone className="h-4 w-4" />
                     (469) 765-3340
                   </Link>
 
                   <button
                     onClick={closeEmergencyBanner}
-                    className="p-1 hover:bg-[#2C3E50]/20 rounded-full transition-colors"
+                    className="p-1 hover:bg-white/20 rounded-full transition-colors flex-shrink-0"
                     aria-label="Close banner"
                   >
                     <X className="h-4 w-4" />
