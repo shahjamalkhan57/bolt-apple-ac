@@ -23,7 +23,6 @@ export default function ContactPage() {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
       description: "Speak directly with Matt for immediate assistance",
-      contact: "(469) 765-3340",
       contact: "(214) 789-7262",
       href: "tel:2147897262",
       available: "24/7 Emergency Service",
