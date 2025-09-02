@@ -70,7 +70,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#0f1724] flex-shrink-0" />
                 <Link
-                  href="mailto:matt@millerroofs.com"
+                  href="mailto:matt@millerroofguard.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   matt@millerroofguard.com

@@ -17,7 +17,7 @@ const navItems = [
 			{ label: "Roof Repair", href: "/roofing-services/repair" },
 			{ label: "Shingles (Asphalt, Metal, Slate, Tile)", href: "/roofing-services/shingles" },
 			{ label: "Hail Damage Repair", href: "/roofing-services/hail-damage" },
-			{ label: "Emergency Tarping (24/7)", href: "/roofing-services/emergency-tarping" },
+			{ label: "Emergency Tarping (24/7)", href: "/emergency-services/tarping" },
 		],
 	},
 	{
