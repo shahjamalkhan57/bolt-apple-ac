@@ -1,20 +1,22 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { toast } from "sonner"
-import { Calendar, Clock, MapPin } from "lucide-react"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { toast } from "sonner";
+import { Calendar, Clock, MapPin } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 interface ServiceRequestFormProps {
-  serviceType: string
+  serviceType: string;
 }
 
-export default function ServiceRequestForm({ serviceType }: ServiceRequestFormProps) {
-  const [isLoading, setIsLoading] = useState(false)
+export default function ServiceRequestForm({
+  serviceType,
+}: ServiceRequestFormProps) {
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -23,15 +25,15 @@ export default function ServiceRequestForm({ serviceType }: ServiceRequestFormPr
     date: "",
     time: "",
     description: "",
-  })
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
+    e.preventDefault();
+    setIsLoading(true);
 
     try {
       const response = await fetch(
-        "https://hvacagencymin.app.n8n.cloud/webhook/0c0a311e-c3f7-406f-8530-44be6d4d08c6",
+        "https://orangepeeldust.app.n8n.cloud/webhook/e6e4157c-ccb7-4315-a043-bdb2a3acb907",
         {
           method: "POST",
           headers: {
@@ -42,13 +44,15 @@ export default function ServiceRequestForm({ serviceType }: ServiceRequestFormPr
             service_type: serviceType,
           }),
         }
-      )
+      );
 
       if (!response.ok) {
-        throw new Error("Failed to submit form")
+        throw new Error("Failed to submit form");
       }
 
-      toast.success("Service request submitted successfully! We'll contact you shortly.")
+      toast.success(
+        "Service request submitted successfully! We'll contact you shortly."
+      );
       setFormData({
         name: "",
         phone: "",
@@ -57,20 +61,20 @@ export default function ServiceRequestForm({ serviceType }: ServiceRequestFormPr
         date: "",
         time: "",
         description: "",
-      })
+      });
     } catch (error) {
-      toast.error("Failed to submit request. Please try again.")
+      toast.error("Failed to submit request. Please try again.");
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   return (
     <motion.form
@@ -187,8 +191,9 @@ export default function ServiceRequestForm({ serviceType }: ServiceRequestFormPr
       </Button>
 
       <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-4">
-        By submitting this form, you agree to our terms of service and privacy policy.
+        By submitting this form, you agree to our terms of service and privacy
+        policy.
       </p>
     </motion.form>
-  )
+  );
 }
