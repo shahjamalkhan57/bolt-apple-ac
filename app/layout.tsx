@@ -1,26 +1,32 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import "./map-styles.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import EmergencyBanner from "@/components/emergency-banner"
-import { Toaster } from "@/components/ui/sonner"
-import AIChatbot from "@/components/ai-chatbot"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import "./map-styles.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import EmergencyBanner from "@/components/emergency-banner";
+import { Toaster } from "@/components/ui/sonner";
+import AIChatbot from "@/components/ai-chatbot";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
-  description: "Professional roofing, exterior, and storm restoration services in Dallas-Fort Worth area. 24/7 emergency services, licensed contractors, and comprehensive warranties.",
-  keywords: "roofing contractors, storm restoration, emergency roofing, Dallas Fort Worth, roof repair, roof replacement, exterior services",
-}
+  title:
+    "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
+  description:
+    "Professional roofing, exterior, and storm restoration services in Dallas-Fort Worth area. 24/7 emergency services, licensed contractors, and comprehensive warranties.",
+  keywords:
+    "roofing contractors, storm restoration, emergency roofing, Dallas Fort Worth, roof repair, roof replacement, exterior services",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -35,5 +41,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
