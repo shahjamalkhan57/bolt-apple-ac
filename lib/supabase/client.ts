@@ -62,20 +62,6 @@ export async function getPublishedBlogPosts(): Promise<BlogPost[]> {
   return data
 }
 
-// Admin helper function to create a new blog post
-export async function createBlogPost(post: BlogPostCreate) {
-  const { data, error } = await supabaseAdmin
-    .from('blog_posts')
-    .insert([post])
-    .select()
-    .single()
-
-  if (error) {
-    throw error
-  }
-
-  return data
-}
 
 // Admin helper function to update a blog post
 export async function updateBlogPost(slug: string, updates: Partial<BlogPost>) {
