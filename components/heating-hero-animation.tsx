@@ -37,7 +37,6 @@ export default function HeatingHeroAnimation() {
 
       constructor(isFlame = false) {
         if (!canvas) {
-          // Provide default values if canvas is null
           this.x = 0
           this.y = 0
           this.size = 0
@@ -93,7 +92,7 @@ export default function HeatingHeroAnimation() {
               .toString(16)
               .padStart(2, "0")
           ctx.fill()
-          ctx.shadowBlur = 15
+          ctx.shadowBlur = 8 // reduced from 15 for performance
           ctx.shadowColor = this.color
         } else {
           ctx.beginPath()
@@ -109,15 +108,14 @@ export default function HeatingHeroAnimation() {
       }
     }
 
-    // Only create particles if canvas and context exist
     if (!canvas || !ctx) return
 
-    // Create particles
+    // Reduced particle counts
     const particles: Particle[] = []
     const flameParticles: Particle[] = []
 
-    const particleCount = Math.min(80, Math.floor((window.innerWidth * window.innerHeight) / 12000))
-    const flameCount = Math.min(40, Math.floor((window.innerWidth * window.innerHeight) / 20000))
+    const particleCount = Math.min(40, Math.floor((window.innerWidth * window.innerHeight) / 20000))
+    const flameCount = Math.min(20, Math.floor((window.innerWidth * window.innerHeight) / 30000))
 
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle())
@@ -133,7 +131,7 @@ export default function HeatingHeroAnimation() {
 
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      // Draw connections
+      // Draw connections (shorter distance = lighter)
       ctx.strokeStyle = theme === "dark" ? "rgba(255, 255, 255, 0.05)" : "rgba(0, 0, 0, 0.05)"
       ctx.lineWidth = 1
 
@@ -143,7 +141,7 @@ export default function HeatingHeroAnimation() {
           const dy = particles[i].y - particles[j].y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < 150) {
+          if (distance < 100) { // reduced from 150
             ctx.beginPath()
             ctx.moveTo(particles[i].x, particles[i].y)
             ctx.lineTo(particles[j].x, particles[j].y)
@@ -152,18 +150,15 @@ export default function HeatingHeroAnimation() {
         }
       }
 
-      // Update and draw regular particles
       particles.forEach((particle) => {
         particle.update()
         particle.draw()
       })
 
-      // Update and draw flame particles
       flameParticles.forEach((particle, index) => {
         particle.update()
         particle.draw()
 
-        // Reset flame particles that have risen too high or become too small
         if (particle.y < 0 || particle.size <= 0.1) {
           flameParticles[index] = new Particle(true)
           if (canvas) {
