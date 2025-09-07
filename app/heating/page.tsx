@@ -151,7 +151,7 @@ export default function HeatingPage() {
               <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white transform hover:rotate-2 transition-transform duration-500">
                 <Image
-                  src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg"
+                  src="https://images.pexels.com/photos/5691536/pexels-photo-5691536.jpeg"
                   alt="Heating Service Technician"
                   width={600}
                   height={600}
@@ -226,7 +226,7 @@ export default function HeatingPage() {
               <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
-                  src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
+                  src="https://images.pexels.com/photos/29226620/pexels-photo-29226620.jpeg"
                   alt="HVAC Furnace Maintenance"
                   width={600}
                   height={600}
@@ -408,7 +408,7 @@ export default function HeatingPage() {
               <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
                 <Image
-                  src="https://images.pexels.com/photos/4489755/pexels-photo-4489755.jpeg"
+                  src="https://images.pexels.com/photos/5768187/pexels-photo-5768187.jpeg"
                   alt="Air Conditioner covered in snow"
                   width={600}
                   height={600}
