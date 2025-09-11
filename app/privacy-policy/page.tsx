@@ -23,9 +23,10 @@ export default function PrivacyPolicyPage() {
           <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-gray-700 space-y-4 sm:space-y-6">
             <p className="text-sm sm:text-base leading-relaxed">
               At Miller Roofguard, we are committed to protecting your privacy.
-              This Privacy Policy explains how Miller Roofguard ("we," "us," or
-              "our") collects, uses, and discloses your personal information
-              when you visit our website, use our services, or interact with us.
+              This Privacy Policy explains how Miller Roofguard
+              (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
+              collects, uses, and discloses your personal information when you
+              visit our website, use our services, or interact with us.
             </p>
 
             <p className="text-sm sm:text-base leading-relaxed">
@@ -41,7 +42,7 @@ export default function PrivacyPolicyPage() {
               We collect various types of information from and about users of
               our services, including information that identifies, relates to,
               describes, or is reasonably capable of being associated with you
-              ("personal information").
+              (&ldquo;personal information&rdquo;).
             </p>
 
             <h3 className="text-lg sm:text-xl font-semibold text-[#0f1724] mt-4 sm:mt-6 mb-2 sm:mb-3">
@@ -181,8 +182,8 @@ export default function PrivacyPolicyPage() {
                 <strong>Business Transfers:</strong> In the event of a merger,
                 acquisition, divestiture, restructuring, reorganization,
                 dissolution, or other sale or transfer of some or all of Miller
-                Roofguard's assets, whether as a going concern or as part of
-                bankruptcy, liquidation, or similar proceeding.
+                Roofguard&lsquo;s assets, whether as a going concern or as part
+                of bankruptcy, liquidation, or similar proceeding.
               </li>
             </ul>
 
@@ -223,7 +224,7 @@ export default function PrivacyPolicyPage() {
             </ul>
 
             <h2 className="text-xl sm:text-2xl font-bold text-[#0f1724] mt-6 sm:mt-8 mb-3 sm:mb-4">
-              6. Children's Privacy
+              6. Children&lsquo;s Privacy
             </h2>
             <p className="text-sm sm:text-base leading-relaxed">
               Our services are not intended for children under 13 years of age.
@@ -241,11 +242,11 @@ export default function PrivacyPolicyPage() {
             <p className="text-sm sm:text-base leading-relaxed">
               It is our policy to post any changes we make to our privacy policy
               on this page. If we make material changes to how we treat our
-              users' personal information, we will notify you through a notice
-              on the website homepage. The date the privacy policy was last
-              revised is identified at the top of the page. You are responsible
-              for periodically visiting our website and this privacy policy to
-              check for any changes.
+              users&lsquo; personal information, we will notify you through a
+              notice on the website homepage. The date the privacy policy was
+              last revised is identified at the top of the page. You are
+              responsible for periodically visiting our website and this privacy
+              policy to check for any changes.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-bold text-[#0f1724] mt-6 sm:mt-8 mb-3 sm:mb-4">
