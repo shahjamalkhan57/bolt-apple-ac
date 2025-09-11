@@ -133,6 +133,12 @@ export default function Footer() {
           <p>{currentYear} Miller Roofguard</p>
           <div className="mt-4 flex justify-center space-x-6">
             <Link
+              href="/privacy-policy"
+              className="hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
               href="/sitemap.xml"
               className="hover:text-white transition-colors"
             >
