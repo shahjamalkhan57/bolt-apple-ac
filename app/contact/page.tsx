@@ -118,6 +118,7 @@ export default function ContactPage() {
                 serviceType="Contact Page Service Request"
                 className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#0f1724] text-[#0f1724] px-6 py-3 rounded-full font-semibold hover:bg-[#0f1724] hover:text-white transition-colors"
               />
+              </Link>
             </div>
           </motion.div>
         </div>
