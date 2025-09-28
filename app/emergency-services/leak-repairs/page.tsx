@@ -18,7 +18,6 @@ import {
   Droplets,
 } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
-import CalendlyWidget from "@/components/calendly-widget";
 
 export default function LeakRepairsPage() {
   const leakTypes = [

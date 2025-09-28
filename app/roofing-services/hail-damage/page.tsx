@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import ServiceRequestForm from "@/components/service-request-form";
 import ParallaxSection from "@/components/parallax-section";
-import CalendlyWidget from "@/components/calendly-widget";
 
 export default function HailDamageRepairPage() {
   const damageTypes = [
