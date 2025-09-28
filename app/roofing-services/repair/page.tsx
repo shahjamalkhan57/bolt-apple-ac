@@ -17,7 +17,6 @@ import {
   DollarSign,
   Droplets,
 } from "lucide-react";
-import ServiceRequestForm from "@/components/service-request-form";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -130,14 +129,10 @@ export default function RoofRepairPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <Link
-                  href="#service-form"
-                >
-                  triggerText="Schedule Repair"
                 <LeadFormModal 
-                  triggerText="Schedule Repair"
+                  triggerText="Get Free Estimate"
                   serviceType="Emergency Roof Repair"
-                  className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                  className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
                 />
               </motion.div>
             </div>
@@ -392,13 +387,11 @@ export default function RoofRepairPage() {
               </p>
 
               <div className="pt-4">
-                <Link
-                  href="#service-form"
+                <LeadFormModal 
+                  triggerText="Get Storm Damage Assessment"
+                  serviceType="Storm Damage Assessment"
                   className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Get Storm Damage Assessment
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
+                />
               </div>
             </motion.div>
 
@@ -489,20 +482,15 @@ export default function RoofRepairPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Emergency: (214) 789-7262</span>
               </Link>
-              <Link
-                href="#service-form"
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Emergency Roof Repair Estimate"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
-              >
-                <Calendar className="h-6 w-6" />
-                <span>Schedule Repair</span>
-              </Link>
+              />
             </motion.div>
           </div>
         </div>
       </section>
     </main>
   );
-}
-
-  )
 }
