@@ -3,8 +3,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, Droplets } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Home,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  Calendar,
+  DollarSign,
+  Droplets,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function LeakRepairsPage() {
   const leakTypes = [
@@ -66,7 +80,7 @@ export default function LeakRepairsPage() {
       icon: <Clock className="h-6 w-6" />,
       title: "24/7 Availability",
       description:
-        "Emergency leak repairs available around the clock because leaks don&apos;t wait for business hours.",
+        "Emergency leak repairs available around the clock because leaks don't wait for business hours.",
     },
     {
       icon: <DollarSign className="h-6 w-6" />,
@@ -84,7 +98,7 @@ export default function LeakRepairsPage() {
       icon: <Home className="h-6 w-6" />,
       title: "Preserves Your Home",
       description:
-        "Fast response protects your home&apos;s structure and your personal belongings from water damage.",
+        "Fast response protects your home's structure and your personal belongings from water damage.",
     },
   ];
 
@@ -136,15 +150,11 @@ export default function LeakRepairsPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <Link
-                  href="#service-form"
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Emergency Leak Repair"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
-                >
-                  <span className="flex items-center justify-center gap-2 font-bold">
-                    Emergency Repair
-                    <ArrowRight className="h-5 w-5" />
-                  </span>
-                </Link>
+                />
               </motion.div>
             </div>
             <motion.div
@@ -347,9 +357,9 @@ export default function LeakRepairsPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t let a small leak become a major disaster. Matt Miller
+              Don't let a small leak become a major disaster. Matt Miller
               Contracting provides immediate emergency leak repair services
-              24/7. We&apos;ll stop the leak, assess the damage, and provide
+              24/7. We'll stop the leak, assess the damage, and provide
               permanent solutions to protect your home.
             </motion.p>
             <motion.div
@@ -366,57 +376,15 @@ export default function LeakRepairsPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Emergency: (214) 789-7262</span>
               </Link>
-              <Link
-                href="tel:2147897262"
-                className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
-              >
-                <span className="flex items-center justify-center gap-2 font-bold">
-                  Call Now: (214) 789-7262
-                  <ArrowRight className="h-5 w-5" />
-                </span>
-              </Link>
-        </div>
-      </section>
-
-      {/* Service Request Form */}
-      <section id="service-form" className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Get Emergency Leak Repair Now
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-gray-600"
-              >
-                Contact us immediately for emergency leak repair services
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <CalendlyWidget />
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Emergency Leak Repair"
+                className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+              />
             </motion.div>
           </div>
         </div>
       </section>
     </main>
   );
-}
-
-  )
 }

@@ -3,8 +3,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, Layers } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Home,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  Calendar,
+  DollarSign,
+  Layers,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function SidingPage() {
   const sidingTypes = [
@@ -107,7 +121,7 @@ export default function SidingPage() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#1a2332]"
+                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#0f1724]"
               >
                 Expert Siding Installation & Repair
               </motion.h1>
@@ -117,7 +131,7 @@ export default function SidingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Transform your home&apos;s exterior with professional siding
+                Transform your home's exterior with professional siding
                 services. From vinyl to fiber cement, we install and repair all
                 siding types with expert craftsmanship.
               </motion.p>
@@ -136,15 +150,11 @@ export default function SidingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <Link
-                  href="#service-form"
-                  className="rounded-full bg-white border-2 border-[#1a2332] px-6 py-4 text-[#1a2332] shadow-lg transition-all hover:bg-[#1a2332] hover:text-white hover:scale-105 active:scale-95"
-                >
-                  <span className="flex items-center justify-center gap-2 font-bold">
-                    Get Free Estimate
-                    <ArrowRight className="h-5 w-5" />
-                  </span>
-                </Link>
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Siding Service"
+                  className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
+                />
               </motion.div>
             </div>
             <motion.div
@@ -209,7 +219,7 @@ export default function SidingPage() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
-                <div className="bg-[#1a2332] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-[#0f1724] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -255,7 +265,7 @@ export default function SidingPage() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
-                <div className="bg-[#1a2332] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6">
+                <div className="bg-[#0f1724] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6">
                   {type.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{type.title}</h3>
@@ -302,7 +312,7 @@ export default function SidingPage() {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#1a2332] p-3 rounded-xl text-white">
+                  <div className="bg-[#0f1724] p-3 rounded-xl text-white">
                     {benefit.icon}
                   </div>
                   <div>
@@ -367,57 +377,15 @@ export default function SidingPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (214) 789-7262</span>
               </Link>
-              <Link
-                href="tel:2147897262"
-                className="rounded-full bg-white border-2 border-[#1a2332] px-6 py-4 text-[#1a2332] shadow-lg transition-all hover:bg-[#1a2332] hover:text-white hover:scale-105 active:scale-95"
-              >
-                <span className="flex items-center justify-center gap-2 font-bold">
-                  Call Now: (214) 789-7262
-                  <ArrowRight className="h-5 w-5" />
-                </span>
-              </Link>
-        </div>
-      </section>
-
-      {/* Service Request Form */}
-      <section id="service-form" className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Schedule Your Siding Service
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-gray-600"
-              >
-                Get expert siding installation, repair, or consultation services
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <CalendlyWidget />
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Siding Service"
+                className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+              />
             </motion.div>
           </div>
         </div>
       </section>
     </main>
   );
-}
-
-  )
 }

@@ -3,8 +3,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, Droplets } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Home,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  Calendar,
+  DollarSign,
+  Droplets,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function WaterDamagePage() {
   const damageTypes = [
@@ -83,10 +97,9 @@ export default function WaterDamagePage() {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-red-50 to-white">
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
@@ -131,15 +144,11 @@ export default function WaterDamagePage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <Link
-                  href="#service-form"
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Water Damage Restoration"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
-                >
-                  <span className="flex items-center justify-center gap-2 font-bold">
-                    Emergency Service
-                    <ArrowRight className="h-5 w-5" />
-                  </span>
-                </Link>
+                />
               </motion.div>
             </div>
             <motion.div
@@ -166,7 +175,7 @@ export default function WaterDamagePage() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -288,7 +297,7 @@ export default function WaterDamagePage() {
             </motion.p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
@@ -336,7 +345,7 @@ export default function WaterDamagePage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              Water Emergency? We&apos;re Here to Help!
+              Water Emergency? We're Here to Help!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -345,9 +354,9 @@ export default function WaterDamagePage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Water damage gets worse every hour. Don&apos;t wait - call Matt
+              Water damage gets worse every hour. Don't wait - call Matt
               Miller Contracting immediately for emergency water extraction and
-              professional restoration services. We&apos;re available 24/7 to
+              professional restoration services. We're available 24/7 to
               minimize damage and get your life back to normal.
             </motion.p>
             <motion.div
@@ -364,58 +373,15 @@ export default function WaterDamagePage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Emergency: (214) 789-7262</span>
               </Link>
-              <Link
-                href="tel:2147897262"
-                className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
-              >
-                <span className="flex items-center justify-center gap-2 font-bold">
-                  Call Now: (214) 789-7262
-                  <ArrowRight className="h-5 w-5" />
-                </span>
-              </Link>
-        </div>
-      </section>
-
-      {/* Service Request Form */}
-      <section id="service-form" className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Get Emergency Water Damage Help
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-gray-600"
-              >
-                Contact us immediately for emergency water damage restoration
-                services
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <CalendlyWidget />
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Water Damage Restoration"
+                className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+              />
             </motion.div>
           </div>
         </div>
       </section>
     </main>
   );
-}
-
-  )
 }

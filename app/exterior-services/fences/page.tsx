@@ -109,7 +109,7 @@ export default function FencesPage() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#1a2332]"
+                className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#0f1724]"
               >
                 Expert Fence Installation & Repair
               </motion.h1>
@@ -119,7 +119,7 @@ export default function FencesPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Enhance your property&apos;s privacy, security, and curb appeal
+                Enhance your property's privacy, security, and curb appeal
                 with professional fence services. From wood to vinyl, we install
                 and repair all fence types.
               </motion.p>
@@ -133,19 +133,15 @@ export default function FencesPage() {
                   href="tel:2147897262"
                   className="rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-all hover:bg-[#be1d1d]/90 hover:scale-105 active:scale-95"
                 >
+                  <span className="flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
-                <LeadFormModal 
-                  triggerText="Schedule Consultation"
-                  serviceType="Fence Consultation"
-                  className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
-                />
-                <Link
-                  href="#service-form"
-                >
+                    (214) 789-7262
+                  </span>
+                </Link>
                 <LeadFormModal 
                   triggerText="Get Free Estimate"
-                  serviceType="Fence Service Request"
-                  className="rounded-full bg-white border-2 border-[#1a2332] px-6 py-4 text-[#1a2332] shadow-lg transition-all hover:bg-[#1a2332] hover:text-white hover:scale-105 active:scale-95"
+                  serviceType="Fence Service"
+                  className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
                 />
               </motion.div>
             </div>
@@ -169,7 +165,7 @@ export default function FencesPage() {
                   <p className="text-sm mt-2">Privacy, security, and style</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -209,7 +205,7 @@ export default function FencesPage() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
-                <div className="bg-[#1a2332] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-[#0f1724] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -245,7 +241,7 @@ export default function FencesPage() {
             </motion.p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {fenceTypes.map((type, index) => (
               <motion.div
                 key={type.title}
@@ -255,7 +251,7 @@ export default function FencesPage() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
-                <div className="bg-[#1a2332] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6">
+                <div className="bg-[#0f1724] w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6">
                   {type.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{type.title}</h3>
@@ -302,7 +298,7 @@ export default function FencesPage() {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#1a2332] p-3 rounded-xl text-white">
+                  <div className="bg-[#0f1724] p-3 rounded-xl text-white">
                     {benefit.icon}
                   </div>
                   <div>
@@ -348,7 +344,7 @@ export default function FencesPage() {
             >
               Whether you need privacy fencing, security barriers, or decorative
               boundaries, Matt Miller Contracting provides expert fence
-              installation and repair services that enhance your property&apos;s
+              installation and repair services that enhance your property's
               value and functionality.
             </motion.p>
             <motion.div
@@ -365,20 +361,15 @@ export default function FencesPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (214) 789-7262</span>
               </Link>
-              <Link
-                href="#service-form"
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Fence Service"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
-              >
-                <Calendar className="h-6 w-6" />
-                <span>Schedule Consultation</span>
-              </Link>
+              />
             </motion.div>
           </div>
         </div>
       </section>
     </main>
   );
-}
-
-  )
 }

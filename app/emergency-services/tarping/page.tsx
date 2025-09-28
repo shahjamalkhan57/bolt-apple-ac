@@ -3,8 +3,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, CloudRain } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Home,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  Calendar,
+  DollarSign,
+  CloudRain,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function TarpingPage() {
   const emergencyScenarios = [
@@ -66,7 +80,7 @@ export default function TarpingPage() {
       icon: <Clock className="h-6 w-6" />,
       title: "Prevents Further Damage",
       description:
-        "Immediate tarping prevents water damage to your home&apos;s interior and belongings.",
+        "Immediate tarping prevents water damage to your home's interior and belongings.",
     },
     {
       icon: <DollarSign className="h-6 w-6" />,
@@ -89,9 +103,9 @@ export default function TarpingPage() {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-50 via-white to-blue-50 overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-red-50 to-white">
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
@@ -136,15 +150,11 @@ export default function TarpingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <Link
-                  href="#service-form"
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Emergency Tarping Service"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
-                >
-                  <span className="flex items-center justify-center gap-2 font-bold">
-                    Emergency Tarping
-                    <ArrowRight className="h-5 w-5" />
-                  </span>
-                </Link>
+                />
               </motion.div>
             </div>
             <motion.div
@@ -337,7 +347,7 @@ export default function TarpingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              Roof Emergency? We&apos;re On Our Way!
+              Roof Emergency? We're On Our Way!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -348,7 +358,7 @@ export default function TarpingPage() {
             >
               When storm damage leaves your roof exposed, every minute counts.
               Matt Miller Contracting provides immediate emergency tarping
-              services 24/7 to protect your home from further damage. Don&apos;t
+              services 24/7 to protect your home from further damage. Don't
               wait - call now!
             </motion.p>
             <motion.div
@@ -365,57 +375,15 @@ export default function TarpingPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Emergency: (214) 789-7262</span>
               </Link>
-              <Link
-                href="tel:2147897262"
-                className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
-              >
-                <span className="flex items-center justify-center gap-2 font-bold">
-                  Call Now: (214) 789-7262
-                  <ArrowRight className="h-5 w-5" />
-                </span>
-              </Link>
-        </div>
-      </section>
-
-      {/* Service Request Form */}
-      <section id="service-form" className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Get Emergency Tarping Now
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-gray-600"
-              >
-                Contact us immediately for emergency roof tarping services
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <CalendlyWidget />
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Emergency Tarping Service"
+                className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+              />
             </motion.div>
           </div>
         </div>
       </section>
     </main>
   );
-}
-
-  )
 }
