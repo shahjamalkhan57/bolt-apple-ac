@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, Droplets } from "lucide-react";
+import { ArrowRight, Phone, Home, AlertTriangle, CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, Droplets } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -162,7 +162,7 @@ export default function LeakDamagePage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -304,6 +304,76 @@ export default function LeakDamagePage() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6 order-2 md:order-1"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Why Choose Matt Miller Contracting?
+              </h2>
+              <div className="w-20 h-1.5 bg-[#be1d1d] rounded-full"></div>
+
+              <div className="bg-red-50 rounded-xl p-6 border border-red-100">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <Shield className="h-5 w-5 text-[#be1d1d]" />
+                  Expert Leak Detection & Restoration
+                </h3>
+                <p className="text-gray-700">
+                  With years of experience in leak damage restoration, we
+                  understand the importance of thorough assessment and quality
+                  repairs. Our team knows exactly what to look for and provides
+                  detailed documentation of all damage.
+                </p>
+              </div>
+
+              <p className="text-lg text-gray-700">
+                We provide detailed reports with photographs and measurements,
+                and ensure that repairs are completed to the highest standards
+                using quality materials. Contact us directly to discuss your
+                specific needs and repair options.
+              </p>
+
+              <div className="pt-4">
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Leak Damage Assessment"
+                  className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative order-1 md:order-2"
+            >
+              <div className="absolute -inset-4 bg-[#be1d1d] rounded-full blur-3xl opacity-10 animate-pulse-slow"></div>
+              <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
+                <Image
+                  src="https://images.pexels.com/photos/48895/roof-plate-tiles-brick-black-48895.jpeg"
+                  alt="Professional Assessment Process"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-cover rounded-2xl"
+                />
+                <div className="absolute top-4 left-4 bg-[#be1d1d] text-white px-4 py-2 rounded-full text-sm font-bold">
+                  Professional Assessment
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
