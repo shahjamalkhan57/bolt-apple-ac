@@ -3,22 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Phone,
-  Snowflake,
-  AlertTriangle,
-  CheckCircle,
-  Clock,
-  Wrench,
-  ThermometerSun,
-  Zap,
-  Calendar,
-  DollarSign,
-  Wind,
-  Fan,
-  Thermometer,
-} from "lucide-react";
+import { ArrowRight, Phone, Snowflake, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, ThermometerSun, Zap, Calendar, DollarSign, Wind, Fan, Thermometer } from "lucide-react";
 import HeroAnimation from "@/components/hero-animation";
 import ServiceRequestForm from "@/components/service-request-form";
 import ParallaxSection from "@/components/parallax-section";

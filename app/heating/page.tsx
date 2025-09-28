@@ -3,20 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Phone,
-  Flame,
-  AlertTriangle,
-  CheckCircle,
-  Clock,
-  Wrench,
-  ThermometerSnowflake,
-  Zap,
-  Calendar,
-  DollarSign,
-  Shield,
-} from "lucide-react";
+import { ArrowRight, Phone, Flame, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, ThermometerSnowflake, Zap, Calendar, DollarSign, Shield } from "lucide-react";
 import ServiceRequestForm from "@/components/service-request-form";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
@@ -518,4 +505,7 @@ export default function HeatingPage() {
       </section>
     </main>
   );
+}
+
+  )
 }
