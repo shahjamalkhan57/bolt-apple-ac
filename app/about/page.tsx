@@ -3,18 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Phone,
-  Home,
-  Award,
-  Clock,
-  MapPin,
-  Shield,
-  Users,
-  Star,
-  CheckCircle,
-} from "lucide-react";
+import { ArrowRight, Phone, Chrome as Home, Award, Clock, MapPin, Shield, Users, Star, CircleCheck as CheckCircle } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -129,6 +118,7 @@ export default function AboutPage() {
                   serviceType="About Page Service Request"
                   className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#0f1724] text-[#0f1724] px-6 py-3 rounded-full font-semibold hover:bg-[#0f1724] hover:text-white transition-colors"
                 />
+                </Link>
               </div>
             </motion.div>
 
