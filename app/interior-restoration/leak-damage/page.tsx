@@ -364,17 +364,57 @@ export default function LeakDamagePage() {
                 <span>Emergency: (214) 789-7262</span>
               </Link>
               <Link
-                href="#service-form"
-                className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                href="tel:2147897262"
+                className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
               >
-                <Calendar className="h-6 w-6" />
-                <span>Schedule Service</span>
+                <span className="flex items-center justify-center gap-2 font-bold">
+                  Call Now: (214) 789-7262
+                  <ArrowRight className="h-5 w-5" />
+                </span>
               </Link>
+        </div>
+      </section>
+
+      {/* Service Request Form */}
+      <section id="service-form" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="text-3xl md:text-4xl font-bold mb-4"
+              >
+                Get Emergency Leak Damage Help
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-lg text-gray-600"
+              >
+                Contact us immediately for leak detection and damage restoration
+                services
+              </motion.p>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <CalendlyWidget />
             </motion.div>
           </div>
         </div>
       </section>
-
     </main>
   );
+}
+
+  )
 }
