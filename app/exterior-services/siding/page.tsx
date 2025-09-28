@@ -368,11 +368,11 @@ export default function SidingPage() {
                 <span>Call Now: (214) 789-7262</span>
               </Link>
               <Link
-                href="#service-form"
+                href="tel:2147897262"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
               >
-                <Calendar className="h-6 w-6" />
-                <span>Schedule Consultation</span>
+                <Phone className="h-6 w-6" />
+                <span>Call Now: (214) 789-7262</span>
               </Link>
             </motion.div>
           </div>
