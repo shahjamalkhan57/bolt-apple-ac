@@ -3,7 +3,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, TreePine } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Home,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  Calendar,
+  DollarSign,
+  TreePine,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
