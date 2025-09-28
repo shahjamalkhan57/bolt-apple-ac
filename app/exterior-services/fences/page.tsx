@@ -18,7 +18,7 @@ import {
   TreePine,
 } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
-import CalendlyWidget from "@/components/calendly-widget";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function FencesPage() {
   const fenceTypes = [
@@ -133,20 +133,20 @@ export default function FencesPage() {
                   href="tel:2147897262"
                   className="rounded-full bg-[#be1d1d] px-6 py-4 text-white shadow-lg transition-all hover:bg-[#be1d1d]/90 hover:scale-105 active:scale-95"
                 >
-                  <span className="flex items-center justify-center gap-2 font-bold">
                     <Phone className="h-5 w-5" />
-                    (214) 789-7262
-                  </span>
-                </Link>
+                <LeadFormModal 
+                  triggerText="Schedule Consultation"
+                  serviceType="Fence Consultation"
+                  className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                />
                 <Link
                   href="#service-form"
-                  className="rounded-full bg-white border-2 border-[#1a2332] px-6 py-4 text-[#1a2332] shadow-lg transition-all hover:bg-[#1a2332] hover:text-white hover:scale-105 active:scale-95"
                 >
-                  <span className="flex items-center justify-center gap-2 font-bold">
-                    Get Free Estimate
-                    <ArrowRight className="h-5 w-5" />
-                  </span>
-                </Link>
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Fence Service Request"
+                  className="rounded-full bg-white border-2 border-[#1a2332] px-6 py-4 text-[#1a2332] shadow-lg transition-all hover:bg-[#1a2332] hover:text-white hover:scale-105 active:scale-95"
+                />
               </motion.div>
             </div>
             <motion.div
@@ -372,43 +372,6 @@ export default function FencesPage() {
                 <Calendar className="h-6 w-6" />
                 <span>Schedule Consultation</span>
               </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Request Form */}
-      <section id="service-form" className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Schedule Your Fence Service
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-gray-600"
-              >
-                Get expert fence installation, repair, or consultation services
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <CalendlyWidget />
             </motion.div>
           </div>
         </div>

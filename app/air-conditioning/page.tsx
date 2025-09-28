@@ -22,8 +22,8 @@ import {
 import HeroAnimation from "@/components/hero-animation";
 import ServiceRequestForm from "@/components/service-request-form";
 import ParallaxSection from "@/components/parallax-section";
-import { useState } from "react";
 import { ScheduleServiceModal } from "@/components/schedule-service-modal";
+import LeadFormModal from "@/components/lead-form-modal";
 
 const features = [
   {
@@ -56,8 +56,6 @@ const warningSignsList = [
 ];
 
 export default function AirConditioningPage() {
-  const [isVisible, setIsVisible] = useState(false);
-
   return (
     <main className="pt-24">
       {/* Hero Section */}
@@ -254,7 +252,11 @@ export default function AirConditioningPage() {
                   <Phone className="h-5 w-5" />
                   Call Now
                 </Link>
-                <ScheduleServiceModal />
+                <LeadFormModal 
+                  triggerText="Schedule Service"
+                  serviceType="Air Conditioning Service"
+                  className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#0f1724] text-[#0f1724] px-8 py-4 rounded-full font-semibold hover:bg-[#0f1724] hover:text-white transition-colors"
+                />
               </div>
             </motion.div>
           </div>

@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import ServiceRequestForm from "@/components/service-request-form";
 import ParallaxSection from "@/components/parallax-section";
-import CalendlyWidget from "@/components/calendly-widget";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function HeatingPage() {
   const repairSigns = [
@@ -132,13 +132,13 @@ export default function HeatingPage() {
                 </Link>
                 <Link
                   href="#service-form"
-                  className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
                 >
-                  <span className="flex items-center justify-center gap-2 font-bold">
-                    Schedule Service
-                    <ArrowRight className="h-5 w-5" />
-                  </span>
-                </Link>
+                  triggerText="Schedule Service"
+                <LeadFormModal 
+                  triggerText="Schedule Service"
+                  serviceType="Heating Emergency Service"
+                  className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                />
               </motion.div>
             </div>
             <motion.div
@@ -512,43 +512,6 @@ export default function HeatingPage() {
                 <Calendar className="h-6 w-6" />
                 <span>Schedule Service</span>
               </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Request Form */}
-      <section id="service-form" className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                Schedule Your Heating Service
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-gray-600"
-              >
-                Choose a convenient time for your service appointment
-              </motion.p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <CalendlyWidget />
             </motion.div>
           </div>
         </div>

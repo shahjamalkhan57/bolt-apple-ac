@@ -16,9 +16,9 @@ import TestimonialCarousel from "@/components/testimonial-carousel"
 import FloatingCTA from "@/components/floating-cta"
 import ParallaxSection from "@/components/parallax-section"
 import ScheduleServiceModal from "@/components/schedule-service-modal"
-import CalendlyWidget from "@/components/calendly-widget"
 import EnhancedServiceAreaMap from "@/components/enhanced-service-area-map"
 import ServiceRequestForm from "@/components/service-request-form"
+import LeadFormModal from "@/components/lead-form-modal"
 
 export const metadata: Metadata = {
   title: "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
@@ -345,23 +345,6 @@ export default function Home() {
           </div>
 
           <TestimonialCarousel testimonials={testimonials} />
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-[#0f1724] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">
-              Ready to Protect Your Home?
-            </h2>
-            <p className="text-xl mb-8">
-              Experience the Matt Miller Contracting difference. Schedule your service appointment today.
-            </p>
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <CalendlyWidget />
-            </div>
-          </div>
         </div>
       </section>
     </main>

@@ -16,7 +16,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
-import CalendlyWidget from "@/components/calendly-widget";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export default function AboutPage() {
   const values = [
@@ -123,11 +123,12 @@ export default function AboutPage() {
                 </Link>
                 <Link
                   href="#contact-form"
-                  className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#0f1724] text-[#0f1724] px-6 py-3 rounded-full font-semibold hover:bg-[#0f1724] hover:text-white transition-colors"
                 >
-                  Get Free Estimate
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="About Page Service Request"
+                  className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#0f1724] text-[#0f1724] px-6 py-3 rounded-full font-semibold hover:bg-[#0f1724] hover:text-white transition-colors"
+                />
               </div>
             </motion.div>
 
@@ -361,31 +362,6 @@ export default function AboutPage() {
                 </motion.div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section id="contact-form" className="py-20 bg-[#0f1724] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-4xl font-bold mb-6">
-                Ready to Work Together?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                Experience the Matt Miller Contracting difference. Let`&apos;s
-                discuss your roofing and exterior needs today.
-              </p>
-              <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <CalendlyWidget />
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
