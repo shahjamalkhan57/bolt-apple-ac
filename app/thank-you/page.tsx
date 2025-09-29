@@ -63,7 +63,7 @@ export default function ThankYouPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
             >
-              Your service request has been successfully submitted. We're
+              Your service request has been successfully submitted. We&apos;re
               excited to help protect your home and will be in touch shortly to
               discuss your project.
             </motion.p>
@@ -110,7 +110,7 @@ export default function ThankYouPage() {
               <div>
                 <h3 className="text-xl font-bold">Need Immediate Help?</h3>
                 <p className="opacity-90">
-                  We're available 24/7 for emergency roofing situations
+                  We&apos;re available 24/7 for emergency roofing situations
                 </p>
               </div>
             </div>
