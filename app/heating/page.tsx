@@ -130,11 +130,7 @@ export default function HeatingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <Link
-                  href="#service-form"
-                >
-                  triggerText="Schedule Service"
-                <LeadFormModal 
+                <LeadFormModal
                   triggerText="Schedule Service"
                   serviceType="Heating Emergency Service"
                   className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
@@ -518,7 +514,4 @@ export default function HeatingPage() {
       </section>
     </main>
   );
-}
-
-  )
 }

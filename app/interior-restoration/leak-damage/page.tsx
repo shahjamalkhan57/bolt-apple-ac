@@ -3,7 +3,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, Calendar, DollarSign, Droplets } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Chrome as Home,
+  TriangleAlert as AlertTriangle,
+  CircleCheck as CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  Calendar,
+  DollarSign,
+  Droplets,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -13,7 +26,7 @@ export default function LeakDamagePage() {
       icon: <Home className="h-6 w-6" />,
       title: "Roof Leaks",
       description:
-        "Damaged or missing shingles, flashing issues, and storm damage can cause water to penetrate your home's interior.",
+        "Damaged or missing shingles, flashing issues, and storm damage can cause water to penetrate your home&apos;s interior.",
     },
     {
       icon: <Droplets className="h-6 w-6" />,
@@ -51,7 +64,7 @@ export default function LeakDamagePage() {
     {
       title: "Mold Prevention & Remediation",
       description:
-        "Professional mold prevention and removal services to protect your family's health.",
+        "Professional mold prevention and removal services to protect your family&apos;s health.",
       icon: <Shield className="h-6 w-6" />,
     },
     {
@@ -112,7 +125,7 @@ export default function LeakDamagePage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Stop leaks at their source and restore the damage they've
+                Stop leaks at their source and restore the damage they&apos;ve
                 caused. Matt Miller Contracting provides comprehensive leak
                 detection and damage restoration services.
               </motion.p>
@@ -131,7 +144,7 @@ export default function LeakDamagePage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <LeadFormModal 
+                <LeadFormModal
                   triggerText="Get Free Estimate"
                   serviceType="Leak Damage Restoration"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
@@ -345,7 +358,7 @@ export default function LeakDamagePage() {
               </p>
 
               <div className="pt-4">
-                <LeadFormModal 
+                <LeadFormModal
                   triggerText="Get Free Estimate"
                   serviceType="Leak Damage Assessment"
                   className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
@@ -410,7 +423,7 @@ export default function LeakDamagePage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Leaks don't fix themselves - they only get worse. Matt Miller
+              Leaks don&apos;t fix themselves - they only get worse. Matt Miller
               Contracting provides immediate leak detection and comprehensive
               damage restoration to protect your home and prevent costly repairs
               down the road.
@@ -429,7 +442,7 @@ export default function LeakDamagePage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Emergency: (214) 789-7262</span>
               </Link>
-              <LeadFormModal 
+              <LeadFormModal
                 triggerText="Get Free Estimate"
                 serviceType="Leak Damage Restoration"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
