@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import { Calendar, Clock, MapPin } from "lucide-react";
@@ -17,6 +18,7 @@ export default function ServiceRequestForm({
   serviceType,
 }: ServiceRequestFormProps) {
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -50,18 +52,8 @@ export default function ServiceRequestForm({
         throw new Error("Failed to submit form");
       }
 
-      toast.success(
-        "Service request submitted successfully! We'll contact you shortly."
-      );
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        address: "",
-        date: "",
-        time: "",
-        description: "",
-      });
+      // Redirect to thank you page on success
+      router.push("/thank-you");
     } catch (error) {
       toast.error("Failed to submit request. Please try again.");
     } finally {
