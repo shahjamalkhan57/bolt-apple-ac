@@ -11,6 +11,7 @@ import { toast } from "sonner"
 import { ArrowRight } from "lucide-react"
 
 const serviceTypes = [
+  "Roof Inspection",
   "Roof Repair",
   "Roof Replacement",
   "Hail Damage Repair",
@@ -81,14 +82,14 @@ export function ScheduleServiceModal() {
       <DialogTrigger asChild>
         <button className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95">
           <span className="flex items-center justify-center gap-2 font-bold">
-            Schedule Service
+            Schedule Inspection
             <ArrowRight className="h-5 w-5" />
           </span>
         </button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>Schedule Your Service</DialogTitle>
+          <DialogTitle>Schedule Your Inspection</DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="space-y-2">

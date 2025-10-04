@@ -228,6 +228,78 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Miller Roofguard Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#0f1724] text-center">
+              About Miller Roofguard
+            </h2>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-800 text-center">
+              Roofs Don&apos;t Last Forever — But Good Work Does.
+            </h3>
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+              <p>
+                We&apos;ve been working on roofs across DFW for years — from simple repairs to full replacements after those Texas hailstorms. At Miller Roofguard, we believe a roof&apos;s only as good as the work and materials behind it.
+              </p>
+              <p>
+                That&apos;s why we use impact-rated shingles, synthetic underlayment, and heavy-gauge flashing and sealants that can handle the DFW weather. Every job&apos;s checked from the decking up — no shortcuts, just solid roofing that holds up season after season.
+              </p>
+              <p>
+                When you call, you&apos;ll talk to someone who actually works in the field. We&apos;ll take a look, explain what&apos;s going on, and if it needs fixing, you&apos;ll know exactly how we&apos;ll do it and what we&apos;ll use.
+              </p>
+            </div>
+            <div className="mt-12 bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <ul className="space-y-4 text-lg">
+                <li className="flex items-start gap-3">
+                  <Shield className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
+                  <span>Locally owned and operated in DFW</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Award className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
+                  <span>Licensed, insured, and manufacturer-certified</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <ThumbsUp className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
+                  <span>We use top-grade materials from GAF, Owens Corning, and CertainTeed</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Zap className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
+                  <span>24/7 emergency service available</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <ThumbsUp className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
+                  <span>Clear written estimates and straightforward pricing</span>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-10 text-center">
+              <ScheduleServiceModal />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Free Roof Inspection Section */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#0f1724]">
+              Free Roof Inspection — Straight Answers, No Guesswork
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              We&apos;ll get up there, check your shingles, decking, and flashing, and show you clear photos of what we find. If it&apos;s in good shape, great. If it needs attention, we&apos;ll explain what it takes to make it right — using the same premium materials we trust on every job.
+            </p>
+            <div className="inline-block bg-[#be1d1d] text-white px-6 py-3 rounded-full font-semibold mb-8 shadow-lg">
+              Limited inspection slots available this week.
+            </div>
+            <div>
+              <ScheduleServiceModal />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Floating CTA */}
       <FloatingCTA />
 
