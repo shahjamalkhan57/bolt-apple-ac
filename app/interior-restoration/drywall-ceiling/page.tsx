@@ -3,20 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Phone,
-  Chrome as Home,
-  TriangleAlert as AlertTriangle,
-  CircleCheck as CheckCircle,
-  Clock,
-  Wrench,
-  Shield,
-  Zap,
-  Calendar,
-  DollarSign,
-  Layers,
-} from "lucide-react";
+import { ArrowRight, Phone, Home, AlertTriangle, CheckCircle, Clock, Wrench, Shield, Zap, DollarSign, Layers } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -150,7 +137,7 @@ export default function DrywallCeilingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <LeadFormModal
+                <LeadFormModal 
                   triggerText="Get Free Estimate"
                   serviceType="Drywall & Ceiling Repair"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
@@ -181,7 +168,7 @@ export default function DrywallCeilingPage() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -272,7 +259,7 @@ export default function DrywallCeilingPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">{repair.title}</h3>
                 <p className="text-gray-600">{repair.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -359,8 +346,8 @@ export default function DrywallCeilingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don&apos;t let damaged walls and ceilings detract from your
-              home&apos;s beauty. Matt Miller Contracting provides expert
+              Don't let damaged walls and ceilings detract from your
+              home's beauty. Matt Miller Contracting provides expert
               drywall and ceiling repair services that restore your interior to
               perfect condition with seamless, professional results.
             </motion.p>
@@ -378,7 +365,7 @@ export default function DrywallCeilingPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (214) 789-7262</span>
               </Link>
-              <LeadFormModal
+              <LeadFormModal 
                 triggerText="Get Free Estimate"
                 serviceType="Drywall & Ceiling Repair"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"

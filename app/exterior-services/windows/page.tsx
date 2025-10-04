@@ -3,20 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Phone,
-  Chrome as Home,
-  TriangleAlert as AlertTriangle,
-  CircleCheck as CheckCircle,
-  Clock,
-  Wrench,
-  Shield,
-  Zap,
-  Calendar,
-  DollarSign,
-  Eye,
-} from "lucide-react";
+import { ArrowRight, Phone, Home, Shield, Zap, Eye, Wrench, CheckCircle, DollarSign } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -98,7 +85,7 @@ export default function WindowsPage() {
       icon: <Home className="h-6 w-6" />,
       title: "Increased Value",
       description:
-        "New windows significantly increase your home&apos;s value and curb appeal for potential buyers.",
+        "New windows significantly increase your home's value and curb appeal for potential buyers.",
     },
   ];
 
@@ -131,7 +118,7 @@ export default function WindowsPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
               >
-                Enhance your home&apos;s comfort, security, and energy
+                Enhance your home's comfort, security, and energy
                 efficiency with professional window services. From installation
                 to repair, we handle all your window needs.
               </motion.p>
@@ -150,7 +137,7 @@ export default function WindowsPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <LeadFormModal
+                <LeadFormModal 
                   triggerText="Get Free Estimate"
                   serviceType="Window Service"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
@@ -179,7 +166,7 @@ export default function WindowsPage() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -251,7 +238,7 @@ export default function WindowsPage() {
               className="text-lg text-gray-600"
             >
               Choose from our selection of high-quality window styles to match
-              your home&apos;s design
+              your home's design
             </motion.p>
           </div>
 
@@ -360,7 +347,7 @@ export default function WindowsPage() {
             >
               Whether you need new window installation, storm damage repair, or
               energy-efficient replacements, Matt Miller Contracting provides
-              expert window services that enhance your home&apos;s comfort,
+              expert window services that enhance your home's comfort,
               security, and value.
             </motion.p>
             <motion.div
@@ -377,7 +364,7 @@ export default function WindowsPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (214) 789-7262</span>
               </Link>
-              <LeadFormModal
+              <LeadFormModal 
                 triggerText="Get Free Estimate"
                 serviceType="Window Service"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"

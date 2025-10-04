@@ -130,10 +130,10 @@ export default function HeatingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <LeadFormModal
-                  triggerText="Schedule Service"
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
                   serviceType="Heating Emergency Service"
-                  className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
+                  className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
                 />
               </motion.div>
             </div>
@@ -269,13 +269,11 @@ export default function HeatingPage() {
                 your comfort and peace of mind all year round.
               </p>
               <div className="pt-4">
-                <Link
-                  href="#service-form"
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Heating Maintenance Service"
                   className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Schedule Maintenance
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
+                />
               </div>
             </motion.div>
           </div>
@@ -398,13 +396,11 @@ export default function HeatingPage() {
               </p>
 
               <div className="pt-4">
-                <Link
-                  href="#service-form"
+                <LeadFormModal 
+                  triggerText="Get Free Estimate"
+                  serviceType="Heating Repair Service"
                   className="inline-flex items-center gap-2 bg-[#0f1724] hover:bg-[#0f1724]/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Get Your HVAC System Fixed
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
+                />
               </div>
             </motion.div>
 
@@ -501,13 +497,11 @@ export default function HeatingPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (214) 789-7262</span>
               </Link>
-              <Link
-                href="#service-form"
+              <LeadFormModal 
+                triggerText="Get Free Estimate"
+                serviceType="Heating Emergency Service"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
-              >
-                <Calendar className="h-6 w-6" />
-                <span>Schedule Service</span>
-              </Link>
+              />
             </motion.div>
           </div>
         </div>
