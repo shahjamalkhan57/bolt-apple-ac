@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Home, Shield, Zap, Layers, Wrench, CheckCircle, DollarSign, Clock } from "lucide-react";
+import { ArrowRight, Phone, Chrome as Home, Shield, Zap, Layers, Wrench, CircleCheck as CheckCircle, DollarSign, Clock } from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
