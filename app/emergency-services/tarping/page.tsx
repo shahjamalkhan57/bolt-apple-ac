@@ -3,7 +3,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Clock, Wrench, Shield, Zap, DollarSign, CloudRain } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Chrome as Home,
+  TriangleAlert as AlertTriangle,
+  CircleCheck as CheckCircle,
+  Clock,
+  Wrench,
+  Shield,
+  Zap,
+  DollarSign,
+  CloudRain,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -137,7 +149,7 @@ export default function TarpingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <LeadFormModal 
+                <LeadFormModal
                   triggerText="Get Free Estimate"
                   serviceType="Emergency Tarping Service"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
@@ -166,7 +178,7 @@ export default function TarpingPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -334,7 +346,7 @@ export default function TarpingPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              Roof Emergency? We're On Our Way!
+              Roof Emergency? We&apos;re On Our Way!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -345,7 +357,7 @@ export default function TarpingPage() {
             >
               When storm damage leaves your roof exposed, every minute counts.
               Matt Miller Contracting provides immediate emergency tarping
-              services 24/7 to protect your home from further damage. Don't
+              services 24/7 to protect your home from further damage. Don&apos;t
               wait - call now!
             </motion.p>
             <motion.div
@@ -362,7 +374,7 @@ export default function TarpingPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Emergency: (214) 789-7262</span>
               </Link>
-              <LeadFormModal 
+              <LeadFormModal
                 triggerText="Get Free Estimate"
                 serviceType="Emergency Tarping Service"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"

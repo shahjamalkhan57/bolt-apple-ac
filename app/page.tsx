@@ -301,9 +301,6 @@ export default function Home() {
             </div>
             <div className="mt-12">
               <video
-                autoPlay
-                loop
-                muted
                 playsInline
                 controls
                 preload="auto"

@@ -3,7 +3,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Chrome as Home, Shield, Zap, Paintbrush, Wrench, CircleCheck as CheckCircle, DollarSign, Clock } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Chrome as Home,
+  Shield,
+  Zap,
+  Paintbrush,
+  Wrench,
+  CircleCheck as CheckCircle,
+  DollarSign,
+  Clock,
+} from "lucide-react";
 import ParallaxSection from "@/components/parallax-section";
 import LeadFormModal from "@/components/lead-form-modal";
 
@@ -79,7 +90,7 @@ export default function ReStainingPage() {
       icon: <Home className="h-6 w-6" />,
       title: "Enhanced Beauty",
       description:
-        "Professional staining enhances natural wood grain and improves your property's appearance.",
+        "Professional staining enhances natural wood grain and improves your property&apos;s appearance.",
     },
     {
       icon: <Clock className="h-6 w-6" />,
@@ -137,7 +148,7 @@ export default function ReStainingPage() {
                     (214) 789-7262
                   </span>
                 </Link>
-                <LeadFormModal 
+                <LeadFormModal
                   triggerText="Get Free Estimate"
                   serviceType="Staining Service"
                   className="rounded-full bg-white border-2 border-[#0f1724] px-6 py-4 text-[#0f1724] shadow-lg transition-all hover:bg-[#0f1724] hover:text-white hover:scale-105 active:scale-95"
@@ -166,7 +177,7 @@ export default function ReStainingPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -345,10 +356,10 @@ export default function ReStainingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl mb-8"
             >
-              Don't let weathered wood detract from your property's
+              Don&apos;t let weathered wood detract from your property&apos;s
               beauty. Matt Miller Contracting provides expert staining and
               restoration services that protect your investment and enhance your
-              home's curb appeal.
+              home&apos;s curb appeal.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -364,7 +375,7 @@ export default function ReStainingPage() {
                 <Phone className="h-6 w-6 animate-pulse" />
                 <span>Call Now: (214) 789-7262</span>
               </Link>
-              <LeadFormModal 
+              <LeadFormModal
                 triggerText="Get Free Estimate"
                 serviceType="Staining Service"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-white/10"
