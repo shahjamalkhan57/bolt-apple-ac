@@ -1,14 +1,27 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Textarea } from "@/components/ui/textarea"
-import { toast } from "sonner"
-import { ArrowRight } from "lucide-react"
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
+import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const serviceTypes = [
   "Roof Inspection",
@@ -21,21 +34,22 @@ const serviceTypes = [
   "Water Damage Restoration",
   "Emergency Service",
   "General Inspection",
-]
+];
 
 export function ScheduleServiceModal() {
-  const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
     service_type: "",
     service_details: "",
-  })
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
+    e.preventDefault();
+    setIsLoading(true);
 
     try {
       const response = await fetch(
@@ -47,35 +61,42 @@ export function ScheduleServiceModal() {
           },
           body: JSON.stringify(formData),
         }
-      )
+      );
 
       if (!response.ok) {
-        throw new Error("Failed to submit form")
+        throw new Error("Failed to submit form");
       }
 
-      toast.success("Service scheduled successfully! We'll contact you shortly.")
+      // Close modal and redirect to thank you page
+      router.push("/thank-you");
+
+      toast.success(
+        "Service scheduled successfully! We'll contact you shortly."
+      );
       setFormData({
         name: "",
         phone: "",
         email: "",
         service_type: "",
         service_details: "",
-      })
+      });
     } catch (error) {
-      toast.error("Failed to schedule service. Please try again.")
+      toast.error("Failed to schedule service. Please try again.");
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleServiceTypeChange = (value: string) => {
-    setFormData((prev) => ({ ...prev, service_type: value }))
-  }
+    setFormData((prev) => ({ ...prev, service_type: value }));
+  };
 
   return (
     <Dialog>
@@ -129,7 +150,11 @@ export function ScheduleServiceModal() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="service_type">Service Type</Label>
-            <Select required value={formData.service_type} onValueChange={handleServiceTypeChange}>
+            <Select
+              required
+              value={formData.service_type}
+              onValueChange={handleServiceTypeChange}
+            >
               <SelectTrigger>
                 <SelectValue placeholder="Select a service" />
               </SelectTrigger>
@@ -160,7 +185,7 @@ export function ScheduleServiceModal() {
         </form>
       </DialogContent>
     </Dialog>
-  )
+  );
 }
 
-export default ScheduleServiceModal
+export default ScheduleServiceModal;

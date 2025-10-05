@@ -1,6 +1,6 @@
-import { Metadata } from "next"
-import Link from "next/link"
-import Image from "next/image"
+import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Phone,
@@ -10,23 +10,27 @@ import {
   Award,
   ThumbsUp,
   Zap,
-} from "lucide-react"
-import ServiceCard from "@/components/service-card"
-import TestimonialCarousel from "@/components/testimonial-carousel"
-import FloatingCTA from "@/components/floating-cta"
-import ParallaxSection from "@/components/parallax-section"
-import ScheduleServiceModal from "@/components/schedule-service-modal"
-import EnhancedServiceAreaMap from "@/components/enhanced-service-area-map"
-import ServiceRequestForm from "@/components/service-request-form"
-import LeadFormModal from "@/components/lead-form-modal"
+} from "lucide-react";
+import ServiceCard from "@/components/service-card";
+import TestimonialCarousel from "@/components/testimonial-carousel";
+import FloatingCTA from "@/components/floating-cta";
+import ParallaxSection from "@/components/parallax-section";
+import ScheduleServiceModal from "@/components/schedule-service-modal";
+import EnhancedServiceAreaMap from "@/components/enhanced-service-area-map";
+import ServiceRequestForm from "@/components/service-request-form";
+import LeadFormModal from "@/components/lead-form-modal";
 
 export const metadata: Metadata = {
-  title: "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
-  description: "Professional roofing, exterior, and storm restoration services in Dallas-Fort Worth area. 24/7 emergency services, licensed contractors, and comprehensive warranties. Call (469) 765-3340.",
-  keywords: "roofing contractors, storm restoration, emergency roofing, Dallas Fort Worth, roof repair, roof replacement, exterior services, Matt Miller Contracting",
+  title:
+    "Matt Miller Contracting | Expert Roofing & Storm Restoration in Dallas-Fort Worth",
+  description:
+    "Professional roofing, exterior, and storm restoration services in Dallas-Fort Worth area. 24/7 emergency services, licensed contractors, and comprehensive warranties. Call (469) 765-3340.",
+  keywords:
+    "roofing contractors, storm restoration, emergency roofing, Dallas Fort Worth, roof repair, roof replacement, exterior services, Matt Miller Contracting",
   openGraph: {
     title: "Matt Miller Contracting | Expert Roofing & Storm Restoration",
-    description: "Protecting homes in Dallas-Fort Worth with expert roofing and storm restoration services. Licensed contractors with 24/7 emergency response.",
+    description:
+      "Protecting homes in Dallas-Fort Worth with expert roofing and storm restoration services. Licensed contractors with 24/7 emergency response.",
     images: [
       {
         url: "https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg",
@@ -40,16 +44,19 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Matt Miller Contracting | Expert Roofing & Storm Restoration",
-    description: "Professional roofing and storm restoration services in Dallas-Fort Worth. 24/7 emergency response available.",
-    images: ["https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg"],
+    description:
+      "Professional roofing and storm restoration services in Dallas-Fort Worth. 24/7 emergency response available.",
+    images: [
+      "https://images.pexels.com/photos/28812508/pexels-photo-28812508.jpeg",
+    ],
   },
-}
+};
 
 const serviceAreas: Array<{
-  name: string
-  coordinates: [number, number] // Changed from number[] to tuple [number, number]
-  isMainOffice?: boolean
-  address?: string
+  name: string;
+  coordinates: [number, number]; // Changed from number[] to tuple [number, number]
+  isMainOffice?: boolean;
+  address?: string;
 }> = [
   {
     name: "Fort Worth",
@@ -57,14 +64,14 @@ const serviceAreas: Array<{
     isMainOffice: true,
     address: "123 Main Street, Fort Worth, TX 76000",
   },
-  { name: "Dallas", coordinates: [32.7767, -96.7970] },
+  { name: "Dallas", coordinates: [32.7767, -96.797] },
   { name: "Arlington", coordinates: [32.7357, -97.1081] },
   { name: "Plano", coordinates: [33.0198, -96.6989] },
-  { name: "Irving", coordinates: [32.8140, -96.9489] },
+  { name: "Irving", coordinates: [32.814, -96.9489] },
   { name: "Garland", coordinates: [32.9126, -96.6389] },
   { name: "Mesquite", coordinates: [32.7668, -96.5992] },
-  { name: "Grand Prairie", coordinates: [32.7460, -96.9978] },
-]
+  { name: "Grand Prairie", coordinates: [32.746, -96.9978] },
+];
 
 export default function Home() {
   const services = [
@@ -89,12 +96,7 @@ export default function Home() {
       icon: "building",
       description:
         "Protect your property's structure and curb appeal with quality exterior upgrades.",
-      services: [
-        "Gutters",
-        "Siding",
-        "Windows",
-        "Fence Repair & Re-staining",
-      ],
+      services: ["Gutters", "Siding", "Windows", "Fence Repair & Re-staining"],
       color: "from-blue-500 to-cyan-500",
       animation: "warm-glow",
       href: "/exterior-services",
@@ -127,7 +129,7 @@ export default function Home() {
       animation: "pulse",
       href: "/emergency-services",
     },
-  ]
+  ];
 
   const testimonials = [
     {
@@ -154,20 +156,23 @@ export default function Home() {
       rating: 5,
       image: "/placeholder.svg?height=100&width=100",
     },
-  ]
+  ];
 
   const features = [
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Personally Managed by Matt Miller",
     },
-    { icon: <Clock className="h-8 w-8" />, title: "24/7 Emergency Roofing Response" },
+    {
+      icon: <Clock className="h-8 w-8" />,
+      title: "24/7 Emergency Roofing Response",
+    },
     { icon: <Award className="h-8 w-8" />, title: "Transparent Estimates" },
     {
       icon: <ThumbsUp className="h-8 w-8" />,
       title: "Workmanship Guaranteed",
     },
-  ]
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -179,12 +184,14 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover z-0"
           >
             <source
               src="https://yqpamwianchyuzleabfb.supabase.co/storage/v1/object/public/Assets/0820(1).mp4"
               type="video/mp4"
             />
+            Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0 bg-white opacity-40 z-0"></div>
         </div>
@@ -198,7 +205,8 @@ export default function Home() {
                 Matt Miller Contracting
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
-                Protecting homes in the Dallas–Fort Worth area with expert roofing and storm restoration services.
+                Protecting homes in the Dallas–Fort Worth area with expert
+                roofing and storm restoration services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -240,13 +248,23 @@ export default function Home() {
             </h3>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                We&apos;ve been working on roofs across DFW for years — from simple repairs to full replacements after those Texas hailstorms. At Miller Roofguard, we believe a roof&apos;s only as good as the work and materials behind it.
+                We&apos;ve been working on roofs across DFW for years — from
+                simple repairs to full replacements after those Texas
+                hailstorms. At Miller Roofguard, we believe a roof&apos;s only
+                as good as the work and materials behind it.
               </p>
               <p>
-                That&apos;s why we use impact-rated shingles, synthetic underlayment, and heavy-gauge flashing and sealants that can handle the DFW weather. Every job&apos;s checked from the decking up — no shortcuts, just solid roofing that holds up season after season.
+                That&apos;s why we use impact-rated shingles, synthetic
+                underlayment, and heavy-gauge flashing and sealants that can
+                handle the DFW weather. Every job&apos;s checked from the
+                decking up — no shortcuts, just solid roofing that holds up
+                season after season.
               </p>
               <p>
-                When you call, you&apos;ll talk to someone who actually works in the field. We&apos;ll take a look, explain what&apos;s going on, and if it needs fixing, you&apos;ll know exactly how we&apos;ll do it and what we&apos;ll use.
+                When you call, you&apos;ll talk to someone who actually works in
+                the field. We&apos;ll take a look, explain what&apos;s going on,
+                and if it needs fixing, you&apos;ll know exactly how we&apos;ll
+                do it and what we&apos;ll use.
               </p>
             </div>
             <div className="mt-12 bg-gray-50 rounded-2xl p-8 border border-gray-200">
@@ -261,7 +279,10 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <ThumbsUp className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
-                  <span>We use top-grade materials from GAF, Owens Corning, and CertainTeed</span>
+                  <span>
+                    We use top-grade materials from GAF, Owens Corning, and
+                    CertainTeed
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Zap className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
@@ -269,12 +290,28 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <ThumbsUp className="h-6 w-6 text-[#be1d1d] flex-shrink-0 mt-1" />
-                  <span>Clear written estimates and straightforward pricing</span>
+                  <span>
+                    Clear written estimates and straightforward pricing
+                  </span>
                 </li>
               </ul>
             </div>
             <div className="mt-10 text-center">
               <ScheduleServiceModal />
+            </div>
+            <div className="mt-12">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                preload="auto"
+                className="w-full rounded-2xl max-h-[500px]"
+              >
+                <source src="matt-mille.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -288,7 +325,11 @@ export default function Home() {
               Free Roof Inspection — Straight Answers, No Guesswork
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              We&apos;ll get up there, check your shingles, decking, and flashing, and show you clear photos of what we find. If it&apos;s in good shape, great. If it needs attention, we&apos;ll explain what it takes to make it right — using the same premium materials we trust on every job.
+              We&apos;ll get up there, check your shingles, decking, and
+              flashing, and show you clear photos of what we find. If it&apos;s
+              in good shape, great. If it needs attention, we&apos;ll explain
+              what it takes to make it right — using the same premium materials
+              we trust on every job.
             </p>
             <div className="inline-block bg-[#be1d1d] text-white px-6 py-3 rounded-full font-semibold mb-8 shadow-lg">
               Limited inspection slots available this week.
@@ -311,7 +352,9 @@ export default function Home() {
               Our Promise to You
             </h2>
             <p className="text-xl text-gray-700 mb-12">
-              At Matt Miller Contracting, our mission is to build trust through honest, high-quality roofing and restoration services that last a lifetime.
+              At Matt Miller Contracting, our mission is to build trust through
+              honest, high-quality roofing and restoration services that last a
+              lifetime.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
               {features.map((feature, index) => (
@@ -329,7 +372,9 @@ export default function Home() {
                 <div className="bg-[#be1d1d] w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                   <MapPin className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Serving All of DFW & Surrounding Areas</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  Serving All of DFW & Surrounding Areas
+                </h3>
               </div>
             </div>
           </div>
@@ -338,10 +383,11 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="py-24 relative overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg')"
+            backgroundImage:
+              "url('https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-black opacity-75"></div>
@@ -371,7 +417,8 @@ export default function Home() {
               Service Areas
             </h2>
             <p className="text-lg text-gray-600">
-              Delivering professional roofing across Dallas–Fort Worth and nearby communities
+              Delivering professional roofing across Dallas–Fort Worth and
+              nearby communities
             </p>
           </div>
           <EnhancedServiceAreaMap serviceAreas={serviceAreas} />
@@ -391,7 +438,8 @@ export default function Home() {
               Roofing Emergency? We&apos;ve Got You Covered.
             </h2>
             <p className="text-xl mb-8">
-              Storm damage? Major leaks? Call Matt anytime — we&apos;ll secure your roof fast and prevent further damage.
+              Storm damage? Major leaks? Call Matt anytime — we&apos;ll secure
+              your roof fast and prevent further damage.
             </p>
             <Link
               href="tel:2147897262"
@@ -412,7 +460,8 @@ export default function Home() {
               What Our Customers Say
             </h2>
             <p className="text-lg text-gray-600">
-              Don&apos;t just take our word for it — hear from homeowners we&apos;ve helped
+              Don&apos;t just take our word for it — hear from homeowners
+              we&apos;ve helped
             </p>
           </div>
 
@@ -420,5 +469,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
